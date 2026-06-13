@@ -8,7 +8,7 @@ object category "I_JWL_DiscordantInstruments_WeaponStrap",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_FaerunMap",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_EversmokingBottle",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_EversmokingBottle_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_EndlessMead",1,0,0,0,0,0,0,0
 new subtable "1,1"

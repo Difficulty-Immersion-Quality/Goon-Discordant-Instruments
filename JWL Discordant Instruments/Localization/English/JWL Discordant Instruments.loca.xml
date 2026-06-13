@@ -11,6 +11,7 @@
 
 	<content contentuid="hb940fd04g538dg4b61g81b3g709de6372382" version="1">A bard playing a song restores one charge of Bardic Inspiration, but must wait before they can restore another.</content>
 	<content contentuid="hd9c18a19gb30cg46abg8748ge720e57dc85d" version="1">A bard playing this song restores one charge of Bardic Inspiration, but must wait before they can restore another.</content>
+	<!-- "Shout_MAG_Restore_BardicInspiration" -->
 	<content contentuid="heea41e66g06d4g4feega335g882f905d40bb" version="1">Play your instrument to restore two of your Bardic Inspiration slots.</content>
 
 <!-- ==================================== Trinkets - Uncommon ==================================== -->
