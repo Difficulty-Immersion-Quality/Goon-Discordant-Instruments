@@ -13,6 +13,7 @@
 					<attribute id="MapKey" type="FixedString" value="b91412ad-d9fc-47e0-b89b-51dbd39db2f9" />
 					<attribute id="Name" type="LSString" value="JWL_CONT_TrinketCrate" />
 					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Stats" type="FixedString" value="JWL_CONT_TrinketCrate" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<attribute id="ParentTemplateId" type="FixedString" value="8853fba5-1182-4798-ad34-b87eb4b27c86" />
 					<attribute id="VisualTemplate" type="FixedString" value="4364f9b4-b8fd-9484-6bd5-3688c3dead69" />
