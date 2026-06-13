@@ -1,0 +1,260 @@
+// ==================================== Instruments ====================================
+
+new entry "JWL_PERFORM_POSITIVE_BARDIC"
+type "StatusData"
+data "StatusType" "BOOST"
+// Catchy Tune
+data "DisplayName" "ha186c9ffgfbedg4c4fg9d06g344347885a7f;1"
+// Your previously played song is still stuck in your head.
+data "Description" "h1c9dbd81g06fdg4b5eg85d2gfb6fa8c04e3f;1"
+data "Icon" "Action_Song_ThePower"
+
+new entry "JWL_Passive_MusicalProficiency"
+type "PassiveData"
+// Sentient Song
+data "DisplayName" "haf038fc3gea65g4152g8be9g5187a945b436;1"
+// A magical enchantment allows anyone to play this instrument with &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt;.
+data "Description" "hc4d6ff19g9a80g430cgbaa2g273a20e49f86;1"
+data "Boosts" "Proficiency(MusicalInstrument)"
+
+// ==================================== Instruments - Base
+// Changes: Diversified ValueScale based on complexity of the instrument.
+// Changes: Reduced rarity by one interval. Basic instruments being uncommon, and poultry bonuses to Performance being rare and very rare is not congruent with vanilla.
+
+new entry "_Instruments"
+type "Armor"
+using "_Instruments"
+// data "Level" "1"
+// data "Slot" "MusicalInstrument"
+// data "UseCosts" "ActionPoint:1"
+// data "ValueLevel" "1"
+// // BaseLoot
+// data "ValueUUID" "4c5217d8-0232-4592-9e32-2fd729123f53"
+// // LootTreasure
+data "ValueUUID" "870797b7-fb40-47ae-be7a-544c05c158c8"
+// data "ValueScale" "1"
+// data "ValueRounding" "1"
+// data "Proficiency Group" "MusicalInstrument"
+data "Rarity" "Common"
+
+new entry "ARM_Instrument_Drum"
+type "Armor"
+// using "_Instruments"
+using "ARM_Instrument_Drum"
+// data "RootTemplate" "76944b2f-1e79-4c22-8d9a-e6c30e5194e0"
+// data "Weight" "1.5"
+// data "ValueLevel" "1"
+data "ValueLevel" "0.8"
+// data "Boosts" "UnlockSpell(Shout_Bard_Perform_Drum)"
+// data "InstrumentType" "Drum"
+
+new entry "ARM_Instrument_Flute"
+type "Armor"
+// using "_Instruments"
+using "ARM_Instrument_Flute"
+// data "RootTemplate" "848ad8dc-59f3-464b-b8b2-95eab6022446"
+// data "Weight" "0.5"
+// data "Boosts" "UnlockSpell(Shout_Bard_Perform_Flute)"
+// data "InstrumentType" "Flute"
+
+new entry "ARM_Instrument_Lute"
+type "Armor"
+// using "_Instruments"
+using "ARM_Instrument_Lute"
+// data "RootTemplate" "8f98a7e7-c773-4b58-9127-5cf79b9206e9"
+// data "Weight" "1"
+// data "ValueLevel" "1"
+data "ValueLevel" "1.2"
+// data "Boosts" "UnlockSpell(Shout_Bard_Perform_Lute)"
+// data "InstrumentType" "Lute"
+
+new entry "ARM_Instrument_Lyre"
+type "Armor"
+// using "_Instruments"
+using "ARM_Instrument_Lyre"
+// data "RootTemplate" "13739f15-7366-4d7f-9926-991e98b9e964"
+// data "Weight" "1"
+// data "ValueLevel" "1"
+data "ValueLevel" "1.4"
+// data "Boosts" "UnlockSpell(Shout_Bard_Perform_Lyre)"
+// data "InstrumentType" "Lyre"
+
+new entry "ARM_Instrument_Violin"
+type "Armor"
+// using "_Instruments"
+using "ARM_Instrument_Violin"
+// data "RootTemplate" "aca5d144-773b-42ba-aca1-6903c60c418c"
+// data "Weight" "0.55"
+// data "ValueLevel" "1"
+data "ValueLevel" "1.6"
+// data "Boosts" "UnlockSpell(Shout_Bard_Perform_Violin)"
+// data "InstrumentType" "Violin"
+
+// ==================================== Instruments - Uncommon and Rare
+
+// ================== 
+
+new entry "JWL_Instrument_Rare_Drum"
+type "Armor"
+using "ARM_Instrument_Drum"
+data "RootTemplate" "8c66df6f-3a59-4d48-8b4a-9191d9a13817"
+// data "Boosts" "UnlockSpell(Shout_Bard_Perform_Drum)"
+data "Boosts" "UnlockSpell(Shout_Bard_Perform_Drum);Skill(Performance,2)"
+// data "ValueLevel" "0.8"
+data "ValueLevel" "3.33"
+// data "Rarity" "Common"
+data "Rarity" "Uncommon"
+
+// ================== 
+
+new entry "JWL_Instrument_Rare_Flute"
+type "Armor"
+using "ARM_Instrument_Flute"
+data "RootTemplate" "3bc7c948-e2c3-4895-b0ce-49e4cabdccc1"
+// data "Boosts" "UnlockSpell(Shout_Bard_Perform_Flute)"
+data "Boosts" "UnlockSpell(Shout_Bard_Perform_Flute);Skill(Performance,2)"
+data "ValueLevel" "3.33"
+// data "Rarity" "Common"
+data "Rarity" "Uncommon"
+
+// ================== 
+
+new entry "JWL_Instrument_Rare_Lute"
+type "Armor"
+using "ARM_Instrument_Lute"
+data "RootTemplate" "64f36ccd-4cd3-4c20-ba31-9fdffa42849d"
+// data "Boosts" "UnlockSpell(Shout_Bard_Perform_Lute)"
+data "Boosts" "UnlockSpell(Shout_Bard_Perform_Lute);Skill(Performance,2)"
+data "ValueLevel" "3.33"
+// data "Rarity" "Common"
+data "Rarity" "Uncommon"
+
+
+// ================== 
+
+new entry "JWL_Instrument_Uncommon_Lyre"
+type "Armor"
+using "ARM_Instrument_Lyre"
+// data "RootTemplate" "13739f15-7366-4d7f-9926-991e98b9e964"
+data "RootTemplate" ""
+// data "Boosts" "UnlockSpell(Shout_Bard_Perform_Lyre)"
+data "Boosts" "UnlockSpell(Shout_Bard_Perform_Lyre);Skill(Performance,1)"
+// data "ValueLevel" "1.4"
+data "ValueLevel" "1.7"
+// data "Rarity" "Common"
+data "Rarity" "Uncommon"
+
+new entry "JWL_Instrument_Rare_Lyre"
+type "Armor"
+using "JWL_Instrument_Uncommon_Lyre"
+// data "RootTemplate" ""
+data "RootTemplate" "ae0afdb6-022c-479f-9db2-1d28fcbb91e4"
+// data "Boosts" "UnlockSpell(Shout_Bard_Perform_Lyre);Skill(Performance,1)"
+data "Boosts" "UnlockSpell(Shout_Bard_Perform_Lyre);Skill(Performance,2)"
+// data "ValueLevel" "1.7"
+data "ValueLevel" "2"
+// data "Rarity" "Uncommon"
+data "Rarity" "Rare"
+
+
+// ================== 
+
+new entry "JWL_Instrument_Rare_Violin"
+type "Armor"
+using "ARM_Instrument_Violin"
+// data "RootTemplate" "aca5d144-773b-42ba-aca1-6903c60c418c"
+data "RootTemplate" "2a4d6328-8ce9-4fa4-bca9-c0e449777783"
+// data "Boosts" "UnlockSpell(Shout_Bard_Perform_Violin)"
+data "Boosts" "UnlockSpell(Shout_Bard_Perform_Violin);Skill(Performance,2)"
+// data "ValueLevel" "1.6"
+data "ValueLevel" "1.9"
+// data "Rarity" "Common"
+data "Rarity" "Uncommon"
+
+// ==================================== Instruments - Unique
+
+// ================== 
+
+new entry "UNI_LOW_KiamGodasKilatDrum"
+type "Armor"
+using "UNI_LOW_KiamGodasKilatDrum"
+data "Boosts" "UnlockSpell(Shout_Bard_Perform_Drum);Skill(Performance,3)"
+data "PassivesOnEquip" "JWL_Passive_MusicalProficiency"
+data "ValueLevel" "6"
+data "Rarity" "Rare"
+
+new entry "JWL_UNI_LOW_KiamGodasKilatDrum_NotUnique"
+type "Armor"
+using "UNI_LOW_KiamGodasKilatDrum"
+// data "Unique" "1"
+data "Unique" "0"
+
+// ================== 
+
+new entry "UNI_LOW_DostrealtsPiccolo"
+type "Armor"
+using "UNI_LOW_DostrealtsPiccolo"
+data "Boosts" "UnlockSpell(Shout_Bard_Perform_Flute);Skill(Performance,3)"
+data "PassivesOnEquip" "JWL_Passive_MusicalProficiency"
+data "ValueLevel" "5.5"
+data "Rarity" "Rare"
+
+new entry "JWL_UNI_LOW_DostrealtsPiccolo_NotUnique"
+type "Armor"
+using "UNI_LOW_DostrealtsPiccolo"
+// data "Unique" "1"
+data "Unique" "0"
+
+// ================== 
+
+new entry "UNI_LOW_StolyarofsTableLute"
+type "Armor"
+using "UNI_LOW_StolyarofsTableLute"
+data "Boosts" "UnlockSpell(Shout_Bard_Perform_Lute);Skill(Performance,3)"
+data "PassivesOnEquip" "JWL_Passive_MusicalProficiency"
+data "ValueLevel" "6"
+data "Rarity" "Rare"
+
+new entry "JWL_UNI_LOW_StolyarofsTableLute_NotUnique"
+type "Armor"
+using "UNI_LOW_StolyarofsTableLute"
+// data "Unique" "1"
+data "Unique" "0"
+
+// ================== Falataeric Cli Lyre
+// This exquisite instrument is said to come from the shop of the legendary Moonshaean bard Falataer. Fewer than twenty of his handcrafted lyres still survive.
+new entry "UNI_LOW_FalataericCliLyre"
+type "Armor"
+// using "ARM_Instrument_Lyre"
+using "UNI_LOW_FalataericCliLyre"
+// data "RootTemplate" "3542b820-713a-4dd3-9cc8-35586f4e7f46"
+// data "ValueScale" "7.5"
+// data "ValueLevel" "1.4"
+data "ValueLevel" "6.5"
+// data "Boosts" "UnlockSpell(Shout_Bard_Perform_Lyre)"
+data "Boosts" "UnlockSpell(Shout_Bard_Perform_Lyre);Skill(Performance,3)"
+data "PassivesOnEquip" "JWL_Passive_MusicalProficiency"
+// data "Rarity" "Rare"
+// data "Unique" "1"
+
+new entry "JWL_UNI_LOW_FalataericCliLyre_NotUnique"
+type "Armor"
+using "UNI_LOW_FalataericCliLyre"
+// data "Unique" "1"
+data "Unique" "0"
+
+// ================== 
+
+new entry "UNI_LOW_GlimmergadSelgauntFiddle"
+type "Armor"
+using "UNI_LOW_GlimmergadSelgauntFiddle"
+data "Boosts" "UnlockSpell(Shout_Bard_Perform_Violin);Skill(Performance,3)"
+data "PassivesOnEquip" "JWL_Passive_MusicalProficiency"
+data "ValueLevel" "7"
+data "Rarity" "Rare"
+
+new entry "JWL_UNI_LOW_GlimmergadSelgauntFiddle_NotUnique"
+type "Armor"
+using "UNI_LOW_GlimmergadSelgauntFiddle"
+// data "Unique" "1"
+data "Unique" "0"
