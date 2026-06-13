@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentList>
 <!-- ==================================== Instruments ==================================== -->
+
 	<!-- "JWL_Passive_MusicalProficiency" -->
 	<content contentuid="haf038fc3gea65g4152g8be9g5187a945b436" version="1">Sentient Song</content>
 	<content contentuid="hc4d6ff19g9a80g430cgbaa2g273a20e49f86" version="1">A magical enchantment allows anyone to play this instrument with &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt;.</content>
@@ -11,17 +12,46 @@
 	<content contentuid="hb940fd04g538dg4b61g81b3g709de6372382" version="1">A bard playing a song restores one charge of Bardic Inspiration, but must wait before they can restore another.</content>
 	<content contentuid="hd9c18a19gb30cg46abg8748ge720e57dc85d" version="1">A bard playing this song restores one charge of Bardic Inspiration, but must wait before they can restore another.</content>
 	<content contentuid="heea41e66g06d4g4feega335g882f905d40bb" version="1">Play your instrument to restore two of your Bardic Inspiration slots.</content>
+
+<!-- ==================================== Trinkets - Uncommon ==================================== -->
+
+	<!-- "JWL_DiscordantInstruments_ComfyBackpack" - "f1a179b8-aa6d-4eaa-b557-75671188428b" -->
 	<content contentuid="h0d93bd89g2802g478fgb7dbg1bbe7461e582" version="1">Fashionable Backpack</content>
 	<content contentuid="ha19d37bcga852g4234gbb06g471c184e73d1" version="1">A stylish canvas bag with leather straps. The envy of any adventurer!</content>
+	<!-- "JWL_Passive_ComfyBackpack" -->
 	<content contentuid="heda4c85age794g4cf8g9b01ge92df2f3d786" version="1">Your &lt;LSTag Tooltip="CarryWeight"&gt;carrying capacity&lt;/LSTag&gt; is increased to 120% of its base value.</content>
+
+	<!-- "JWL_DiscordantInstruments_Crowbar" - "4acf7acf-0522-4564-a400-190179863774" -->
+	<content contentuid="h2f7cdf09g2f86g493eg8251g64dffceab790" version="1">Steel Crowbar</content>
+	<content contentuid="hfbb53114gc5e2g4357g9ecagd0ee9bd7cf55" version="1">A sturdy and useful tool.</content>
+	<!-- "JWL_Passive_Crowbar" -->
+	<content contentuid="h718fcad2gafbag4ad8g9e5fgb821b4230426" version="1">While not in combat you have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="Athletics"&gt;Athletics&lt;/LSTag&gt; checks.</content>
+
+	<!-- "JWL_DiscordantInstruments_FaerunMap" - "f11adb87-bcde-40a1-aeaf-05086890a1cf" -->
+	<content contentuid="h374f226fg7464g4d2fga8b6gb83b0291e2b3" version="1">Annotated Map of the Sword Coast</content>
+	<content contentuid="h5b9eed9egedd6g441bg844cg684b0f645cac" version="1">A map covered in notes marking places of interest. Has an atlas on the back filled with useful facts on the region.</content>
+
+	<!--  -->
+
+	<!--  -->
+	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
+	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
+	<!--  -->
+	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
+	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
+	<!--  -->
+	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
+	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
+
+	<!--  -->
 	<content contentuid="hd71087fege40dg4875gb80eg4aea2cb98460" version="1">Psionic Alarm</content>
 	<content contentuid="h7e2a0d8fg1379g48e7ga23agf773f98e4baa" version="1">You cannot be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;.</content>
 	<content contentuid="h7ef7c832g6883g46f9ga63egfe6ac408b669" version="1">Shoulder-Mounted Leather Frog</content>
 	<content contentuid="h864d0c9eg29d0g4d1cgbb92g3e0ee0e09b2c" version="1">A solid leather base with sturdy straps used to comfortably and securely attach a weapon to your back.</content>
+	<!-- "JWL_Passive_WeaponStrap" -->
 	<content contentuid="h179c9e7dgbc6bg40bfga76eg5d3bea28d044" version="1">Securely Fastened</content>
 	<content contentuid="h291fbb29gb863g4516gb16agcff49cc2c615" version="1">While you have a Glaive, Greatclub, Halberd, Maul, Pike, Quarterstaff, Spear, Trident, or Warhammer equipped in your main hand and nothing in your free hand, your primary attacks are &lt;LSTag Type="Spell" Tooltip="Target_UnarmedAttack"&gt;Unarmed Strikes&lt;/LSTag&gt;.</content>
-	<content contentuid="h374f226fg7464g4d2fga8b6gb83b0291e2b3" version="1">Annotated Map of the Sword Coast</content>
-	<content contentuid="h5b9eed9egedd6g441bg844cg684b0f645cac" version="1">A map covered in notes marking places of interest. Has an atlas on the back filled with useful facts on the region.</content>
+
 	<content contentuid="h129f6f7bg8551g4b05g84f9g9709c075177f" version="1">Eversmoking Bottle</content>
 	<content contentuid="h84d817ecgc99bg45e4ga402g6d0da384028f" version="1">Smoke leaks from the lead-stoppered mouth of this brass bottle.</content>
 	<content contentuid="h3ecef8baf67f4ca8ba3f2787ebab87fa340f" version="1">Instant Smoke</content>
@@ -240,14 +270,25 @@
 	<content contentuid="h06749d6eg08ceg4cb0ga4d7g4f267580ca0a" version="1">A pin dedicated to Omgar, the legendary sea serpent.</content>
 	<content contentuid="h2867de5fged3dg4d12g80fegb1e5012c7b7c" version="1">Serpent Strikes</content>
 	<content contentuid="h0158e0f1g8943g4e61g8e64g52cb6b80abfe" version="1">Your melee attacks can possibly inflict &lt;LSTag Type="Status" Tooltip="ALCH_TOXIN_SERPENTVENOM_CONDITION"&gt;Serpent Fang Toxin&lt;/LSTag&gt;.</content>
+
+<!-- ==================================== Straps ==================================== -->
+
+	<!-- "JWL_DiscordantInstruments_WeaponStrap" - "de48261f-913c-4a1e-86ae-0c26ec5beebc" -->
+	<content contentuid="h7ef7c832g6883g46f9ga63egfe6ac408b669" version="1">Shoulder-Mounted Leather Frog</content>
+	<content contentuid="h864d0c9eg29d0g4d1cgbb92g3e0ee0e09b2c" version="1">A solid leather base with sturdy straps used to comfortably and securely attach a weapon to your back.</content>
+
 	<content contentuid="ha5683a94gca7ag4476g801egcc9fb1d057ce" version="1">Worghide Leather Frog</content>
 	<content contentuid="h1dbb03f8g4e1fg4124g821ag263d5fbee261" version="1">Dragonscale Leather Frog</content>
+
+	<!-- "JWL_Passive_WorghideWeaponStrap", "JWL_Passive_DragonhideWeaponStrap" -->
 	<content contentuid="hcdfcfb2dgd621g4757ga45agc38399153514" version="1">Training Weights</content>
+	<!-- "JWL_Passive_WorghideWeaponStrap" -->
 	<content contentuid="h60c6445dgd49ag40f6g96afgeeb6674e0f6f" version="1">Receive a +[1] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;unarmed attack&lt;/LSTag&gt; rolls. If the wielder has at least [2] levels in the &lt;i&gt;Monk&lt;/i&gt; class, the bonus increases to +[3].</content>
+	<!-- "JWL_Passive_DragonhideWeaponStrap" -->
 	<content contentuid="hecbf2ba5g2932g429dgbe53gf64882290a11" version="1">Receive a +[1] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;unarmed Attack&lt;/LSTag&gt; Rolls and Damage Rolls. If the wielder has at least [2] levels in the &lt;i&gt;Monk&lt;/i&gt; class, the bonus increases to +[3].</content>
-	<content contentuid="h2f7cdf09g2f86g493eg8251g64dffceab790" version="1">Steel Crowbar</content>
-	<content contentuid="hfbb53114gc5e2g4357g9ecagd0ee9bd7cf55" version="1">A sturdy and useful tool.</content>
-	<content contentuid="h718fcad2gafbag4ad8g9e5fgb821b4230426" version="1">While not in combat you have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="Athletics"&gt;Athletics&lt;/LSTag&gt; checks.</content>
+
+<!-- ==================================== Belts ==================================== -->
+
 	<content contentuid="h7002c787gc9bag4fe5gb6beg1c01952acaba" version="1">Belt of Primal Recall</content>
 	<content contentuid="h7ed0d5c5g7628g4de2g99c2g1c862f8ebc0f" version="1">A comfortable hide belt once owned by a berserker.</content>
 	<content contentuid="ha077071bg8662g4b09gbff2gb3f34c0ea8f8" version="1">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on attacks against beasts.</content>
@@ -255,6 +296,9 @@
 	<content contentuid="h6daea693gf1b9g4d01gb771g1715263acbfb" version="1">The belt of a fearsome champion.</content>
 	<content contentuid="h908a800fg775eg4cf7g8001g0ddb1b7b5611" version="1">Belt of Forbidden Harmony</content>
 	<content contentuid="hecc2d9d5g29d4g4da5g8bf0gaa460828639e" version="1">A belt celebrating the impossible balance between Shar and Selûne.</content>
+
+<!-- ==================================== Totems ==================================== -->
+
 	<content contentuid="hb5b63d88gafd6g4989g915cgb7096596ecf6" version="1">Beast Totem</content>
 	<content contentuid="h3e349385g1a09g408eg93e3gd4d27d1d82df" version="1">A small wooden idol carved into the shape of several different beasts.</content>
 	<content contentuid="h0f7518b4g8148g4a93g9cc9g5e5acd94cd6e" version="1">When you &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Rage&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wild Shape&lt;/LSTag&gt;, you gain &lt;LSTag Type="Status" Tooltip="MAG_MOMENTUM"&gt;Momentum&lt;/LSTag&gt; for [1] turns.</content>

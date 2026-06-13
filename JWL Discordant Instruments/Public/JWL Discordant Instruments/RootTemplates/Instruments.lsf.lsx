@@ -4,6 +4,7 @@
 	<region id="Templates">
 		<node id="Templates">
 			<children>
+	<!-- Instruments -->
 		<!-- Drums -->
 			<!-- Drum - Rare -->
 				<node id="GameObjects">

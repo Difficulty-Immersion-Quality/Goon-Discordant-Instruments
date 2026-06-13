@@ -2,34 +2,6 @@
 // UNCOMMON ITEMS
 // ===============================================================
 
-new entry "JWL_Passive_ComfyBackpack"
-type "PassiveData"
-data "DisplayName" "h0d93bd89g2802g478fgb7dbg1bbe7461e582;1"
-data "Description" "heda4c85age794g4cf8g9b01ge92df2f3d786;1"
-data "BoostContext" "OnEquip"
-data "Boosts" "CarryCapacityMultiplier(1.2)"
-
-new entry "JWL_Passive_ComfyBackpack_Human"
-type "PassiveData"
-using "JWL_Passive_ComfyBackpack"
-data "Properties" "IsHidden"
-data "BoostConditions" "HasPassive('HumanVersatility',context.Source)"
-data "Boosts" "CarryCapacityMultiplier(1.45)"
-
-new entry "JWL_Passive_ComfyBackpack_Giant"
-type "PassiveData"
-using "JWL_Passive_ComfyBackpack"
-data "Properties" "IsHidden"
-data "BoostConditions" "HasPassive('Giants_CarryCapacity',context.Source)"
-data "Boosts" "CarryCapacityMultiplier(1.45)"
-
-new entry "JWL_Passive_ComfyBackpack_Combo"
-type "PassiveData"
-using "JWL_Passive_ComfyBackpack"
-data "Properties" "IsHidden"
-data "BoostConditions" "HasPassive('HumanVersatility',context.Source) and HasPassive('Giants_CarryCapacity',context.Source)"
-data "Boosts" "CarryCapacityMultiplier(1.7)"
-
 new entry "JWL_Passive_GithRadar"
 type "PassiveData"
 data "DisplayName" "hd71087fege40dg4875gb80eg4aea2cb98460;1"
@@ -416,49 +388,6 @@ data "Description" "h0158e0f1g8943g4e61g8e64g52cb6b80abfe;1"
 data "StatsFunctorContext" "OnDamage"
 data "Conditions" "IsMeleeWeaponAttack()"
 data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 14)):ApplyStatus(ALCH_TOXIN_SERPENTVENOM_CONDITION,100,1, AdvantageOnPoisoned())"
-
-
-// ===============================================================
-// STRAPS
-// ===============================================================
-
-new entry "JWL_Passive_WeaponStrap"
-type "PassiveData"
-data "DisplayName" "h179c9e7dgbc6bg40bfga76eg5d3bea28d044;1"
-data "Description" "h291fbb29gb863g4516gb16agcff49cc2c615;1"
-data "BoostContext" "OnEquip;OnCreate"
-data "BoostConditions" "IsWeaponOfProficiencyGroup('Glaives|Greatclubs|Halberds|Mauls|Pikes|Quarterstaffs|Spears|Tridents|Warhammers', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) and not DualWielder(context.Source)"
-data "Boosts" "AttackSpellOverride(Target_UnarmedAttack, Target_MainHandAttack)"
-
-new entry "JWL_Passive_WeaponStrap_TECHNICAL"
-type "PassiveData"
-data "DisplayName" "h7ef7c832g6883g46f9ga63egfe6ac408b669;1"
-data "Properties" "IsHidden"
-data "BoostContext" "OnEquip;OnCreate"
-data "BoostConditions" "IsWeaponOfProficiencyGroup('Glaives|Greatclubs|Halberds|Mauls|Pikes|Quarterstaffs|Spears|Tridents|Warhammers', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) and not DualWielder(context.Source)"
-data "Boosts" "UnlockSpell(Target_MainHandAttack)"
-
-new entry "JWL_Passive_WorghideWeaponStrap"
-type "PassiveData"
-data "DisplayName" "hcdfcfb2dgd621g4757ga45agc38399153514;1"
-data "Description" "h60c6445dgd49ag40f6g96afgeeb6674e0f6f;1"
-data "DescriptionParams" "1;5;2"
-data "Boosts" "IF(not ClassLevelHigherOrEqualThan(5,'Monk')):RollBonus(MeleeUnarmedAttack, 1);IF(ClassLevelHigherOrEqualThan(5,'Monk')):RollBonus(MeleeUnarmedAttack, 2)"
-
-new entry "JWL_Passive_DragonhideWeaponStrap"
-type "PassiveData"
-data "DisplayName" "hcdfcfb2dgd621g4757ga45agc38399153514;1"
-data "Description" "hecbf2ba5g2932g429dgbe53gf64882290a11;1"
-data "DescriptionParams" "2;7;4"
-//data "Boosts" "IF(not ClassLevelHigherOrEqualThan(7,'Monk')):RollBonus(MeleeUnarmedAttack, 2);IF(ClassLevelHigherOrEqualThan(7,'Monk')):RollBonus(MeleeUnarmedAttack, 4);IF(not ClassLevelHigherOrEqualThan(7,'Monk') and IsMeleeUnarmedAttack()):CharacterWeaponDamage(2);IF(ClassLevelHigherOrEqualThan(7,'Monk') and IsMeleeUnarmedAttack()):CharacterWeaponDamage(4)"
-data "Boosts" "IF(not ClassLevelHigherOrEqualThan(7,'Monk')):RollBonus(MeleeUnarmedAttack, 2);IF(ClassLevelHigherOrEqualThan(7,'Monk')):RollBonus(MeleeUnarmedAttack, 4);IF(not ClassLevelHigherOrEqualThan(7,'Monk') and IsMeleeUnarmedAttack()):CharacterUnarmedDamage(2);IF(ClassLevelHigherOrEqualThan(7,'Monk') and IsMeleeUnarmedAttack()):CharacterUnarmedDamage(4)"
-
-new entry "JWL_Passive_Crowbar"
-type "PassiveData"
-data "DisplayName" "h2f7cdf09g2f86g493eg8251g64dffceab790;1"
-data "Description" "h718fcad2gafbag4ad8g9e5fgb821b4230426;1"
-data "Boosts" "IF(not Combat(context.Source)):Advantage(Skill, Athletics)"
-
 
 // ===============================================================
 // TOTEMS (BARBARIAN/DRUID)

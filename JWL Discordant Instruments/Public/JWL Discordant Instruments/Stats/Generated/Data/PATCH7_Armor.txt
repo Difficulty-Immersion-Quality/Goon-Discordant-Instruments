@@ -5,8 +5,11 @@ new entry "JWL_DiscordantInstruments_Base_Common"
 type "Armor"
 data "Level" "1"
 data "Slot" "MusicalInstrument"
+data "Weight" "1"
+data "ValueLevel" "1"
 data "ValueScale" "1"
 data "ValueRounding" "1"
+data "Rarity" "Common"
 
 new entry "JWL_DiscordantInstruments_Base_Uncommon"
 type "Armor"
@@ -39,24 +42,61 @@ data "Rarity" "Legendary"
 // ==================================== UNCOMMON ITEMS ==================================== 
 
 // ==================================== Fashionable Backpack
+// TODO: Expand upon this concept with custom sources of "CarryCapacityMultiplier" in Goon's Library.
+// TODO: Confirm if this BoostContext sees "Giants_CarryCapacity" after respec, while it's equipped.
+
 new entry "JWL_DiscordantInstruments_ComfyBackpack"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
 data "RootTemplate" "f1a179b8-aa6d-4eaa-b557-75671188428b"
-data "ValueLevel" "1.25"
-data "Weight" "1.00"
-data "PassivesOnEquip" "JWL_Passive_ComfyBackpack;JWL_Passive_ComfyBackpack_Human;JWL_Passive_ComfyBackpack_Giant;JWL_Passive_ComfyBackpack_Combo"
+// data "Weight" "1"
+data "Weight" "2"
+// data "ValueLevel" "2"
+data "ValueLevel" "1"
+data "PassivesOnEquip" "JWL_Passive_ComfyBackpack"
+
+new entry "JWL_Passive_ComfyBackpack"
+type "PassiveData"
+// Fashionable Backpack
+data "DisplayName" "h0d93bd89g2802g478fgb7dbg1bbe7461e582;1"
+// Your &lt;LSTag Tooltip="CarryWeight"&gt;carrying capacity&lt;/LSTag&gt; is increased to 120% of its base value.
+data "Description" "heda4c85age794g4cf8g9b01ge92df2f3d786;1"
+data "BoostContext" "OnEquip;OnCreate"
+data "Boosts" "IF(not HasPassive('HumanVersatility',context.Source) and HasPassive('Giants_CarryCapacity',context.Source)):CarryCapacityMultiplier(1.2);IF((HasPassive('HumanVersatility',context.Source) and not HasPassive('Giants_CarryCapacity',context.Source)) or (HasPassive('Giants_CarryCapacity',context.Source) and not HasPassive('HumanVersatility',context.Source))):CarryCapacityMultiplier(1.45);IF(HasPassive('HumanVersatility',context.Source) and HasPassive('Giants_CarryCapacity',context.Source)):CarryCapacityMultiplier(1.7)"
+
+// ==================================== Steel Crowbar
+
+new entry "JWL_DiscordantInstruments_Crowbar"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_Uncommon"
+data "RootTemplate" "4acf7acf-0522-4564-a400-190179863774"
+// data "ValueLevel" "2"
+data "ValueLevel" "1"
+// data "Weight" "1"
+data "Weight" "3"
+data "PassivesOnEquip" "JWL_Passive_Crowbar"
+
+new entry "JWL_Passive_Crowbar"
+type "PassiveData"
+// Steel Crowbar
+data "DisplayName" "h2f7cdf09g2f86g493eg8251g64dffceab790;1"
+// While not in combat you have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="Athletics"&gt;Athletics&lt;/LSTag&gt; checks.
+data "Description" "h718fcad2gafbag4ad8g9e5fgb821b4230426;1"
+data "Boosts" "IF(not Combat(context.Source)):Advantage(Skill, Athletics)"
 
 // ==================================== Annotated Map of the Sword Coast
+// TODO: Confirm that boosts are displayed on tooltip.
+
 new entry "JWL_DiscordantInstruments_FaerunMap"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
 data "RootTemplate" "f11adb87-bcde-40a1-aeaf-05086890a1cf"
-data "ValueLevel" "1"
-data "Weight" "0.25"
+// data "Weight" "1"
+data "Weight" "0.1"
 data "Boosts" "Skill(History, 1);Skill(Nature, 1);Skill(Survival, 1)"
 
 // ==================================== Eversmoking Bottle
+
 new entry "JWL_DiscordantInstruments_EversmokingBottle"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -67,6 +107,7 @@ data "Boosts" "UnlockSpell(JWL_Target_SmokeCloud_Trinket)"
 data "Unique" "1"
 
 // ==================================== Decanter of Endless Mead
+
 new entry "JWL_DiscordantInstruments_EndlessMead"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -79,6 +120,7 @@ data "StatusOnEquip" "JWL_Status_EndlessMead_TECHNICAL"
 data "Unique" "1"
 
 // ==================================== Rope of Mending
+
 new entry "JWL_DiscordantInstruments_MendingRope"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -89,6 +131,7 @@ data "Boosts" "UnlockSpell(Target_Mending)"
 data "Unique" "1"
 
 // ==================================== Balance of Harmony
+
 new entry "JWL_DiscordantInstruments_BalanceHarmony"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -99,6 +142,7 @@ data "Boosts" "UnlockSpell(JWL_Target_ProtectionFromEvilAndGood_Trinket)"
 data "Unique" "1"
 
 // ==================================== Galder's Bubble Pipe
+
 new entry "JWL_DiscordantInstruments_SmokingPipe"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -108,6 +152,7 @@ data "Boosts" "UnlockSpell(JWL_Target_MistyStep_Trinket)"
 data "Unique" "1"
 
 // ==================================== Pole of Collapsing
+
 new entry "JWL_DiscordantInstruments_VaultingPole"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -119,6 +164,7 @@ data "PassivesOnEquip" "JWL_Passive_VaultingPole"
 // ==================================== RARE ITEMS ==================================== 
 
 // ==================================== Triage Kit
+
 new entry "JWL_DiscordantInstruments_TriageKit"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -128,6 +174,7 @@ data "Weight" "1.25"
 data "Boosts" "UnlockSpell(JWL_Target_Triage)"
 
 // ==================================== Portable Whetstone
+
 new entry "JWL_DiscordantInstruments_Whetstone"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -139,6 +186,7 @@ data "StatusOnEquip" "JWL_Status_Whetstone_TECHNICAL"
 data "UseConditions" "not IsWeaponOfProficiencyGroup('None|Clubs|Flails|Greatclubs|LightHammers|Maces|Mauls|Morningstars|Quarterstaffs|Shields|Warhammers', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand))"
 
 // ==================================== Candle of Lawful Invocation
+
 new entry "JWL_DiscordantInstruments_HolyCandle"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -149,6 +197,7 @@ data "Boosts" "UnlockSpell(JWL_Target_Light_Trinket)"
 data "Unique" "1"
 
 // ==================================== Pearl of Power
+
 new entry "JWL_DiscordantInstruments_PearlPower"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -159,6 +208,7 @@ data "Boosts" "UnlockSpell(JWL_Shout_MAG_SpellSlotRestoration_Trinket)"
 data "Unique" "1"
 
 // ==================================== Wind Fan
+
 new entry "JWL_DiscordantInstruments_WindFan"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -168,6 +218,7 @@ data "Boosts" "UnlockSpell(Zone_MAG_GustOfWind_Trinket)"
 data "Unique" "1"
 
 // ==================================== Hourglass of Distorted Perception
+
 new entry "JWL_DiscordantInstruments_Hourglass"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -178,6 +229,7 @@ data "Boosts" "UnlockSpell(JWL_Shout_Haste_Trinket)"
 data "Unique" "1"
 
 // ==================================== Ruby of the War Mage
+
 new entry "JWL_DiscordantInstruments_RubyWarmage"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -189,6 +241,7 @@ data "Boosts" "UnlockSpell(JWL_Shout_RubyWarmage)"
 data "Unique" "1"
 
 // ==================================== Lens of Astute Observation
+
 new entry "JWL_DiscordantInstruments_AstuteLens"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -199,6 +252,7 @@ data "Boosts" "Skill(Insight,2);Skill(Investigation,3)"
 data "Unique" "1"
 
 // ==================================== Shielding Brooch
+
 new entry "JWL_DiscordantInstruments_ShieldingBrooch"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -209,6 +263,7 @@ data "PassivesOnEquip" "JWL_Passive_ShieldingBrooch"
 data "Unique" "1"
 
 // ==================================== Docent
+
 new entry "JWL_DiscordantInstruments_Docent"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -219,6 +274,7 @@ data "PassivesOnEquip" "JWL_Passive_WoundClosure"
 data "Unique" "1"
 
 // ==================================== Professor Orb
+
 new entry "JWL_DiscordantInstruments_ProfessorOrb"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -228,6 +284,7 @@ data "Boosts" "UnlockSpell(JWL_Target_MageHand_Trinket);Skill(Arcana,2);Skill(Hi
 data "Unique" "1"
 
 // ==================================== Soulbound Chain
+
 new entry "JWL_DiscordantInstruments_WeaponChain"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -241,6 +298,7 @@ data "Unique" "1"
 // ==================================== VERY RARE ITEMS ==================================== 
 
 // ==================================== Cowardly Magic Carpet
+
 new entry "JWL_DiscordantInstruments_FlyingCarpet"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -251,6 +309,7 @@ data "Boosts" "UnlockSpell(JWL_Projectile_FlyingCarpet)"
 data "Unique" "1"
 
 // ==================================== Harbin's Lucky Die
+
 new entry "JWL_DiscordantInstruments_LuckyDice"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -261,6 +320,7 @@ data "PassivesOnEquip" "JWL_Passive_LuckyDice"
 data "Unique" "1"
 
 // ==================================== Bowl of Commanding Water
+
 new entry "JWL_DiscordantInstruments_BowlCommandingWater"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -271,6 +331,7 @@ data "Boosts" "UnlockSpell(JWL_Target_BowlCommandingWater)"
 data "Unique" "1"
 
 // ==================================== Eyes of Charming
+
 new entry "JWL_DiscordantInstruments_CharmingEyes"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -281,6 +342,7 @@ data "Boosts" "Skill(Persuasion,2);UnlockSpell(JWL_Target_CharmingEyes)"
 data "Unique" "1"
 
 // ==================================== Handy Haversack
+
 new entry "JWL_DiscordantInstruments_HandyHaversack"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -291,6 +353,7 @@ data "PassivesOnEquip" "JWL_Passive_HandyHaversack;JWL_Passive_HandyHaversack_Hu
 data "Unique" "1"
 
 // ==================================== Badge of the Watch
+
 new entry "JWL_DiscordantInstruments_WatchBadge"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -300,6 +363,7 @@ data "Boosts" "AC(2);RollBonus(SavingThrow,1)"
 data "Unique" "1"
 
 // ==================================== Mimir
+
 new entry "JWL_DiscordantInstruments_Mimir"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -325,6 +389,7 @@ data "PassivesOnEquip" "JWL_Passive_BagHolding"
 data "Unique" "1"
 
 // ==================================== Dimensional Shackles
+
 new entry "JWL_DiscordantInstruments_Shackles"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -335,6 +400,7 @@ data "Boosts" "UnlockSpell(JWL_Target_Shackles)"
 data "Unique" "1"
 
 // ==================================== Empowered Guardian Emblem
+
 new entry "JWL_DiscordantInstruments_GuardianEmblem"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -346,6 +412,7 @@ data "Boosts" "CriticalHit(AttackTarget,Success,Never)"
 data "Unique" "1"
 
 // ==================================== Kyrzin's Ooze
+
 new entry "JWL_DiscordantInstruments_KerzinsOoze"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -357,6 +424,7 @@ data "Boosts" "Resistance(Acid,Resistant);Resistance(Poison,Resistant);UnlockSpe
 data "Unique" "1"
 
 // ==================================== Black Crystal Tablet
+
 new entry "JWL_DiscordantInstruments_BlackCrystalTablet"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -367,6 +435,7 @@ data "Boosts" "UnlockSpell(JWL_Target_ProfaneKnowledge)"
 data "Unique" "1"
 
 // ==================================== Orb of Skoraeus
+
 new entry "JWL_DiscordantInstruments_OrbSkoraeus"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -401,6 +470,7 @@ data "DescriptionParams" "1;7;2"
 data "Boosts" "IF(not ClassLevelHigherOrEqualThan(7,'Fighter')):RollBonus(MeleeWeaponAttack, 1);IF(ClassLevelHigherOrEqualThan(7,'Fighter')):RollBonus(MeleeWeaponAttack, 2);IF(not ClassLevelHigherOrEqualThan(7,'Fighter') and IsMeleeWeaponAttack()):CharacterWeaponDamage(1);IF(ClassLevelHigherOrEqualThan(7,'Fighter') and IsMeleeWeaponAttack()):CharacterWeaponDamage(2)"
 
 // ==================================== Orb of Imminent Scrying
+
 new entry "JWL_DiscordantInstruments_OrbScrying"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -411,6 +481,7 @@ data "PassivesOnEquip" "JWL_Passive_OrbScrying"
 data "Unique" "1"
 
 // ==================================== Book of Exalted Deeds
+
 new entry "JWL_DiscordantInstruments_BookExaltedDeeds"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -423,6 +494,7 @@ data "Boosts" "Ability(Wisdom, 2);UnlockSpell(Target_Resistance);UnlockSpell(JWL
 data "Unique" "1"
 
 // ==================================== Book of Vile Darkness
+
 new entry "JWL_DiscordantInstruments_BookVileDarkness"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -435,6 +507,7 @@ data "Boosts" "Ability(Intelligence, 2);Ability(Wisdom, -2);AC(1);ActionResource
 data "Unique" "1"
 
 // ==================================== Dealbreaker
+
 new entry "JWL_DiscordantInstruments_GoldenFiddle"
 type "Armor"
 using "ARM_Instrument_Violin"
@@ -450,6 +523,7 @@ data "Unique" "1"
 // ==================================== IOUN STONES ==================================== 
 
 // ==================================== Stormy Ioun Stone
+
 new entry "JWL_DiscordantInstruments_IounBlue"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -461,6 +535,7 @@ data "Boosts" "Ability(Wisdom, 2, 23)"
 data "Unique" "1"
 
 // ==================================== Verdant Ioun Stone
+
 new entry "JWL_DiscordantInstruments_IounGreen"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -472,6 +547,7 @@ data "Boosts" "Ability(Dexterity, 2, 23)"
 data "Unique" "1"
 
 // ==================================== Roseate Ioun Stone
+
 new entry "JWL_DiscordantInstruments_IounPink"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -483,6 +559,7 @@ data "Boosts" "Ability(Constitution, 2, 23)"
 data "Unique" "1"
 
 // ==================================== Umbral Ioun Stone
+
 new entry "JWL_DiscordantInstruments_IounPurple"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -494,6 +571,7 @@ data "Boosts" "Ability(Intelligence, 2, 23)"
 data "Unique" "1"
 
 // ==================================== Scarlet Ioun Stone
+
 new entry "JWL_DiscordantInstruments_IounRed"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -505,6 +583,7 @@ data "Boosts" "Ability(Strength, 2, 23)"
 data "Unique" "1"
 
 // ==================================== Radiant Ioun Stone
+
 new entry "JWL_DiscordantInstruments_IounYellow"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -519,6 +598,7 @@ data "Unique" "1"
 // ==================================== QUIVERS ==================================== 
 
 // ==================================== Brambleheart Quiver
+
 new entry "JWL_DiscordantInstruments_QuiverBrambleheart"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -528,6 +608,7 @@ data "Weight" "1.50"
 data "Boosts" "RollBonus(RangedWeaponAttack, 1)"
 
 // ==================================== Efficient Quiver
+
 new entry "JWL_DiscordantInstruments_QuiverEfficient"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -537,6 +618,7 @@ data "Weight" "2.00"
 data "PassivesOnEquip" "JWL_Passive_QuiverEfficient_Range;JWL_Passive_QuiverEfficient_RollBonus"
 
 // ==================================== Quiver of Elemental Chaos
+
 new entry "JWL_DiscordantInstruments_QuiverChaos"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -549,6 +631,7 @@ data "Boosts" "UnlockSpell(JWL_Shout_ElementalArrows)"
 data "Unique" "1"
 
 // ==================================== Dimensional Quiver
+
 new entry "JWL_DiscordantInstruments_QuiverDimensional"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -562,6 +645,7 @@ data "Unique" "1"
 // ==================================== BELTS ==================================== 
 
 // ==================================== Belt of Primal Recall
+
 new entry "JWL_DiscordantInstruments_BeltPrimalRecall"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -572,6 +656,7 @@ data "PassivesOnEquip" "JWL_Passive_BeltPrimalRecall"
 data "Boosts" "Ability(Strength, 2, 16)"
 
 // ==================================== Belt of Dwarvenkind
+
 new entry "JWL_DiscordantInstruments_BeltDwarven"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -584,6 +669,7 @@ data "Boosts" "Ability(Constitution, 2, 20);ScaleMultiplier(0.95)"
 data "Unique" "1"
 
 // ==================================== Belt of Frost Giant Strength
+
 new entry "JWL_DiscordantInstruments_BeltFrostGiant"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -594,6 +680,7 @@ data "Boosts" "AbilityOverrideMinimum(Strength, 23);ScaleMultiplier(1.05)"
 data "Unique" "1"
 
 // ==================================== Belt of the Raid Leader
+
 new entry "JWL_DiscordantInstruments_BeltRaidLeader"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -604,6 +691,7 @@ data "Boosts" "AbilityOverrideMinimum(Dexterity, 21)"
 data "Unique" "1"
 
 // ==================================== Belt of Forbidden Harmony
+
 new entry "JWL_DiscordantInstruments_BeltForbiddenHarmony"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -616,6 +704,7 @@ data "Unique" "1"
 // ==================================== SPELL TOMES (WIZARD) ==================================== 
 
 // ==================================== Grimoire of the Green Arts
+
 new entry "JWL_DiscordantInstruments_BookGreenArts"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -627,6 +716,7 @@ data "UseConditions" "CanUseSpellTome()"
 data "Unique" "1"
 
 // ==================================== Tome of Celestial Healing
+
 new entry "JWL_DiscordantInstruments_BookCelestialHealing"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -639,6 +729,7 @@ data "UseConditions" "CanUseSpellTome()"
 data "Unique" "1"
 
 // ==================================== Book of Many Spells
+
 new entry "JWL_DiscordantInstruments_BookManySpells"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -651,6 +742,7 @@ data "UseConditions" "CanUseSpellTome()"
 data "Unique" "1"
 
 // ==================================== Codex of the Arcanes
+
 new entry "JWL_DiscordantInstruments_BookArcaneCodex"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -665,6 +757,7 @@ data "Unique" "1"
 // ==================================== INFERNAL TOMES (WARLOCK) ==================================== 
 
 // ==================================== Infernal Archive
+
 new entry "JWL_DiscordantInstruments_BookInfernalArchive"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -676,6 +769,7 @@ data "UseConditions" "CanUseFiendishTome()"
 data "Unique" "1"
 
 // ==================================== Tome of Lost Knowledge
+
 new entry "JWL_DiscordantInstruments_BookLostKnowledge"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -687,6 +781,7 @@ data "UseConditions" "CanUseFiendishTome()"
 data "Unique" "1"
 
 // ==================================== Tome of Clear Thought
+
 new entry "JWL_DiscordantInstruments_BookClearThought"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -699,6 +794,7 @@ data "UseConditions" "CanUseFiendishTome()"
 data "Unique" "1"
 
 // ==================================== Tome of Ethereal Currents
+
 new entry "JWL_DiscordantInstruments_BookEtherealCurrents"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -713,6 +809,7 @@ data "Unique" "1"
 // ==================================== MEDALS ==================================== 
 
 // ==================================== Mourningsteel Obol
+
 new entry "JWL_DiscordantInstruments_MourningsteelCoin"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -723,6 +820,7 @@ data "PassivesOnEquip" "JWL_Passive_SoldiersBoon"
 data "Unique" "1"
 
 // ==================================== Sea Serpent's Pin
+
 new entry "JWL_DiscordantInstruments_SerpentsPin"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -733,48 +831,75 @@ data "PassivesOnEquip" "JWL_Passive_SerpentsPin;JWL_Passive_SoldiersBoon2"
 data "Unique" "1"
 
 // ==================================== STRAPS ==================================== 
+// Bug: It keeps using weapon SFX when doing unarmed attacks.
+// TODO: These are pretty redundant and I could do better. Make a different mod with toggle functionality for this, unarmed opportunity attacks at baseline, and always having unarmed strike on the bar.
+// TODO: Could expand on that and have toggles for melee/ranged too, but largely redundant due to simply weapon swapping.
+// Idea: Maybe they could allow you to grapple without free hands?
 
 // ==================================== Shoulder-Mounted Leather Frog
+
 new entry "JWL_DiscordantInstruments_WeaponStrap"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
 data "RootTemplate" "de48261f-913c-4a1e-86ae-0c26ec5beebc"
 data "ValueLevel" "1.85"
 data "Weight" "1.00"
-data "PassivesOnEquip" "JWL_Passive_WeaponStrap;JWL_Passive_WeaponStrap_TECHNICAL"
+data "PassivesOnEquip" "JWL_Passive_WeaponStrap"
+
+new entry "JWL_Passive_WeaponStrap"
+type "PassiveData"
+// Securely Fastened
+data "DisplayName" "h179c9e7dgbc6bg40bfga76eg5d3bea28d044;1"
+// While you have a Glaive, Greatclub, Halberd, Maul, Pike, Quarterstaff, Spear, Trident, or Warhammer equipped in your main hand and nothing in your free hand, your primary attacks are &lt;LSTag Type="Spell" Tooltip="Target_UnarmedAttack"&gt;Unarmed Strikes&lt;/LSTag&gt;.
+data "Description" "h291fbb29gb863g4516gb16agcff49cc2c615;1"
+data "BoostContext" "OnEquip;OnCreate"
+data "BoostConditions" "IsWeaponOfProficiencyGroup('Glaives|Greatclubs|Halberds|Mauls|Pikes|Quarterstaffs|Spears|Tridents|Warhammers', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) and not DualWielder(context.Source)"
+data "Boosts" "AttackSpellOverride(Target_UnarmedAttack, Target_MainHandAttack);UnlockSpell(Target_MainHandAttack)"
 
 // ==================================== Worghide Leather Frog
+
 new entry "JWL_DiscordantInstruments_WorghideWeaponStrap"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
 data "RootTemplate" "ca2ab06d-0e1e-4b95-a5e4-47ac91a74af4"
 data "ValueLevel" "5.66"
 data "Weight" "1.25"
-data "PassivesOnEquip" "JWL_Passive_WeaponStrap;JWL_Passive_WeaponStrap_TECHNICAL;JWL_Passive_WorghideWeaponStrap"
+data "PassivesOnEquip" "JWL_Passive_WeaponStrap;JWL_Passive_WorghideWeaponStrap"
 data "Unique" "1"
 
+new entry "JWL_Passive_WorghideWeaponStrap"
+type "PassiveData"
+// Training Weights
+data "DisplayName" "hcdfcfb2dgd621g4757ga45agc38399153514;1"
+// Receive a +[1] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;unarmed attack&lt;/LSTag&gt; rolls. If the wielder has at least [2] levels in the &lt;i&gt;Monk&lt;/i&gt; class, the bonus increases to +[3].
+data "Description" "h60c6445dgd49ag40f6g96afgeeb6674e0f6f;1"
+data "DescriptionParams" "1;5;2"
+data "Boosts" "IF(not ClassLevelHigherOrEqualThan(5,'Monk')):RollBonus(MeleeUnarmedAttack, 1);IF(ClassLevelHigherOrEqualThan(5,'Monk')):RollBonus(MeleeUnarmedAttack, 2)"
+
 // ==================================== Dragonscale Leather Frog
+
 new entry "JWL_DiscordantInstruments_DragonhideWeaponStrap"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
 data "RootTemplate" "c40009cf-0dac-4b73-a1c6-1e62b5d088ba"
 data "ValueLevel" "7.75"
 data "Weight" "1.25"
-data "PassivesOnEquip" "JWL_Passive_WeaponStrap;JWL_Passive_WeaponStrap_TECHNICAL;JWL_Passive_DragonhideWeaponStrap"
+data "PassivesOnEquip" "JWL_Passive_WeaponStrap;JWL_Passive_DragonhideWeaponStrap"
 data "Unique" "1"
 
-// ==================================== Steel Crowbar
-new entry "JWL_DiscordantInstruments_Crowbar"
-type "Armor"
-using "JWL_DiscordantInstruments_Base_Uncommon"
-data "RootTemplate" "4acf7acf-0522-4564-a400-190179863774"
-data "ValueLevel" "1"
-data "Weight" "2.50"
-data "PassivesOnEquip" "JWL_Passive_Crowbar"
+new entry "JWL_Passive_DragonhideWeaponStrap"
+type "PassiveData"
+data "DisplayName" "hcdfcfb2dgd621g4757ga45agc38399153514;1"
+// Receive a +[1] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;unarmed Attack&lt;/LSTag&gt; Rolls and Damage Rolls. If the wielder has at least [2] levels in the &lt;i&gt;Monk&lt;/i&gt; class, the bonus increases to +[3].
+data "Description" "hecbf2ba5g2932g429dgbe53gf64882290a11;1"
+data "DescriptionParams" "2;7;4"
+//data "Boosts" "IF(not ClassLevelHigherOrEqualThan(7,'Monk')):RollBonus(MeleeUnarmedAttack, 2);IF(ClassLevelHigherOrEqualThan(7,'Monk')):RollBonus(MeleeUnarmedAttack, 4);IF(not ClassLevelHigherOrEqualThan(7,'Monk') and IsMeleeUnarmedAttack()):CharacterWeaponDamage(2);IF(ClassLevelHigherOrEqualThan(7,'Monk') and IsMeleeUnarmedAttack()):CharacterWeaponDamage(4)"
+data "Boosts" "IF(not ClassLevelHigherOrEqualThan(7,'Monk')):RollBonus(MeleeUnarmedAttack, 2);IF(ClassLevelHigherOrEqualThan(7,'Monk')):RollBonus(MeleeUnarmedAttack, 4);IF(not ClassLevelHigherOrEqualThan(7,'Monk') and IsMeleeUnarmedAttack()):CharacterUnarmedDamage(2);IF(ClassLevelHigherOrEqualThan(7,'Monk') and IsMeleeUnarmedAttack()):CharacterUnarmedDamage(4)"
 
 // ==================================== TOTEMS (BARBARIAN/DRUID) ==================================== 
 
 // ==================================== Beast Totem
+
 new entry "JWL_DiscordantInstruments_TotemBeast"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -786,6 +911,7 @@ data "UseConditions" "CanUseTotem()"
 data "Unique" "1"
 
 // ==================================== Totem of Dread
+
 new entry "JWL_DiscordantInstruments_TotemDread"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -798,6 +924,7 @@ data "UseConditions" "CanUseTotem()"
 data "Unique" "1"
 
 // ==================================== Spirit Totem
+
 new entry "JWL_DiscordantInstruments_TotemSpirit"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -809,6 +936,7 @@ data "UseConditions" "CanUseTotem()"
 data "Unique" "1"
 
 // ==================================== Ornate Dragon Totem
+
 new entry "JWL_DiscordantInstruments_TotemDragon"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -823,6 +951,7 @@ data "Unique" "1"
 // ==================================== BLOODWELL VIALS (SORCERER) ==================================== 
 
 // ==================================== Booyahg Bloodwell Vial
+
 new entry "JWL_DiscordantInstruments_BloodwellGoblin"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -834,6 +963,7 @@ data "UseConditions" "CanUseBloodwell()"
 data "Unique" "1"
 
 // ==================================== Corrupted Bloodwell Vial
+
 new entry "JWL_DiscordantInstruments_BloodwellCorrupted"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -845,6 +975,7 @@ data "UseConditions" "CanUseBloodwell()"
 data "Unique" "1"
 
 // ==================================== Blood of Ahmarreld
+
 new entry "JWL_DiscordantInstruments_BloodwellSorcerous"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -856,6 +987,7 @@ data "UseConditions" "CanUseBloodwell()"
 data "Unique" "1"
 
 // ==================================== Dragon Bloodwell Vial
+
 new entry "JWL_DiscordantInstruments_BloodwellDragon"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -870,6 +1002,7 @@ data "Unique" "1"
 // ==================================== WHISTLES ==================================== 
 
 // ==================================== Houndmaster's Whistle
+
 new entry "JWL_DiscordantInstruments_WhistleBeast"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -881,6 +1014,7 @@ data "StatusOnEquip" "JWL_Status_WhistleBeastAura"
 data "Unique" "1"
 
 // ==================================== Silver Lycan Chime
+
 new entry "JWL_DiscordantInstruments_SilverLycanCharm"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -892,6 +1026,7 @@ data "StatusOnEquip" "JWL_Status_SilverLycanCharmAura"
 data "Unique" "1"
 
 // ==================================== Cerberus Whistle
+
 new entry "JWL_DiscordantInstruments_WhistleCerberus"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -903,6 +1038,7 @@ data "StatusOnEquip" "JWL_Status_WhistleCerberusAura"
 data "Unique" "1"
 
 // ==================================== Witch's Whistle
+
 new entry "JWL_DiscordantInstruments_WhistleWitch"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -914,6 +1050,7 @@ data "StatusOnEquip" "JWL_Status_WhistleWitchAura"
 data "Unique" "1"
 
 // ==================================== Thayan Femur
+
 new entry "JWL_DiscordantInstruments_ThayanFemur"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -925,6 +1062,7 @@ data "StatusOnEquip" "JWL_Status_ThayanFemurAura"
 data "Unique" "1"
 
 // ==================================== Gibbering Bell
+
 new entry "JWL_DiscordantInstruments_GibberingBell"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -938,6 +1076,7 @@ data "Unique" "1"
 // ==================================== ROGUE TOOLS (ROGUE) ==================================== 
 
 // ==================================== Curious Copper Coin
+
 new entry "JWL_DiscordantInstruments_CuriousCoin"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -949,6 +1088,7 @@ data "UseConditions" "CanUseRogueTool()"
 data "Unique" "1"
 
 // ==================================== Illusory Coin
+
 new entry "JWL_DiscordantInstruments_CuriousCoin_Illusion"
 type "Armor"
 using "JWL_DiscordantInstruments_CuriousCoin"
@@ -957,6 +1097,7 @@ data "Boosts" ""
 data "ValueOverride" "1"
 
 // ==================================== Bag of Tricks
+
 new entry "JWL_DiscordantInstruments_BagTricks"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -968,6 +1109,7 @@ data "UseConditions" "CanUseRogueTool()"
 data "Unique" "1"
 
 // ==================================== Stone of Good Luck
+
 new entry "JWL_DiscordantInstruments_StoneGoodLuck"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -981,6 +1123,7 @@ data "UseConditions" "CanUseRogueTool()"
 data "Unique" "1"
 
 // ==================================== Skeleton Key
+
 new entry "JWL_DiscordantInstruments_SkeletonKey"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -994,6 +1137,7 @@ data "Unique" "1"
 // ==================================== WAR BANNERS (FIGHTER/MONK) ==================================== 
 
 // ==================================== Goblin War Banner
+
 new entry "JWL_DiscordantInstruments_BannerGoblin"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -1006,6 +1150,7 @@ data "UseConditions" "CanUseWarBanner()"
 data "Unique" "1"
 
 // ==================================== Mourningsteel War Banner
+
 new entry "JWL_DiscordantInstruments_BannerMourningsteel"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -1018,6 +1163,7 @@ data "UseConditions" "CanUseWarBanner()"
 data "Unique" "1"
 
 // ==================================== Consecrated War Banner
+
 new entry "JWL_DiscordantInstruments_BannerConsecrated"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -1030,6 +1176,7 @@ data "UseConditions" "CanUseWarBanner()"
 data "Unique" "1"
 
 // ==================================== Battle Standard of Infernal Power
+
 new entry "JWL_DiscordantInstruments_BannerInfernalPower"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -1044,6 +1191,7 @@ data "Unique" "1"
 // ==================================== HOLY SYMBOLS (CLERIC/PALADIN → DEITY-LOCKED ) ==================================== 
 
 // ==================================== Holy Symbol of Kelemvor
+
 new entry "JWL_DiscordantInstruments_SymbolKelemvor"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -1055,6 +1203,7 @@ data "UseConditions" "CanUseKelemvorSymbol()"
 data "Unique" "1"
 
 // ==================================== Holy Symbol of Silvanus
+
 new entry "JWL_DiscordantInstruments_SymbolSylvanus"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
@@ -1066,6 +1215,7 @@ data "UseConditions" "CanUseSilvanusSymbol()"
 data "Unique" "1"
 
 // ==================================== Holy Symbol of Lolth
+
 new entry "JWL_DiscordantInstruments_SymbolLolth"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -1078,6 +1228,7 @@ data "UseConditions" "CanUseLolthSymbol()"
 data "Unique" "1"
 
 // ==================================== Holy Symbol of Moradin
+
 new entry "JWL_DiscordantInstruments_SymbolMoradin"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Rare"
@@ -1089,6 +1240,7 @@ data "UseConditions" "CanUseMoradinSymbol()"
 data "Unique" "1"
 
 // ==================================== Holy Symbol of Bahamut
+
 new entry "JWL_DiscordantInstruments_SymbolBahamut"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -1100,6 +1252,7 @@ data "UseConditions" "CanUseBahamutSymbol()"
 data "Unique" "1"
 
 // ==================================== Holy Symbol of Eilistraee
+
 new entry "JWL_DiscordantInstruments_SymbolEllistrae"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -1111,6 +1264,7 @@ data "UseConditions" "CanUseEilistraeeSymbol()"
 data "Unique" "1"
 
 // ==================================== Holy Symbol of Helm
+
 new entry "JWL_DiscordantInstruments_SymbolHelm"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -1122,6 +1276,7 @@ data "UseConditions" "CanUseHelmSymbol()"
 data "Unique" "1"
 
 // ==================================== Holy Symbol of Mielikki
+
 new entry "JWL_DiscordantInstruments_SymbolMeilikki"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_VeryRare"
@@ -1133,6 +1288,7 @@ data "UseConditions" "CanUseMielikkiSymbol()"
 data "Unique" "1"
 
 // ==================================== Holy Symbol of Corellon Larethian
+
 new entry "JWL_DiscordantInstruments_SymbolCorellon"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"
@@ -1145,6 +1301,7 @@ data "UseConditions" "CanUseCorellonSymbol()"
 data "Unique" "1"
 
 // ==================================== Holy Symbol of Ilmater
+
 new entry "JWL_DiscordantInstruments_SymbolIlmater"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Legendary"

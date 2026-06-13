@@ -4,6 +4,7 @@
 	<region id="Templates">
 		<node id="Templates">
 			<children>
+		<!-- Containers -->
 			<!-- Trinket Crate -->
 				<node id="GameObjects">
 					<!-- A crate full of trinkets. -->
