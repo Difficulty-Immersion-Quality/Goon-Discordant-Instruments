@@ -373,9 +373,11 @@ data "StatsFunctors" "ApplyStatus(SELF,JWL_Status_BookInfernalArchive, 100, -1)"
 
 new entry "JWL_Passive_BookLostKnowledge"
 type "PassiveData"
+// Tome of Lost Knowledge
 data "DisplayName" "ha2c3be5fg54ddg4a8eg9829gd8fdd12008ff;1"
+// You can cast &lt;LSTag Type="Spell" Tooltip="Target_Hex"&gt;Hex&lt;/LSTag&gt; without expending a spell slot.
 data "Description" "h7ef59719g4ff0g43b1g87fag14140d859fcf;1"
-data "Boosts" "UnlockSpellVariant(HexSpellVariation(),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup), ModifyTooltipDescription())"
+data "Boosts" "UnlockSpellVariant(Goon_IsHexSpell(),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup), ModifyTooltipDescription())"
 
 new entry "JWL_Passive_BookClearThought"
 type "PassiveData"
