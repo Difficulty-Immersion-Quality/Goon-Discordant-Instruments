@@ -170,7 +170,7 @@ data "StackId" "WELLOFKNOWLEDGE"
 new entry "JWL_Status_WellOfKnowledge_Wisdom"
 type "StatusData"
 data "StatusType" "BOOST"
-using "ASTRAL_KNOWLEDGE_WISDOM
+using "ASTRAL_KNOWLEDGE_WISDOM"
 data "DisplayName" "h13b7bee56e42406d90d1824cbae9173a3e82;1"
 data "StackId" "WELLOFKNOWLEDGE"
 

@@ -409,13 +409,6 @@ data "Description" "hb6bb954cg36cag4fe6g904cgf3699f03d513;1"
 data "DescriptionParams" "2;5;4"
 data "Boosts" "IF(not ClassLevelHigherOrEqualThan(5,'Fighter')):RollBonus(MeleeWeaponAttack, 2);IF(ClassLevelHigherOrEqualThan(5,'Fighter')):RollBonus(MeleeWeaponAttack, 4)"
 
-new entry "JWL_Passive_CompendiumTechniques"
-type "PassiveData"
-data "DisplayName" "h394f316cg79acg41ffgb6ecgeb6fb249ef59;1"
-data "Description" "h63b2bc2ag0c9ag46e4gaecfg7c4eeaad31a4;1"
-data "DescriptionParams" "2;7;4"
-data "Boosts" "IF(not ClassLevelHigherOrEqualThan(7,'Fighter')):RollBonus(MeleeWeaponAttack, 2);IF(ClassLevelHigherOrEqualThan(7,'Fighter')):RollBonus(MeleeWeaponAttack, 4);IF(not ClassLevelHigherOrEqualThan(7,'Fighter') and IsMeleeWeaponAttack()):CharacterWeaponDamage(2);IF(ClassLevelHigherOrEqualThan(7,'Fighter') and IsMeleeWeaponAttack()):CharacterWeaponDamage(4)"
-
 new entry "JWL_Passive_SerpentsPin"
 type "PassiveData"
 data "DisplayName" "h2867de5fged3dg4d12g80fegb1e5012c7b7c;1"
@@ -494,7 +487,6 @@ type "PassiveData"
 data "DisplayName" "hf7a84260gca0dg4f20g95f9g11ba487f16b0;1"
 data "Description" "hd1631a77g33afg40ffg926fg3d6d23d70508;1"
 data "DescriptionParams" "20%;1"
-data "TooltipStatusApply" "ApplyStatus(GREATER_INVISIBILITY,100,1)"
 data "StatsFunctorContext" "OnDamaged"
 data "Conditions" "not Ally() and HasHPPercentageEqualOrLessThan(19) and not HasStatus('SG_Rage', context.Source) and not HasStatus('SG_Polymorph_BeastShape', context.Source) and not HasStatus('WILDSHAPE_STARRY_ARCHER_PLAYER', context.Source) and not HasStatus('WILDSHAPE_STARRY_CHALICE_PLAYER', context.Source) and not HasStatus('WILDSHAPE_STARRY_DRAGON_PLAYER', context.Source)"
 data "StatsFunctors" "ApplyStatus(GREATER_INVISIBILITY,100,1)"
@@ -626,14 +618,15 @@ data "DescriptionParams" "Distance(9)"
 
 new entry "JWL_Passive_GibberingBell_TECHNICAL"
 type "PassiveData"
+// It Tolls For Thee
 data "DisplayName" "h9c228ce1g19fdg4697g87f1g7a6bbd39b11e;1"
+// The wielder's summoned Undead creatures within [1] use your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; and have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against any target that doesn't have all of its hit points, provided it's not a construct, an ooze, a plant, or an elemental.
 data "Description" "hba613187gef97g41ecga20cgc383e27dbcf0;1"
 data "DescriptionParams" "Distance(9)"
 data "Properties" "IsHidden"
-data "StatsFunctorContext" "OnDamage"
-data "Conditions" "IsAttack()"
-data "StatsFunctors" "IF(not HasMaxHP() and not (Tagged('CONSTRUCT') or Tagged('OOZE') or Tagged('PLANT') or Tagged('ELEMENTAL'))):Advantage(AttackRoll)"
-
+data "StatsFunctorContext" "OnAttack"
+data "BoostConditions" "IsAttack()"
+data "Boosts" "IF(not HasMaxHP() and not (Tagged('CONSTRUCT') or Tagged('OOZE') or Tagged('PLANT') or Tagged('ELEMENTAL'))):Advantage(AttackRoll)"
 
 // ===============================================================
 // ROGUE TOOLS (ROGUE)

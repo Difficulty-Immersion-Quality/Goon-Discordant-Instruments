@@ -1,9 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentList>
+<!-- ==================================== Instruments ==================================== -->
+	<!-- "JWL_Passive_MusicalProficiency" -->
 	<content contentuid="haf038fc3gea65g4152g8be9g5187a945b436" version="1">Sentient Song</content>
 	<content contentuid="hc4d6ff19g9a80g430cgbaa2g273a20e49f86" version="1">A magical enchantment allows anyone to play this instrument with &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt;.</content>
+	<!-- "JWL_PERFORM_POSITIVE_BARDIC" -->
 	<content contentuid="ha186c9ffgfbedg4c4fg9d06g344347885a7f" version="1">Catchy Tune</content>
 	<content contentuid="h1c9dbd81g06fdg4b5eg85d2gfb6fa8c04e3f" version="1">Your previously played song is still stuck in your head.</content>
+
 	<content contentuid="hb940fd04g538dg4b61g81b3g709de6372382" version="1">A bard playing a song restores one charge of Bardic Inspiration, but must wait before they can restore another.</content>
 	<content contentuid="hd9c18a19gb30cg46abg8748ge720e57dc85d" version="1">A bard playing this song restores one charge of Bardic Inspiration, but must wait before they can restore another.</content>
 	<content contentuid="heea41e66g06d4g4feega335g882f905d40bb" version="1">Play your instrument to restore two of your Bardic Inspiration slots.</content>
@@ -196,9 +200,11 @@
 	<content contentuid="hf7d90eefga60bg45b3gbabcg14e4bd0a77a1" version="1">Receive a +[1] bonus to &lt;LSTag Tooltip="RangedWeaponAttack"&gt;ranged weapon Attack&lt;/LSTag&gt; &lt;LSTag Tooltip="AttackRoll"&gt;Rolls&lt;/LSTag&gt; and Damage Rolls. If the wielder has at least [2] levels in the &lt;i&gt;Ranger&lt;/i&gt; class, the bonus increases to +[3].</content>
 	<content contentuid="h0077ffd5g7f31g4645g9b48g75b90f91e7ef" version="1">Soldier's Boon</content>
 	<content contentuid="hc1c15525gfea2g4421g87bdgd0b2ca6a9881" version="1">Greater Soldier's Boon</content>
+	<content contentuid="hb6bb954cg36cag4fe6g904cgf3699f03d513" version="1">Receive a +[1] bonus to &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;melee weapon&lt;/LSTag&gt; &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;If the wielder has at least [2] levels in the &lt;i&gt;Fighter&lt;/i&gt; class, the bonus increases to +[3].</content>
+	<!-- "JWL_Passive_CompendiumTechniques" -->
 	<content contentuid="h394f316cg79acg41ffgb6ecgeb6fb249ef59" version="1">Studied Strikes</content>
-	<content contentuid="hb6bb954cg36cag4fe6g904cgf3699f03d513" version="1">Receive a +[1] bonus to &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;melee weapon Attack&lt;/LSTag&gt; &lt;LSTag Tooltip="AttackRoll"&gt;Rolls&lt;/LSTag&gt;. If the wielder has at least [2] levels in the &lt;i&gt;Fighter&lt;/i&gt; class, the bonus increases to +[3].</content>
-	<content contentuid="h63b2bc2ag0c9ag46e4gaecfg7c4eeaad31a4" version="1">Receive a +[1] bonus to &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;melee weapon Attack&lt;/LSTag&gt; &lt;LSTag Tooltip="AttackRoll"&gt;Rolls&lt;/LSTag&gt; and Damage Rolls. If the wielder has at least [2] levels in the &lt;i&gt;Fighter&lt;/i&gt; class, the bonus increases to +[3].</content>
+	<content contentuid="h63b2bc2ag0c9ag46e4gaecfg7c4eeaad31a4" version="1">Receive a +[1] bonus to &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;melee weapon&lt;/LSTag&gt; &lt;LSTag Tooltip="AttackRoll"&gt;Attack&lt;/LSTag&gt; and Damage Rolls.&lt;br&gt;&lt;br&gt;If the wielder has at least [2] levels in the &lt;i&gt;Fighter&lt;/i&gt; class, the bonus increases to +[3].</content>
+
 	<content contentuid="h17aa76abg3229g4964gad26g22c99ff639f2" version="1">Dimensional Quiver</content>
 	<content contentuid="h128c5420g5daeg417bg9d44g981071cd7673" version="1">Every time an arrow is pulled from this quiver, another immediately appears in its place.</content>
 	<content contentuid="h8877f418g67feg41c0gb9a5g55f2bfd95d77" version="1">Grimoire of the Green Arts</content>
@@ -310,8 +316,10 @@
 	<content contentuid="hc263741eg94ceg4e0cg98f0g22ff3a54f314" version="1">Chance to inflict &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Fearful&lt;/LSTag&gt; when doing damage with melee attacks.</content>
 	<content contentuid="he2146d72g3d2eg4389g8222g3e236e5d39a1" version="1">Gibbering Bell</content>
 	<content contentuid="h514b9a04g2741g4db6gb6d8gb49d83eb57ca" version="1">A sentient bell that can telepathically communicate with nearby undead.</content>
+	<!-- "JWL_Passive_GibberingBell_TECHNICAL" -->
 	<content contentuid="h9c228ce1g19fdg4697g87f1g7a6bbd39b11e" version="1">It Tolls For Thee</content>
-	<content contentuid="hba613187gef97g41ecga20cgc383e27dbcf0" version="1">The wielder's summoned Undead creatures within [1] use your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; and have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on attacks against any target that doesn't have all of its hit points, provided it's not a construct, an ooze, a plant, or an elemental.</content>
+	<content contentuid="hba613187gef97g41ecga20cgc383e27dbcf0" version="1">The wielder's summoned Undead creatures within [1] use your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; and have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against any target that doesn't have all of its hit points, provided it's not a construct, an ooze, a plant, or an elemental.</content>
+
 	<content contentuid="h9bfaa917ge884g4a27ga08fg2cd825b99915" version="1">Affected entity uses the summoner's &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; and has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on attacks against any target that doesn't have all of its hit points, provided it's not a construct, an ooze, a plant, or an elemental.</content>
 	<content contentuid="h4a5326aaga75ag4348ga87fg51c83fe194ec" version="1">Dealbreaker</content>
 	<content contentuid="h043aaeb2g0379g462eg86c8g0abf03bbe1ae" version="1">Raphael's golden fiddle. It radiates with incredible power.</content>
@@ -418,6 +426,7 @@
 	<content contentuid="h3564219846e64025978be22a44ead981e6fg" version="1">Only a follower of Mielikki can use this.</content>
 	<content contentuid="ha966b7799ef54ee48076f0540e7e0280cd1g" version="1">Only a follower of Corellon Larethian can use this.</content>
 	<content contentuid="h3a3e19f168dc40c59e670614f355fd046710" version="1">Only a follower of Ilmater can use this.</content>
+	<!-- JWL_CONT_TrinketCrate - b91412ad-d9fc-47e0-b89b-51dbd39db2f9 -->
 	<content contentuid="hd0146582g2796g4c82g9253ge653e4273a5c" version="1">Trinket Crate</content>
 	<content contentuid="hbd185ddcgab06g4f22g8d91g6ce6b413d25c" version="1">A crate full of trinkets.</content>
 </contentList>
