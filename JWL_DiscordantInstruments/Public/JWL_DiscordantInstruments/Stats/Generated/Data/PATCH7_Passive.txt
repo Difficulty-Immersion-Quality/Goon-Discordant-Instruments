@@ -1,0 +1,929 @@
+// ===============================================================
+// UNCOMMON ITEMS
+// ===============================================================
+
+new entry "JWL_Passive_MusicalProficiency"
+type "PassiveData"
+data "DisplayName" "haf038fc3gea65g4152g8be9g5187a945b436;1"
+data "Description" "hc4d6ff19g9a80g430cgbaa2g273a20e49f86;1"
+data "Boosts" "Proficiency(MusicalInstrument)"
+
+new entry "JWL_Passive_ComfyBackpack"
+type "PassiveData"
+data "DisplayName" "h0d93bd89g2802g478fgb7dbg1bbe7461e582;1"
+data "Description" "heda4c85age794g4cf8g9b01ge92df2f3d786;1"
+data "BoostContext" "OnEquip"
+data "Boosts" "CarryCapacityMultiplier(1.2)"
+
+new entry "JWL_Passive_ComfyBackpack_Human"
+type "PassiveData"
+using "JWL_Passive_ComfyBackpack"
+data "Properties" "IsHidden"
+data "BoostConditions" "HasPassive('HumanVersatility',context.Source)"
+data "Boosts" "CarryCapacityMultiplier(1.45)"
+
+new entry "JWL_Passive_ComfyBackpack_Giant"
+type "PassiveData"
+using "JWL_Passive_ComfyBackpack"
+data "Properties" "IsHidden"
+data "BoostConditions" "HasPassive('Giants_CarryCapacity',context.Source)"
+data "Boosts" "CarryCapacityMultiplier(1.45)"
+
+new entry "JWL_Passive_ComfyBackpack_Combo"
+type "PassiveData"
+using "JWL_Passive_ComfyBackpack"
+data "Properties" "IsHidden"
+data "BoostConditions" "HasPassive('HumanVersatility',context.Source) and HasPassive('Giants_CarryCapacity',context.Source)"
+data "Boosts" "CarryCapacityMultiplier(1.7)"
+
+new entry "JWL_Passive_GithRadar"
+type "PassiveData"
+data "DisplayName" "hd71087fege40dg4875gb80eg4aea2cb98460;1"
+data "Description" "h7e2a0d8fg1379g48e7ga23agf773f98e4baa;1"
+data "Boosts" "StatusImmunity(SURPRISED)"
+
+// new entry "JWL_Passive_EversmokingBottle"
+// type "PassiveData"
+// data "DisplayName" "h3ecef8baf67f4ca8ba3f2787ebab87fa340f;1"
+// data "Description" "h641496bdg3745g4ae1gbfcagc6f12af63ec3;1"
+
+new entry "JWL_Passive_EndlessMead"
+type "PassiveData"
+data "DisplayName" "hc871842agb1a7g4ac2g9f40ge0d8827c4d24;1"
+data "Description" "hbf81d249gc12dg4206gafcegc2b54d4be618;1"
+
+new entry "JWL_Passive_EndlessMead_MonkWatcher"
+type "PassiveData"
+// %%% EMPTY
+data "DisplayName" "hb54aed68ge945g4133g99e7gc9d0adb1157d;1"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnCreate"
+data "Conditions" "not HasStatus('JWL_Status_EndlessMead_Applied',context.Source)"
+data "StatsFunctors" "IF(not HasPassive('CheekyTipple_Drunk',context.Source)):ApplyStatus(DRUNK, 100, -1);IF(HasPassive('CheekyTipple_Drunk',context.Source)):ApplyStatus(DRUNK_DRUNKEN_MASTER, 100, -1);ApplyStatus(JWL_Status_EndlessMead_Applied, 100, -1)"
+
+new entry "JWL_Passive_VaultingPole"
+type "PassiveData"
+data "DisplayName" "hd3914dfcg3a26g4ff3g9682ga9dd70f4b89b;1"
+data "Description" "h5b84c8edg3ba5g4233g9418g7eb1d06d36e1;1"
+data "DescriptionParams" "Distance(3)"
+data "Boosts" "JumpMaxDistanceBonus(3)"
+
+
+// ===============================================================
+// RARE ITEMS
+// ===============================================================
+
+new entry "JWL_Passive_HolyCandle"
+type "PassiveData"
+data "DisplayName" "h6464bc22gfd08g4349gad10g8d70ed230120;1"
+data "Description" "h93101549gc2acg425ag92f7gf0b846a2f2ae;1"
+data "Boosts" "IF(Tagged('DRUID', context.Source)):ActionResource(SpellSlot,1,1);IF(Tagged('CLERIC', context.Source)):ActionResource(SpellSlot,1,1)"
+
+new entry "JWL_Passive_ShieldingBrooch"
+type "PassiveData"
+data "DisplayName" "hc0a37439gd64eg4443g9860g76bfff9bd648;1"
+data "Description" "hbf15a81dg68fag4239g839fg90fcd4fac3e6;1"
+data "Boosts" "Resistance(Force,Resistant);IF(IsSpellChildOrVariantFromContext('Projectile_MagicMissile')):DamageReduction(Force,Flat,100)"
+
+
+// ===============================================================
+// VERY RARE ITEMS
+// ===============================================================
+
+new entry "JWL_Passive_WoundClosure"
+type "PassiveData"
+data "DisplayName" "hb5e854fag2d20g4966g9011gbacc8b58de7f;1"
+data "Description" "h69a03b72g8dcbg4b21g8994gba0df0850b89;1"
+data "StatsFunctorContext" "OnStatusApplied"
+data "Conditions" "StatusId('DOWNED')"
+data "StatsFunctors" "ApplyStatus(MAG_WOUND_CLOSURE, 100, 1)"
+
+new entry "JWL_Passive_LuckyDice"
+type "PassiveData"
+data "DisplayName" "h677d9987g59b7g412fg8b71gd00cd6ccd284;1"
+data "Description" "h4b50acc2gf8e5g4ca4ga89fg2544d969e5e3;1"
+data "Boosts" "Reroll(Attack,1,true);Reroll(SkillCheck,1,true);Reroll(RawAbility,1,true)"
+
+new entry "JWL_Passive_HandyHaversack"
+type "PassiveData"
+data "DisplayName" "hc5345370g60acg4d8dg96bagf664734ec704;1"
+data "Description" "h4cef8db3g5f4bg40bcg9483g1e91c369e74c;1"
+data "BoostContext" "OnEquip"
+data "Boosts" "CarryCapacityMultiplier(2.5)"
+
+new entry "JWL_Passive_HandyHaversack_Human"
+type "PassiveData"
+using "JWL_Passive_HandyHaversack"
+data "Properties" "IsHidden"
+data "BoostConditions" "HasPassive('HumanVersatility',context.Source)"
+data "Boosts" "CarryCapacityMultiplier(2.75)"
+
+new entry "JWL_Passive_HandyHaversack_Giant"
+type "PassiveData"
+using "JWL_Passive_HandyHaversack"
+data "Properties" "IsHidden"
+data "BoostConditions" "HasPassive('Giants_CarryCapacity',context.Source)"
+data "Boosts" "CarryCapacityMultiplier(2.75)"
+
+new entry "JWL_Passive_HandyHaversack_Combo"
+type "PassiveData"
+using "JWL_Passive_HandyHaversack"
+data "Properties" "IsHidden"
+data "BoostConditions" "HasPassive('HumanVersatility',context.Source) and HasPassive('Giants_CarryCapacity',context.Source)"
+data "Boosts" "CarryCapacityMultiplier(3.0)"
+
+// ===============================================================
+// LEGENDARY ITEMS
+// ===============================================================
+
+new entry "JWL_Passive_BagHolding"
+type "PassiveData"
+data "DisplayName" "h947b0b3bg157dg4b10g8ac9g016602b32dfc;1"
+data "Description" "h39329b8ag5d8cg4ae3gbde9g9083488807e0;1"
+data "Boosts" "CarryCapacityMultiplier(10.0)"
+
+new entry "JWL_Passive_GuardianEmblem"
+type "PassiveData"
+data "DisplayName" "h4656c3a2gca8ag4669ga84fg5d2623dacedf;1"
+data "Description" "h41dd65fcgfe51g4c4cg9b57g9a7371842f99;1"
+data "DescriptionParams" "1"
+data "Boosts" "ReduceCriticalAttackThreshold(1)"
+
+new entry "JWL_Passive_KerzinsOoze"
+type "PassiveData"
+data "DisplayName" "hbf9396e5g3e78g4f39g93f7ge142367898a5;1"
+data "Description" "hd9fce87bg97e4g4e3bgadf3g367789b5587f;1"
+// data "DescriptionParams" "StatusImmunity(SG_Poisoned)"
+data "Boosts" "StatusImmunity(SG_Poisoned)"
+
+new entry "JWL_Passive_GreaterDarkvision"
+type "PassiveData"
+data "DisplayName" "h87214168gfe8dg4283g98afgfa4210d71e66;1"
+data "Description" "h1bde91c2g3406g4552gafb0g6e21436db1d3;1"
+data "DescriptionParams" " Distance(36)"
+data "Icon" "PassiveFeature_Darkvision"
+data "Boosts" "DarkvisionRangeMin(36)"
+
+new entry "JWL_Passive_OrbScrying"
+type "PassiveData"
+data "DisplayName" "h21059f48g08bfg42c2ga601gde03a1017252;1"
+data "Description" "hcf4f7239g386ag4598g8e6ag5e34b35ed445;1"
+data "Boosts" "ActionResource(ReactionActionPoint,1,0)"
+
+new entry "JWL_Passive_BookExaltedDeeds_Regen"
+type "PassiveData"
+data "DisplayName" "hf38111b1ge9afg4034ga7cbg86406451dfa1;1"
+data "Description" "hb941ba71gf583g4455gb475g6b0cd51f75d3;1"
+data "DescriptionParams" "RegainHitPoints(1d6)"
+
+new entry "JWL_Passive_BookExaltedDeeds_DiseaseImmunity"
+type "PassiveData"
+data "DisplayName" "h31f1742cgc2c6g48dagab8eg0e206e7b679b;1"
+data "Description" "h0b2d68c2gd4bdg4f9dg9288g7ab5b7b1cd42;1"
+data "DescriptionParams" "StatusImmunity(SG_Disease)"
+
+new entry "JWL_Passive_BookExaltedDeeds_LightAura"
+type "PassiveData"
+using "CRE_LathandersLight_Passive"
+// Luminance
+data "DisplayName" "h541a79497fb64d5bbf0d115ae87b21c9996b;1"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar"
+data "Icon" "PassiveFeature_BlessingsOfKnowledge"
+
+new entry "JWL_Passive_BookVileDarkness_FearImmunity"
+type "PassiveData"
+data "DisplayName" "h64b04b49gcb66g44cdg8d6dg0b2d6419d435;1"
+data "Description" "he8f86af8g35c8g4d95g9637gd9033c8d605a;1"
+data "DescriptionParams" "StatusImmunity(SG_Frightened);Disadvantage(AllSavingThrows)"
+
+new entry "JWL_Passive_BookVileDarkness_Distracted"
+type "PassiveData"
+data "DisplayName" "h251be558g1894g41d0g9581gd365d2ea404e;1"
+data "Description" "h86fd6fe6g2ab4g4f14g918dg7fa235257ee0;1"
+data "DescriptionParams" "StatusImmunity(SG_Frightened);Disadvantage(AllSavingThrows)"
+
+new entry "JWL_Passive_BookVileDarkness_FieryGambit"
+type "PassiveData"
+data "DisplayName" "hc0e432eagb51ag49c3g86c4gb430b50db13f;1"
+data "Description" "h922b1f5bg84a6g4e4dgb432g8dd80f67aba9;1"
+data "DescriptionParams" "DealDamage(1d6, Fire)"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "not Self()"
+data "StatsFunctors" "ApplyStatus(SELF, JWL_Status_BookeVileDarkness_DidDamage, 100, 1)"
+
+new entry "JWL_Passive_GoldenFiddle"
+type "PassiveData"
+data "DisplayName" "h72ce85ebg558bg448ag9a32g6ad78de3d9d0;1"
+data "Description" "h297f440bgf832g4be1gbd65g8c330664a8ef;1"
+data "Properties" "OncePerTurn;Highlighted"
+data "StatsFunctorContext" "OnDamaged"
+data "Conditions" "IsMeleeAttack() and Character()"
+data "StatsFunctors" "ApplyStatus(SWAP,CHARMED, 100, 1)"
+
+
+// ===============================================================
+// IOUN STONES
+// ===============================================================
+
+new entry "JWL_Passive_IounStone_Base"
+type "PassiveData"
+data "DisplayName" "hb39f4e39g9111g4184g8a28gf3f795acd643;1"
+data "Description" "h5a8212f7gf198g45d7g8f72g19fcfd89b502;1"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnDamaged"
+data "Conditions" "IsCritical()"
+data "StatsFunctors" ""
+
+new entry "JWL_Passive_IounStone_Blue"
+type "PassiveData"
+using "JWL_Passive_IounStone_Base"
+data "StatsFunctors" "ApplyStatus(SELF,JWL_Status_IounStone_Blue,100,2)"
+
+new entry "JWL_Passive_IounStone_Green"
+type "PassiveData"
+using "JWL_Passive_IounStone_Base"
+data "StatsFunctors" "ApplyStatus(SELF,JWL_Status_IounStone_Green,100,2)"
+
+new entry "JWL_Passive_IounStone_Pink"
+type "PassiveData"
+using "JWL_Passive_IounStone_Base"
+data "StatsFunctors" "ApplyStatus(SELF,JWL_Status_IounStone_Pink,100,2)"
+
+new entry "JWL_Passive_IounStone_Purple"
+type "PassiveData"
+using "JWL_Passive_IounStone_Base"
+data "StatsFunctors" "ApplyStatus(SELF,JWL_Status_IounStone_Purple,100,2)"
+
+new entry "JWL_Passive_IounStone_Red"
+type "PassiveData"
+using "JWL_Passive_IounStone_Base"
+data "StatsFunctors" "ApplyStatus(SELF,JWL_Status_IounStone_Red,100,2)"
+
+new entry "JWL_Passive_IounStone_Yellow"
+type "PassiveData"
+using "JWL_Passive_IounStone_Base"
+data "StatsFunctors" "ApplyStatus(SELF,JWL_Status_IounStone_Yellow,100,2)"
+
+
+// ===============================================================
+// QUIVERS
+// ===============================================================
+
+// new entry "JWL_Passive_Quiver"
+// type "PassiveData"
+// data "DisplayName" "h5b8a7ee7g6f68g4337gacb6g4630d3cd0ef2;1"
+// data "Description" "h19dc5fb0ga3e1g4bd9gb0ceg9784b119bf35;1"
+// data "Boosts" "UnlockSpellVariant(SpellId('Projectile_MainHandAttack'),ModifyTargetRadius(Multiplicative,1.25));UnlockSpellVariant(SpellId('Projectile_OffhandAttack'),ModifyTargetRadius(Multiplicative,1.25))"
+
+new entry "JWL_Passive_QuiverEfficient_Range"
+type "PassiveData"
+data "DisplayName" "h46b292c7g8d64g4d24g90c1g9ca1974a655d;1"
+data "Description" "h616f433dg87d5g4972g8692g432763c60834;1"
+data "DescriptionParams" "3"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsRangedWeaponAttack()"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 13)):ApplyStatus(BLEEDING,100,3)"
+
+new entry "JWL_Passive_QuiverEfficient_Range2"
+type "PassiveData"
+data "DisplayName" "h75c58fc6gd3f5g4930gb333g06ae579a88af;1"
+data "Description" "h19dc5fb0ga3e1g4bd9gb0ceg9784b119bf35;1"
+data "Boosts" "UnlockSpellVariant(SpellId('Projectile_MainHandAttack'),ModifyNumberOfTargets(AdditiveBase,1,true), ModifyTooltipDescription())"
+
+new entry "JWL_Passive_QuiverEfficient_RollBonus"
+type "PassiveData"
+data "DisplayName" "hcfd62a55g0209g45bcg92efgb178b5963dc0;1"
+data "Description" "h0ffc60e7g082bg440bg9aebg41ea6c34c29e;1"
+data "DescriptionParams" "1;3;2"
+data "Boosts" "IF(not ClassLevelHigherOrEqualThan(3,'Ranger')):RollBonus(RangedWeaponAttack, 1);IF(ClassLevelHigherOrEqualThan(3,'Ranger')):RollBonus(RangedWeaponAttack, 2)"
+
+new entry "JWL_Passive_QuiverEfficient_RollBonus2"
+type "PassiveData"
+data "DisplayName" "hf5fdb8d0g25b5g4255g9d07gb99d4740011d;1"
+data "Description" "h0ffc60e7g082bg440bg9aebg41ea6c34c29e;1"
+data "DescriptionParams" "2;5;4"
+data "Boosts" "IF(not ClassLevelHigherOrEqualThan(5,'Ranger')):RollBonus(RangedWeaponAttack, 2);IF(ClassLevelHigherOrEqualThan(5,'Ranger')):RollBonus(RangedWeaponAttack, 4)"
+
+new entry "JWL_Passive_QuiverEfficient_RollBonus3"
+type "PassiveData"
+data "DisplayName" "h190f5f91g3ed8g490bg8082g8c885c7962b7;1"
+data "Description" "h0ffc60e7g082bg440bg9aebg41ea6c34c29e;1"
+data "DescriptionParams" "2;7;4"
+data "Boosts" "IF(not ClassLevelHigherOrEqualThan(7,'Ranger')):RollBonus(RangedWeaponAttack, 2);IF(ClassLevelHigherOrEqualThan(7,'Ranger')):RollBonus(RangedWeaponAttack, 4);IF(not ClassLevelHigherOrEqualThan(7,'Ranger') and IsRangedWeaponAttack()):CharacterWeaponDamage(2);IF(ClassLevelHigherOrEqualThan(7,'Ranger') and IsRangedWeaponAttack()):CharacterWeaponDamage(4)"
+
+
+// ===============================================================
+// BELTS
+// ===============================================================
+
+new entry "JWL_Passive_BeltDwarven"
+type "PassiveData"
+data "DisplayName" "h8fd61985g33c0g4e87g9502gc424d4cbf8c1;1"
+data "Description" "h659e139dg985ag49degb9feg909c48372856;1"
+//data "Boosts" "IF(Tagged('DWARF', context.Source)):Advantage(Skill, Intimidation);IF(Tagged('DWARF', context.Source)):Advantage(Skill, Persuasion);ScaleMultiplier(0.95)"
+data "Boosts" "IF(Tagged('DWARF', context.Source)):Advantage(Skill, Intimidation);IF(Tagged('DWARF', context.Source)):Advantage(Skill, Persuasion)"
+
+new entry "JWL_Passive_BeltPrimalRecall"
+type "PassiveData"
+data "DisplayName" "h7002c787gc9bag4fe5gb6beg1c01952acaba;1"
+data "Description" "ha077071bg8662g4b09gbff2gb3f34c0ea8f8;1"
+data "Boosts" "IF(Tagged('MONSTROSITY', context.Target)):Advantage(AttackRoll)"
+
+
+// ===============================================================
+// SPELL TOMES (WIZARD)
+// ===============================================================
+
+new entry "JWL_Passive_BookCelestialHealing"
+type "PassiveData"
+data "DisplayName" "hda0fdc6egca3bg4884gb8dcg38b905d029d0;1"
+data "Description" "h1ba4552fga99fg410bg90e3g69f566129168;1"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character() and not Self()"
+data "StatsFunctors" "ApplyStatus(SELF, MAG_GISH_ARCANE_ACUITY, 100, 2);ApplyStatus(SELF, MAG_GISH_ARCANE_ACUITY_DURATION_TECHNICAL, 100, 1)"
+
+new entry "JWL_Passive_BookManySpells"
+type "PassiveData"
+data "DisplayName" "h181f9246g612ag484cg99c2g57ca3e4ffcb5;1"
+data "Description" "h4960abddg9469g4453g9a95g4c4d83fd7b81;1"
+data "DescriptionParams" "2"
+data "Boosts" "RollBonus(MeleeSpellAttack, 2);RollBonus(RangedSpellAttack,2)"
+
+new entry "JWL_Passive_BookArcaneCodex"
+type "PassiveData"
+data "DisplayName" "hf1be896bgf910g4eceg92d4g908c73c186d9;1"
+data "Description" "h6a7f9b37g7213g4328g9bceg352bf62c1c31;1"
+data "DescriptionParams" "3"
+data "Boosts" "SpellSaveDC(3);RollBonus(MeleeSpellAttack, 3);RollBonus(RangedSpellAttack,3)"
+
+
+// ===============================================================
+// INFERNAL TOMES (WARLOCK)
+// ===============================================================
+
+new entry "JWL_Passive_BookInfernalArchive"
+type "PassiveData"
+data "DisplayName" "h8ef49014g58dag4a7dga856gaad8f3c1936f;1"
+data "Description" "h85ab0ea3gca94g412bg9d4bg7e526570b85e;1"
+data "Properties" "OncePerCombat;Highlighted"
+data "StatsFunctorContext" "OnTurn"
+data "Conditions" "Combat()"
+data "StatsFunctors" "ApplyStatus(SELF,JWL_Status_BookInfernalArchive, 100, -1)"
+
+new entry "JWL_Passive_BookLostKnowledge"
+type "PassiveData"
+data "DisplayName" "ha2c3be5fg54ddg4a8eg9829gd8fdd12008ff;1"
+data "Description" "h7ef59719g4ff0g43b1g87fag14140d859fcf;1"
+data "Boosts" "UnlockSpellVariant(HexSpellVariation(),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup), ModifyTooltipDescription())"
+
+new entry "JWL_Passive_BookClearThought"
+type "PassiveData"
+data "DisplayName" "hc90fc3b6g6386g4c94ga122gf127b3957c93;1"
+data "Description" "h6a4b1552gf5a4g403ag9686g0bff0933854e;1"
+data "DescriptionParams" "25%"
+data "Properties" "OncePerAttack;Highlighted"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsMeleeWeaponAttack() and Enemy() and Character() and RollDieAgainstDC(DiceType.d4,4)"
+data "StatsFunctors" "RestoreResource(SELF,WarlockSpellSlot,1,1);RestoreResource(SELF,WarlockSpellSlot,1,2);RestoreResource(SELF,WarlockSpellSlot,1,3);RestoreResource(SELF,WarlockSpellSlot,1,4);RestoreResource(SELF,WarlockSpellSlot,1,5);RestoreResource(SELF,WarlockSpellSlot,1,6);RestoreResource(SELF,WarlockSpellSlot,1,7);RestoreResource(SELF,WarlockSpellSlot,1,8);RestoreResource(SELF,WarlockSpellSlot,1,9)"
+
+new entry "JWL_Passive_BookEtherealCurrents"
+type "PassiveData"
+data "DisplayName" "h7e18c6e6g7fb5g433cg96ccg01f7dbe46f29;1"
+data "Description" "h99447434ga47dg41a1g8c22ge46eb37f8600;1"
+data "DescriptionParams" "1"
+data "Boosts" "UnlockSpellVariant(SpellId('Projectile_EldritchBlast'),ModifyNumberOfTargets(AdditiveBase,1,true), ModifyTooltipDescription())"
+
+
+// ===============================================================
+// MEDALS (FIGHTER)
+// ===============================================================
+
+new entry "JWL_Passive_SoldiersBoon"
+type "PassiveData"
+data "DisplayName" "h0077ffd5g7f31g4645g9b48g75b90f91e7ef;1"
+data "Description" "hb6bb954cg36cag4fe6g904cgf3699f03d513;1"
+data "DescriptionParams" "1;3;2"
+data "Boosts" "IF(not ClassLevelHigherOrEqualThan(3,'Fighter')):RollBonus(MeleeWeaponAttack, 1);IF(ClassLevelHigherOrEqualThan(3,'Fighter')):RollBonus(MeleeWeaponAttack, 2)"
+
+new entry "JWL_Passive_SoldiersBoon2"
+type "PassiveData"
+data "DisplayName" "hc1c15525gfea2g4421g87bdgd0b2ca6a9881;1"
+data "Description" "hb6bb954cg36cag4fe6g904cgf3699f03d513;1"
+data "DescriptionParams" "2;5;4"
+data "Boosts" "IF(not ClassLevelHigherOrEqualThan(5,'Fighter')):RollBonus(MeleeWeaponAttack, 2);IF(ClassLevelHigherOrEqualThan(5,'Fighter')):RollBonus(MeleeWeaponAttack, 4)"
+
+new entry "JWL_Passive_CompendiumTechniques"
+type "PassiveData"
+data "DisplayName" "h394f316cg79acg41ffgb6ecgeb6fb249ef59;1"
+data "Description" "h63b2bc2ag0c9ag46e4gaecfg7c4eeaad31a4;1"
+data "DescriptionParams" "2;7;4"
+data "Boosts" "IF(not ClassLevelHigherOrEqualThan(7,'Fighter')):RollBonus(MeleeWeaponAttack, 2);IF(ClassLevelHigherOrEqualThan(7,'Fighter')):RollBonus(MeleeWeaponAttack, 4);IF(not ClassLevelHigherOrEqualThan(7,'Fighter') and IsMeleeWeaponAttack()):CharacterWeaponDamage(2);IF(ClassLevelHigherOrEqualThan(7,'Fighter') and IsMeleeWeaponAttack()):CharacterWeaponDamage(4)"
+
+new entry "JWL_Passive_SerpentsPin"
+type "PassiveData"
+data "DisplayName" "h2867de5fged3dg4d12g80fegb1e5012c7b7c;1"
+data "Description" "h0158e0f1g8943g4e61g8e64g52cb6b80abfe;1"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsMeleeWeaponAttack()"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 14)):ApplyStatus(ALCH_TOXIN_SERPENTVENOM_CONDITION,100,1, AdvantageOnPoisoned())"
+
+
+// ===============================================================
+// STRAPS
+// ===============================================================
+
+new entry "JWL_Passive_WeaponStrap"
+type "PassiveData"
+data "DisplayName" "h179c9e7dgbc6bg40bfga76eg5d3bea28d044;1"
+data "Description" "h291fbb29gb863g4516gb16agcff49cc2c615;1"
+data "BoostContext" "OnEquip;OnCreate"
+data "BoostConditions" "IsWeaponOfProficiencyGroup('Glaives|Greatclubs|Halberds|Mauls|Pikes|Quarterstaffs|Spears|Tridents|Warhammers', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) and not DualWielder(context.Source)"
+data "Boosts" "AttackSpellOverride(Target_UnarmedAttack, Target_MainHandAttack)"
+
+new entry "JWL_Passive_WeaponStrap_TECHNICAL"
+type "PassiveData"
+data "DisplayName" "h7ef7c832g6883g46f9ga63egfe6ac408b669;1"
+data "Properties" "IsHidden"
+data "BoostContext" "OnEquip;OnCreate"
+data "BoostConditions" "IsWeaponOfProficiencyGroup('Glaives|Greatclubs|Halberds|Mauls|Pikes|Quarterstaffs|Spears|Tridents|Warhammers', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) and not DualWielder(context.Source)"
+data "Boosts" "UnlockSpell(Target_MainHandAttack)"
+
+new entry "JWL_Passive_WorghideWeaponStrap"
+type "PassiveData"
+data "DisplayName" "hcdfcfb2dgd621g4757ga45agc38399153514;1"
+data "Description" "h60c6445dgd49ag40f6g96afgeeb6674e0f6f;1"
+data "DescriptionParams" "1;5;2"
+data "Boosts" "IF(not ClassLevelHigherOrEqualThan(5,'Monk')):RollBonus(MeleeUnarmedAttack, 1);IF(ClassLevelHigherOrEqualThan(5,'Monk')):RollBonus(MeleeUnarmedAttack, 2)"
+
+new entry "JWL_Passive_DragonhideWeaponStrap"
+type "PassiveData"
+data "DisplayName" "hcdfcfb2dgd621g4757ga45agc38399153514;1"
+data "Description" "hecbf2ba5g2932g429dgbe53gf64882290a11;1"
+data "DescriptionParams" "2;7;4"
+//data "Boosts" "IF(not ClassLevelHigherOrEqualThan(7,'Monk')):RollBonus(MeleeUnarmedAttack, 2);IF(ClassLevelHigherOrEqualThan(7,'Monk')):RollBonus(MeleeUnarmedAttack, 4);IF(not ClassLevelHigherOrEqualThan(7,'Monk') and IsMeleeUnarmedAttack()):CharacterWeaponDamage(2);IF(ClassLevelHigherOrEqualThan(7,'Monk') and IsMeleeUnarmedAttack()):CharacterWeaponDamage(4)"
+data "Boosts" "IF(not ClassLevelHigherOrEqualThan(7,'Monk')):RollBonus(MeleeUnarmedAttack, 2);IF(ClassLevelHigherOrEqualThan(7,'Monk')):RollBonus(MeleeUnarmedAttack, 4);IF(not ClassLevelHigherOrEqualThan(7,'Monk') and IsMeleeUnarmedAttack()):CharacterUnarmedDamage(2);IF(ClassLevelHigherOrEqualThan(7,'Monk') and IsMeleeUnarmedAttack()):CharacterUnarmedDamage(4)"
+
+new entry "JWL_Passive_Crowbar"
+type "PassiveData"
+data "DisplayName" "h2f7cdf09g2f86g493eg8251g64dffceab790;1"
+data "Description" "h718fcad2gafbag4ad8g9e5fgb821b4230426;1"
+data "Boosts" "IF(not Combat(context.Source)):Advantage(Skill, Athletics)"
+
+
+// ===============================================================
+// TOTEMS (BARBARIAN/DRUID)
+// ===============================================================
+
+new entry "JWL_Passive_TotemBeast"
+type "PassiveData"
+data "DisplayName" "hb5b63d88gafd6g4989g915cgb7096596ecf6;1"
+data "Description" "h0f7518b4g8148g4a93g9cc9g5e5acd94cd6e;1"
+data "DescriptionParams" "3"
+data "StatsFunctorContext" "OnStatusApply"
+data "Conditions" "StatusHasStatusGroup(context.StatusId, 'SG_Rage') or StatusHasStatusGroup(context.StatusId, 'SG_Polymorph_BeastShape') or StatusId('WILDSHAPE_STARRY_ARCHER_PLAYER') or StatusId('WILDSHAPE_STARRY_CHALICE_PLAYER') or StatusId('WILDSHAPE_STARRY_DRAGON_PLAYER')"
+data "StatsFunctors" "ApplyStatus(SELF,MAG_MOMENTUM,100,3)"
+
+new entry "JWL_Passive_TotemDread"
+type "PassiveData"
+data "DisplayName" "h460b90a5g45b3g468cg9f9fgb23925173eb0;1"
+data "Description" "h7611d9e7g25dfg42a8ga65ag166a225a8a89;1"
+data "DescriptionParams" "5;DealDamage(1d4, Necrotic)"
+data "StatsFunctorContext" "OnStatusApply"
+data "Conditions" "StatusHasStatusGroup(context.StatusId, 'SG_Rage') or StatusHasStatusGroup(context.StatusId, 'SG_Polymorph_BeastShape') or StatusId('WILDSHAPE_STARRY_ARCHER_PLAYER') or StatusId('WILDSHAPE_STARRY_CHALICE_PLAYER') or StatusId('WILDSHAPE_STARRY_DRAGON_PLAYER')"
+data "StatsFunctors" "ApplyStatus(SELF,JWL_Status_TotemDread,100,5)"
+
+new entry "JWL_Passive_TotemSpirit"
+type "PassiveData"
+data "DisplayName" "hf7a84260gca0dg4f20g95f9g11ba487f16b0;1"
+data "Description" "hd1631a77g33afg40ffg926fg3d6d23d70508;1"
+data "DescriptionParams" "20%;1"
+data "TooltipStatusApply" "ApplyStatus(GREATER_INVISIBILITY,100,1)"
+data "StatsFunctorContext" "OnDamaged"
+data "Conditions" "not Ally() and HasHPPercentageEqualOrLessThan(19) and not HasStatus('SG_Rage', context.Source) and not HasStatus('SG_Polymorph_BeastShape', context.Source) and not HasStatus('WILDSHAPE_STARRY_ARCHER_PLAYER', context.Source) and not HasStatus('WILDSHAPE_STARRY_CHALICE_PLAYER', context.Source) and not HasStatus('WILDSHAPE_STARRY_DRAGON_PLAYER', context.Source)"
+data "StatsFunctors" "ApplyStatus(GREATER_INVISIBILITY,100,1)"
+
+new entry "JWL_Passive_TotemDragon"
+type "PassiveData"
+data "DisplayName" "hce864aabg41fdg405egba6cg1d45f6a85bec;1"
+data "Description" "h9e35a2dcge824g4205g84f9g2e34128be73e;1"
+data "DescriptionParams" "3"
+data "StatsFunctorContext" "OnStatusApply"
+data "Conditions" "StatusHasStatusGroup(context.StatusId, 'SG_Rage') or StatusHasStatusGroup(context.StatusId, 'SG_Polymorph_BeastShape') or StatusId('WILDSHAPE_STARRY_ARCHER_PLAYER') or StatusId('WILDSHAPE_STARRY_CHALICE_PLAYER') or StatusId('WILDSHAPE_STARRY_DRAGON_PLAYER')"
+data "StatsFunctors" "ApplyStatus(SELF,ALCH_POTION_FLYING,100,3)"
+
+
+// ===============================================================
+// BLOODWELL VIALS (SORCERER)
+// ===============================================================
+
+new entry "JWL_Passive_Bloodwell"
+type "PassiveData"
+data "DisplayName" "hc8aab3fdg7b49g408dga247g4087360849ff;1"
+data "Description" "h6a57224cgf25fg40e1ga2d2gcd3b3721ae7a;1"
+data "DescriptionParams" "1"
+data "Boosts" "SpellSaveDC(1)"
+
+new entry "JWL_Passive_Bloodwell2"
+type "PassiveData"
+data "DisplayName" "hc8aab3fdg7b49g408dga247g4087360849ff;1"
+data "Description" "h6a57224cgf25fg40e1ga2d2gcd3b3721ae7a;1"
+data "DescriptionParams" "2"
+data "Boosts" "SpellSaveDC(2)"
+
+new entry "JWL_Passive_Bloodwell3"
+type "PassiveData"
+data "DisplayName" "hc8aab3fdg7b49g408dga247g4087360849ff;1"
+data "Description" "h6a57224cgf25fg40e1ga2d2gcd3b3721ae7a;1"
+data "DescriptionParams" "3"
+data "Boosts" "SpellSaveDC(3)"
+
+new entry "JWL_Passive_BloodwellCorrupted"
+type "PassiveData"
+data "DisplayName" "h07ffb6e7g2d7dg421bgb851g1f49cd34aba6;1"
+data "Description" "h915dd495g17f2g4e00gb69fg803f3608d735;1"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnDamaged"
+data "Conditions" "IsMeleeAttack() and Character()"
+data "StatsFunctors" "ApplyStatus(SWAP,ACID, 100, 2,,,,not SavingThrow(Ability.Constitution,13))"
+
+new entry "JWL_Passive_BloodwellSorcerous"
+type "PassiveData"
+data "DisplayName" "hdc8fb06agfaa4g4259gb834ge143ac95662f;1"
+data "Description" "h995da508g3f05g4b5bg9689g07584b5555a4;1"
+data "DescriptionParams" "18%"
+data "Properties" "OncePerAttack;Highlighted"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsCantrip() and Enemy() and Character() and RollDieAgainstDC(DiceType.d100,83)"
+data "StatsFunctors" "RestoreResource(SELF,SpellSlot,1,1)"
+
+new entry "JWL_Passive_BloodwellDragon"
+type "PassiveData"
+data "DisplayName" "he8c5ad1ag2839g4840gacdfg2e258a8ed05f;1"
+data "Description" "he21cf481gf24fg4afagb458g2edf34392160;1"
+data "DescriptionParams" "4"
+data "StatsFunctorContext" "OnCast;OnAttack;OnCastResolved"
+data "Conditions" "HasUseCosts('SorceryPoint', true)"
+data "StatsFunctors" "ApplyStatus(SELF, JWL_Status_BloodwellDragon_Tracker, 100, -1);ApplyEquipmentStatus(MusicalInstrument, JWL_Status_BloodwellDragon_Depleted, 100, -1)"
+
+new entry "JWL_Passive_BloodwellDragon_TECHNICAL"
+type "PassiveData"
+using "MAG_ShieldOfDevotion_Cooldown_Passive"
+data "Properties" "IsHidden"
+data "StatsFunctors" "RemoveStatus(JWL_Status_BloodwellDragon_Tracker);ApplyStatus(JWL_Status_BloodwellDragon_SorceryPoints, 100, -1)"
+
+new entry "JWL_Passive_BloodwellDragon_Tracker"
+type "PassiveData"
+using "JWL_Passive_BloodwellDragon_TECHNICAL"
+data "StatsFunctors" "RemoveStatus(JWL_Status_BloodwellDragon_Tracker)"
+
+
+// ===============================================================
+// WHISTLES
+// ===============================================================
+
+new entry "JWL_Passive_WhistleBeast"
+type "PassiveData"
+data "DisplayName" "ha06bd265gb0cfg4f69g8472gb1caa99461ff;1"
+data "Description" "h25afced1g24d6g4d9bgb8b6g49f9bea8df40;1"
+data "DescriptionParams" "Distance(9);1"
+
+new entry "JWL_Passive_SilverLycanCharm"
+type "PassiveData"
+data "DisplayName" "h102b66d2g810dg49c5g89ecg47411d8cf0f5;1"
+data "Description" "h1dd773ecg5ad7g40cdg9e94gb8bfda9c2f50;1"
+data "DescriptionParams" "Distance(9);Distance(3);1"
+
+new entry "JWL_Passive_WhistleCerberus"
+type "PassiveData"
+data "DisplayName" "ha4e22634g9128g4dddga41cge55c88a6b5d0;1"
+data "Description" "h4e389111g119bg46aeg9333gebe4b8e6ac4f;1"
+data "DescriptionParams" "Distance(9);LevelMapValue(StandardProficiencyBonusScale);Level*2+1"
+
+new entry "JWL_Passive_WhistleWitch"
+type "PassiveData"
+data "DisplayName" "h32c50380g8becg4444g8128g3101e1a61be5;1"
+data "Description" "h47d93a72gc85fg4de7gb191g4a504185180c;1"
+data "DescriptionParams" "Distance(9);DealDamage(LevelMapValue(StandardProficiencyBonusScale), Necrotic)"
+
+new entry "JWL_Passive_ThayanFemur"
+type "PassiveData"
+data "DisplayName" "h992f7657g2d5bg4396ga200gb8c040d932d5;1"
+data "Description" "h07f271f9g13e5g4b7aga5a6gffce01cf0f2c;1"
+data "DescriptionParams" "Distance(9);2"
+
+new entry "JWL_Passive_ThayanFemur_TECHNICAL"
+type "PassiveData"
+data "DisplayName" "h992f7657g2d5bg4396ga200gb8c040d932d5;1"
+data "Description" "h07f271f9g13e5g4b7aga5a6gffce01cf0f2c;1"
+data "DescriptionParams" "Distance(9);2"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsMeleeAttack()"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Wisdom, 14)):ApplyStatus(FEARED,100,2)"
+
+new entry "JWL_Passive_GibberingBell"
+type "PassiveData"
+data "DisplayName" "h9c228ce1g19fdg4697g87f1g7a6bbd39b11e;1"
+data "Description" "hba613187gef97g41ecga20cgc383e27dbcf0;1"
+data "DescriptionParams" "Distance(9)"
+
+new entry "JWL_Passive_GibberingBell_TECHNICAL"
+type "PassiveData"
+data "DisplayName" "h9c228ce1g19fdg4697g87f1g7a6bbd39b11e;1"
+data "Description" "hba613187gef97g41ecga20cgc383e27dbcf0;1"
+data "DescriptionParams" "Distance(9)"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsAttack()"
+data "StatsFunctors" "IF(not HasMaxHP() and not (Tagged('CONSTRUCT') or Tagged('OOZE') or Tagged('PLANT') or Tagged('ELEMENTAL'))):Advantage(AttackRoll)"
+
+
+// ===============================================================
+// ROGUE TOOLS (ROGUE)
+// ===============================================================
+
+new entry "JWL_Passive_Lucky"
+type "PassiveData"
+data "DisplayName" "hdc3f1921g5680g4b3cg97a3gf500bcbac62e;1"
+data "Description" "h116fd689g69b5g4f7bg866dg4dd19537234b;1"
+data "DescriptionParams" "2"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnCast;OnAttack;OnCastResolved;OnAbilityCheck;OnInterruptUsed"
+data "Conditions" "HasUseCosts('LuckPoint', true)"
+data "StatsFunctors" "ApplyStatus(SELF, JWL_Status_Lucky_Tracker, 100, -1);ApplyEquipmentStatus(MusicalInstrument, JWL_Status_Lucky_Depleted, 100, -1)"
+data "Boosts" "UnlockInterrupt(Interrupt_Lucky_RollAdditionalDie);UnlockInterrupt(Interrupt_Lucky_ReplaceAttackersDie)"
+
+new entry "JWL_Passive_Lucky_TECHNICAL"
+type "PassiveData"
+using "MAG_ShieldOfDevotion_Cooldown_Passive"
+data "Properties" "IsHidden"
+data "StatsFunctors" "RemoveStatus(JWL_Status_Lucky_Tracker);ApplyStatus(JWL_Status_Lucky_LuckPoints, 100, -1)"
+
+new entry "JWL_Passive_Lucky_Tracker"
+type "PassiveData"
+using "JWL_Passive_Lucky_TECHNICAL"
+data "StatsFunctors" "RemoveStatus(JWL_Status_Lucky_Tracker)"
+
+
+// ===============================================================
+// WAR BANNERS (FIGHTER/MONK)
+// ===============================================================
+
+new entry "JWL_Passive_BannerGoblin"
+type "PassiveData"
+data "DisplayName" "h8c942f84g5a21g4cefga90eg9b6387fa7fda;1"
+data "Description" "h87c08893gb9d9g422bg8fb2gbff604eb96f6;1"
+data "DescriptionParams" "Distance(4.5);DealDamage(1d4,Poison)"
+
+new entry "JWL_Passive_BannerMourningsteel"
+type "PassiveData"
+data "DisplayName" "h2f47412bgb3d8g4e9cg843egabd782d5bbab;1"
+data "Description" "hb6ca31a7g534eg40a3gb4aag7c8a0eef5055;1"
+data "DescriptionParams" "Distance(4.5);1"
+
+new entry "JWL_Passive_BannerConsecrated"
+type "PassiveData"
+data "DisplayName" "hb8ce9867ga25ag4c9bg8be0g694d1bb36acc;1"
+data "Description" "h5c06d5f0gb4feg46e6g9076g97538156c965;1"
+data "DescriptionParams" "Distance(4.5);DealDamage(1d4,Radiant)"
+
+new entry "JWL_Passive_BannerConsecrated_TECHNICAL"
+type "PassiveData"
+data "DisplayName" "hb8ce9867ga25ag4c9bg8be0g694d1bb36acc;1"
+data "Description" "h5c06d5f0gb4feg46e6g9076g97538156c965;1"
+data "DescriptionParams" "Distance(4.5);DealDamage(1d4,Radiant)"
+data "Properties" "OncePerTurn;IsHidden"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsWeaponAttack()"
+data "StatsFunctors" "ApplyStatus(MAG_RADIANT_RADIATING_ORB,100,1)"
+
+new entry "JWL_Passive_BannerInfernalPower"
+type "PassiveData"
+data "DisplayName" "hf6bdc4fbg9425g4934ga102g2e49f33cf1f9;1"
+data "Description" "h189a3126g1df0g4bb8gb4ecgdd23d771b39e;1"
+data "DescriptionParams" "Distance(4.5);2;DealDamage(1d6,Fire)"
+
+new entry "JWL_Passive_BannerInfernalPower_TECHNICAL"
+type "PassiveData"
+data "DisplayName" "hf6bdc4fbg9425g4934ga102g2e49f33cf1f9;1"
+data "Description" "h189a3126g1df0g4bb8gb4ecgdd23d771b39e;1"
+data "DescriptionParams" "Distance(4.5);2;DealDamage(1d6,Fire)"
+data "Properties" "OncePerTurn;IsHidden"
+data "StatsFunctorContext" "OnDamaged"
+data "Conditions" "IsMeleeAttack()"
+data "StatsFunctors" "DealDamage(SWAP,1d6,Fire)"
+
+// ===============================================================
+// HOLY SYMBOLS
+// ===============================================================
+
+new entry "JWL_Passive_SymbolBonusHP"
+type "PassiveData"
+data "DisplayName" "h33aa6c10ge766g47a3g8f20ge523bb432725;1"
+data "Description" "h6a6336cdge766g447dg9fa3gd730d21ae04d;1"
+data "DescriptionParams" "Level+LevelMapValue(StandardProficiencyBonusScale)"
+
+new entry "JWL_Passive_SymbolKelemvor"
+type "PassiveData"
+data "DisplayName" "h056322b9g3133g4a74g94fcg870752f5a500;1"
+data "Description" "h41345d5eg81deg4336g8edcgbd7b9c2bc9b7;1"
+data "DescriptionParams" "DealDamage(1,Radiant);DealDamage(1,Necrotic)"
+//data "StatsFunctorContext" "OnDamage"
+//data "Conditions" "IsMeleeWeaponAttack()"
+//data "StatsFunctors" "DealDamage(1,Radiant);DealDamage(1,Necrotic)"
+data "Conditions" "IsMeleeWeaponAttack()"
+data "Boosts" "IF(IsMeleeWeaponAttack()):DamageBonus(1,Radiant);IF(IsMeleeWeaponAttack()):DamageBonus(1,Necrotic)"
+
+new entry "JWL_Passive_Follower_SymbolKelemvor"
+type "PassiveData"
+using "JWL_Passive_SymbolBonusHP"
+data "Boosts" "IncreaseMaxHP(Level+LevelMapValue(StandardProficiencyBonusScale))"
+
+new entry "JWL_Passive_SymbolSylvanus"
+type "PassiveData"
+data "DisplayName" "h314a1cdcgaf9bg48e8g9a68g6e8bc950867a;1"
+data "Description" "ha65071ecgcd87g458fga9f9gaef18c7e32e1;1"
+data "DescriptionParams" "RegainHitPoints(2)"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character()"
+data "StatsFunctors" "RegainHitPoints(2)"
+
+new entry "JWL_Passive_SymbolLolth"
+type "PassiveData"
+data "DisplayName" "haa668900g567ag4dd2ga782g1b695b41410e;1"
+data "Description" "hce08c682gc2d1g4402g9866g7c8e509fd48e;1"
+data "Properties" "OncePerCombat"
+// data "StatsFunctorContext" "OnDamage"
+// data "Conditions" "IsMeleeAttack() and HasStatus('SG_Poisoned',context.Target)"
+// data "StatsFunctors" "CriticalDamageOnHit()"
+data "BoostContext" "OnAttack"
+data "BoostConditions" "not IsMiss() and IsMeleeAttack() and HasStatus('SG_Poisoned',context.Target)"
+data "Boosts" "CriticalDamageOnHit()"
+
+new entry "JWL_Passive_Follower_SymbolLolth"
+type "PassiveData"
+using "JWL_Passive_SymbolBonusHP"
+data "Boosts" "IncreaseMaxHP(Level+LevelMapValue(StandardProficiencyBonusScale))"
+
+new entry "JWL_Passive_SymbolMoradin"
+type "PassiveData"
+data "DisplayName" "h0c4f6289g13d6g4f4ag8977gd11dd0930847;1"
+data "Description" "hc1ce535cg2d9bg4a36ga6f5gc8edba675aee;1"
+data "DescriptionParams" "25%;2"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character() and not Self() and RollDieAgainstDC(DiceType.d4,4)"
+data "StatsFunctors" "ApplyStatus(SELF,SANCTUARY,100,2)"
+
+new entry "JWL_Passive_Follower_SymbolMoradin"
+type "PassiveData"
+using "JWL_Passive_SymbolBonusHP"
+data "Boosts" "IncreaseMaxHP(Level+LevelMapValue(StandardProficiencyBonusScale))"
+
+new entry "JWL_Passive_SymbolBahamut"
+type "PassiveData"
+data "DisplayName" "hb46154fagbb2fg4a01g9fbdg0f879b1230f7;1"
+data "Description" "h2a866ad9gc795g4ccagbbd1ga09a0ca21b17;1"
+data "DescriptionParams" "RegainHitPoints(1d4)"
+data "Properties" "OncePerAttack"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "(IsSpell() and not IsCantrip()) or IsAttackType(AttackType.MeleeSpellAttack)"
+data "StatsFunctors" "RegainHitPoints(SELF, 1d4)"
+
+new entry "JWL_Passive_Follower_SymbolBahamut"
+type "PassiveData"
+using "JWL_Passive_SymbolBonusHP"
+data "Boosts" "IncreaseMaxHP(Level+LevelMapValue(StandardProficiencyBonusScale))"
+
+new entry "JWL_Passive_SymbolEllistrae"
+type "PassiveData"
+data "DisplayName" "hca2427eag5ae6g4bdfg801cg74eb4646d6e9;1"
+data "Description" "hc6dbc548g719dg4548g871cg674bd40b61a0;1"
+data "DescriptionParams" "2"
+data "Boosts" "Proficiency(Shortswords);Proficiency(Longswords);Proficiency(Greatswords);RollBonus(MeleeWeaponAttack, 2);RollBonus(MeleeOffHandWeaponAttack, 2)"
+
+new entry "JWL_Passive_SymbolEllistrae_Crit"
+type "PassiveData"
+data "DisplayName" "h0a42c16cg335cg4c7agb82cgbfb12da4725e;1"
+data "Description" "h5b79bb48g15e7g48c3gbc73g80af1e8492ee;1"
+// data "DescriptionParams" "RegainHitPoints(SELF, 2d4)"
+data "DescriptionParams" "RegainHitPoints(2d4)"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsCritical() and not Tagged('CONSTRUCT', context.Target) and not Tagged('OOZE') and not Tagged('PLANT') and not Tagged('ELEMENTAL')"
+data "StatsFunctors" "RegainHitPoints(SELF, 2d4)"
+
+new entry "JWL_Passive_Follower_SymbolEllistrae"
+type "PassiveData"
+using "JWL_Passive_SymbolBonusHP"
+data "Boosts" "IncreaseMaxHP(Level+LevelMapValue(StandardProficiencyBonusScale))"
+
+new entry "JWL_Passive_SymbolHelm"
+type "PassiveData"
+data "DisplayName" "h79ecdbdfgbdeag46deg98aag429783a9362b;1"
+data "Description" "h5a53fc9bgcf86g4d66ga6f8g69f10db09ff5;1"
+data "DescriptionParams" "1;2;RegainHitPoints(5)"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character() and not Self()"
+data "StatsFunctors" "ApplyStatus(JWL_Status_SymbolHelm,100,2)"
+
+new entry "JWL_Passive_SymbolHelm_TECHNICAL"
+type "PassiveData"
+data "DisplayName" "h79ecdbdfgbdeag46deg98aag429783a9362b;1"
+data "Description" "h5a53fc9bgcf86g4d66ga6f8g69f10db09ff5;1"
+data "DescriptionParams" "RegainHitPoints(5)"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character()"
+data "StatsFunctors" "RegainHitPoints(5)"
+
+new entry "JWL_Passive_Follower_SymbolHelm"
+type "PassiveData"
+using "JWL_Passive_SymbolBonusHP"
+data "Boosts" "IncreaseMaxHP(Level+LevelMapValue(StandardProficiencyBonusScale))"
+
+new entry "JWL_Passive_SymbolMeilikki"
+type "PassiveData"
+data "DisplayName" "h2feb84c0g7c38g4517ga5f9g977364fd4dfa;1"
+data "Description" "hf8f153ecg250fg4706gaec5g4a0f3859e9dc;1"
+data "DescriptionParams" "1;Distance(1.5)"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character() and not Self()"
+data "StatsFunctors" "RestoreResource(SELF,Movement,1.5,0);ApplyStatus(MAG_MOMENTUM,100,1)"
+
+new entry "JWL_Passive_Follower_SymbolMeilikki"
+type "PassiveData"
+using "JWL_Passive_SymbolBonusHP"
+data "Boosts" "IncreaseMaxHP(Level+LevelMapValue(StandardProficiencyBonusScale))"
+
+new entry "JWL_Passive_SymbolIlmater"
+type "PassiveData"
+data "DisplayName" "hf20fa9e6g2e6fg4c41g9558g2385e2ff3148;1"
+data "Description" "hb7d81a93gabf3g4d41gb4a5g26912e01f0e7;1"
+data "DescriptionParams" "1;12%"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character() and not Self()"
+data "StatsFunctors" "ApplyStatus(JWL_Status_SymbolIlmater,100,1)"
+
+new entry "JWL_Passive_SymbolIlmater_TECHNICAL"
+type "PassiveData"
+data "DisplayName" "hf20fa9e6g2e6fg4c41g9558g2385e2ff3148;1"
+data "Description" "hb7d81a93gabf3g4d41gb4a5g26912e01f0e7;1"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character() and not Self() and RollDieAgainstDC(DiceType.d100,89)"
+data "StatsFunctors" "RestoreResource(SELF,SpellSlot,1,1)"
+
+new entry "JWL_Passive_Follower_SymbolIlmater"
+type "PassiveData"
+using "JWL_Passive_SymbolBonusHP"
+data "Boosts" "IncreaseMaxHP(Level+LevelMapValue(StandardProficiencyBonusScale))"
+
+new entry "JWL_Passive_SymbolCorellon"
+type "PassiveData"
+data "DisplayName" "h34da5138gdb27g4a62gb5afgba1d39d9aa7a;1"
+data "Description" "hbd2f6f58g9ff7g4e6fg8936g39b7d5c6cfba;1"
+data "Boosts" "StatusImmunity(SG_Charmed)"
+
+new entry "JWL_Passive_SymbolCorellon_Cleric"
+type "PassiveData"
+data "DisplayName" "h196e6a71g1b68g4741gacefg5d15ef907b74;1"
+data "Description" "hdb2f3490g6e25g40b7gba3fga42664a7c9b7;1"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnCast;OnAttack;OnCastResolved;OnAbilityCheck;OnInterruptUsed;OnHeal"
+data "Conditions" "HasUseCosts('ChannelDivinity', true)"
+data "StatsFunctors" "ApplyStatus(SELF, JWL_Status_SymbolCorellon_Cleric_Tracker, 100, -1);ApplyEquipmentStatus(MusicalInstrument, JWL_Status_SymbolCorellon_Cleric_Depleted, 100, -1)"
+
+new entry "JWL_Passive_SymbolCorellon_Cleric_TECHNICAL"
+type "PassiveData"
+using "MAG_ShieldOfDevotion_Cooldown_Passive"
+data "Properties" "IsHidden"
+data "StatsFunctors" "RemoveStatus(JWL_Status_SymbolCorellon_Cleric_Tracker);ApplyStatus(JWL_Status_SymbolCorellon_Cleric_ChannelDivinity, 100, -1)"
+
+new entry "JWL_Passive_SymbolCorellon_Cleric_Tracker"
+type "PassiveData"
+using "JWL_Passive_SymbolCorellon_Cleric_TECHNICAL"
+data "StatsFunctors" "RemoveStatus(JWL_Status_SymbolCorellon_Cleric_Tracker)"
+
+new entry "JWL_Passive_SymbolCorellon_Paladin"
+type "PassiveData"
+data "DisplayName" "h196e6a71g1b68g4741gacefg5d15ef907b74;1"
+data "Description" "hdb2f3490g6e25g40b7gba3fga42664a7c9b7;1"
+data "Properties" "Highlighted;IsHidden"
+data "StatsFunctorContext" "OnCast;OnAttack;OnCastResolved;OnAbilityCheck;OnInterruptUsed;OnHeal"
+data "Conditions" "HasUseCosts('ChannelOath', true)"
+data "StatsFunctors" "ApplyStatus(SELF, JWL_Status_SymbolCorellon_Paladin_Tracker, 100, -1);ApplyEquipmentStatus(MusicalInstrument, JWL_Status_SymbolCorellon_Paladin_Depleted, 100, -1)"
+
+new entry "JWL_Passive_SymbolCorellon_Paladin_TECHNICAL"
+type "PassiveData"
+using "MAG_ShieldOfDevotion_Cooldown_Passive"
+data "Properties" "IsHidden"
+data "StatsFunctors" "RemoveStatus(JWL_Status_SymbolCorellon_Paladin_Tracker);ApplyStatus(JWL_Status_SymbolCorellon_Paladin_ChannelOath, 100, -1)"
+
+new entry "JWL_Passive_SymbolCorellon_Paladin_Tracker"
+type "PassiveData"
+using "JWL_Passive_SymbolCorellon_Paladin_TECHNICAL"
+data "StatsFunctors" "RemoveStatus(JWL_Status_SymbolCorellon_Paladin_Tracker)"
+
+new entry "JWL_Passive_Follower_SymbolCorellon"
+type "PassiveData"
+using "JWL_Passive_SymbolBonusHP"
+data "Boosts" "IncreaseMaxHP(Level+LevelMapValue(StandardProficiencyBonusScale))"

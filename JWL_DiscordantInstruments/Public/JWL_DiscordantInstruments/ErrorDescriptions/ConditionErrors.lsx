@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+	<version major="4" minor="3" revision="0" build="0"/>
+	<region id="ConditionErrors">
+		<node id="root">
+			<children>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="heef6c81eg3d98g4e79g8b9fge0ad61fc6ed7" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseHolySymbol"/>
+					<attribute id="UUID" type="guid" value="3528e0e4-5721-44fc-b4e1-6a5109451216"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="h2a40a170cf974b0fa101ac124d98d7d63462" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseKelemvorSymbol"/>
+					<attribute id="UUID" type="guid" value="e4b5e633-0902-4872-b05d-cb4d31b5c71e"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="he76769b74e034a818907c2b70321891b16f2" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseSilvanusSymbol"/>
+					<attribute id="UUID" type="guid" value="89e0b16b-cfa4-4e6c-a2c2-fca51e5712e1"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="hf0c4700054a74437a41f614871cd3fed5817" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseLolthSymbol"/>
+					<attribute id="UUID" type="guid" value="d57664d4-236b-46de-bbbd-ef059490277e"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="h8a44019a64324e27b659ceb14a7531fc4863" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseMoradinSymbol"/>
+					<attribute id="UUID" type="guid" value="3251b6c4-91e5-4b9a-8f13-05b543dadda8"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="h043eb16631fc4a9c941f9793d2e33a6b41d9" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseBahamutSymbol"/>
+					<attribute id="UUID" type="guid" value="a25db5e2-12fe-4c8e-840c-95121810f3b7"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="h090e001e12bf4f1098a82fd9bc9751424247" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseEilistraeeSymbol"/>
+					<attribute id="UUID" type="guid" value="dbd3933b-d550-4ac1-9d39-19727f441f87"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="h56b77a8eb51240019b1e3e335c8f4e2ae7g1" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseHelmSymbol"/>
+					<attribute id="UUID" type="guid" value="92da525e-9df3-4f0a-8f28-48d362556f3d"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="h3564219846e64025978be22a44ead981e6fg" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseMielikkiSymbol"/>
+					<attribute id="UUID" type="guid" value="e9b1cdbb-77eb-4a8f-87fc-2f44198aa3e9"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="ha966b7799ef54ee48076f0540e7e0280cd1g" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseCorellonSymbol"/>
+					<attribute id="UUID" type="guid" value="6229f909-b42f-4a01-a649-4acf57ec470a"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="h3a3e19f168dc40c59e670614f355fd046710" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseIlmaterSymbol"/>
+					<attribute id="UUID" type="guid" value="b2a20755-0b27-41e9-9031-75bfc172ec93"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="h8774fd7fgc239g4d90ga0e4gae878ab99707" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseSpellTome"/>
+					<attribute id="UUID" type="guid" value="8038d475-8f0f-404f-b43d-703d7bfa290d"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="hd2bafb8dg046bg44bdgb0f4g7ced453d2d44" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseBloodwell"/>
+					<attribute id="UUID" type="guid" value="9c9d5d33-78fc-4417-8595-b3f7f91cb174"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="h21de6712g417bg463dgb592g9ea0b4dfe9f9" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseFiendishTome"/>
+					<attribute id="UUID" type="guid" value="915ad947-3399-45cb-8f81-7f5fea3f13ad"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="h9cf241b6gea45g4ce2gaf0fg99d09ed72ab7" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseTotem"/>
+					<attribute id="UUID" type="guid" value="3338e675-7916-4511-a6da-a4df5f76cf29"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="h070c392dg979bg45e7g84e2g3ce057e4c402" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseMimir"/>
+					<attribute id="UUID" type="guid" value="cf05af78-59df-40ad-ad5d-3d0ffaaaab90"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="h46972e03gf708g41e6gb609g9649294f9f1c" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseGoldenFiddle"/>
+					<attribute id="UUID" type="guid" value="40de7c86-660a-4437-afb8-c3a7c67eb439"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="ha2076ef1g35ebg4943g9ba9g762d8ed481a7" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseRogueTool"/>
+					<attribute id="UUID" type="guid" value="99cfb362-a0e8-4279-a0d3-b9963394603d"/>
+				</node>
+				<node id="ConditionErrors">
+					<attribute id="DisplayName" type="TranslatedString" handle="hdf2d75fbgb49fg4929g87ccge040b701a298" version="1"/>
+					<attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+					<attribute id="Identifier" type="FixedString" value="CanNotUseWarBanner"/>
+					<attribute id="UUID" type="guid" value="cda0e44b-5e06-42df-849b-074dfc726ebd"/>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

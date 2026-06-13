@@ -1,0 +1,1334 @@
+// ===============================================================
+// INSTRUMENTS (NOT DISCORDANT)
+// ===============================================================
+
+new entry "_Instruments"
+type "Armor"
+using "_Instruments"
+data "Level" "1"
+data "ValueUUID" "870797b7-fb40-47ae-be7a-544c05c158c8"
+
+new entry "ARM_Instrument_Drum"
+type "Armor"
+using "ARM_Instrument_Drum"
+data "ValueLevel" "1.5"
+data "Rarity" "Uncommon"
+
+new entry "ARM_Instrument_Flute"
+type "Armor"
+using "ARM_Instrument_Flute"
+data "ValueLevel" "1.5"
+data "Rarity" "Uncommon"
+
+new entry "ARM_Instrument_Lute"
+type "Armor"
+using "ARM_Instrument_Lute"
+data "ValueLevel" "1.5"
+data "Rarity" "Uncommon"
+
+new entry "ARM_Instrument_Lyre"
+type "Armor"
+using "ARM_Instrument_Lyre"
+data "ValueLevel" "1.5"
+data "Rarity" "Uncommon"
+
+new entry "ARM_Instrument_Violin"
+type "Armor"
+using "ARM_Instrument_Violin"
+data "ValueLevel" "1.5"
+data "Rarity" "Uncommon"
+
+// Title
+new entry "UNI_LOW_KiamGodasKilatDrum"
+type "Armor"
+using "UNI_LOW_KiamGodasKilatDrum"
+data "Boosts" "Skill(Performance,2);UnlockSpell(Shout_Bard_Perform_Drum)"
+data "PassivesOnEquip" "JWL_Passive_MusicalProficiency"
+data "ValueLevel" "6"
+data "Rarity" "VeryRare"
+
+// Title
+new entry "UNI_LOW_DostrealtsPiccolo"
+type "Armor"
+using "UNI_LOW_DostrealtsPiccolo"
+data "Boosts" "Skill(Performance,2);UnlockSpell(Shout_Bard_Perform_Flute)"
+data "PassivesOnEquip" "JWL_Passive_MusicalProficiency"
+data "ValueLevel" "5.5"
+data "Rarity" "VeryRare"
+
+// Title
+new entry "UNI_LOW_StolyarofsTableLute"
+type "Armor"
+using "UNI_LOW_StolyarofsTableLute"
+data "Boosts" "Skill(Performance,2);UnlockSpell(Shout_Bard_Perform_Lute)"
+data "PassivesOnEquip" "JWL_Passive_MusicalProficiency"
+data "ValueLevel" "6"
+data "Rarity" "VeryRare"
+
+// Title
+new entry "UNI_LOW_FalataericCliLyre"
+type "Armor"
+using "UNI_LOW_FalataericCliLyre"
+data "Boosts" "Skill(Performance,2);UnlockSpell(Shout_Bard_Perform_Lyre)"
+data "PassivesOnEquip" "JWL_Passive_MusicalProficiency"
+data "ValueLevel" "6.5"
+data "Rarity" "VeryRare"
+
+// Title
+new entry "UNI_LOW_GlimmergadSelgauntFiddle"
+type "Armor"
+using "UNI_LOW_GlimmergadSelgauntFiddle"
+data "Boosts" "Skill(Performance,2);UnlockSpell(Shout_Bard_Perform_Violin)"
+data "PassivesOnEquip" "JWL_Passive_MusicalProficiency"
+data "ValueLevel" "7"
+data "Rarity" "VeryRare"
+
+new entry "JWL_Instrument_Rare_Drum"
+type "Armor"
+using "ARM_Instrument_Drum"
+data "RootTemplate" "8c66df6f-3a59-4d48-8b4a-9191d9a13817"
+data "Boosts" "Skill(Performance,1);UnlockSpell(Shout_Bard_Perform_Drum)"
+data "ValueLevel" "3.33"
+data "Rarity" "Rare"
+
+new entry "JWL_Instrument_Rare_Flute"
+type "Armor"
+using "ARM_Instrument_Flute"
+data "RootTemplate" "3bc7c948-e2c3-4895-b0ce-49e4cabdccc1"
+data "Boosts" "Skill(Performance,1);UnlockSpell(Shout_Bard_Perform_Flute)"
+data "ValueLevel" "3.33"
+data "Rarity" "Rare"
+
+new entry "JWL_Instrument_Rare_Lute"
+type "Armor"
+using "ARM_Instrument_Lute"
+data "RootTemplate" "64f36ccd-4cd3-4c20-ba31-9fdffa42849d"
+data "Boosts" "Skill(Performance,1);UnlockSpell(Shout_Bard_Perform_Lute)"
+data "ValueLevel" "3.33"
+data "Rarity" "Rare"
+
+new entry "JWL_Instrument_Rare_Lyre"
+type "Armor"
+using "ARM_Instrument_Lyre"
+data "RootTemplate" "ae0afdb6-022c-479f-9db2-1d28fcbb91e4"
+data "Boosts" "Skill(Performance,1);UnlockSpell(Shout_Bard_Perform_Lyre)"
+data "ValueLevel" "3.33"
+data "Rarity" "Rare"
+
+new entry "JWL_Instrument_Rare_Violin"
+type "Armor"
+using "ARM_Instrument_Violin"
+data "RootTemplate" "2a4d6328-8ce9-4fa4-bca9-c0e449777783"
+data "Boosts" "Skill(Performance,1);UnlockSpell(Shout_Bard_Perform_Violin)"
+data "ValueLevel" "3.33"
+data "Rarity" "Rare"
+
+
+// ===============================================================
+// BASE ITEMS
+// ===============================================================
+
+new entry "JWL_DiscordantInstruments_Base_UC"
+type "Armor"
+data "Level" "1"
+data "Slot" "MusicalInstrument"
+data "ValueLevel" "2"
+data "ValueUUID" "f0e7be35-8be4-483d-afa8-dc9a104ea758"
+data "ValueScale" "1"
+data "ValueRounding" "1"
+data "Rarity" "Uncommon"
+
+new entry "JWL_DiscordantInstruments_Base_RR"
+type "Armor"
+data "Level" "1"
+data "Slot" "MusicalInstrument"
+data "ValueLevel" "4"
+data "ValueUUID" "a229f048-70b0-4b0c-88cb-29b5c6bdb2d0"
+data "ValueScale" "1"
+data "ValueRounding" "1"
+data "Rarity" "Rare"
+
+new entry "JWL_DiscordantInstruments_Base_VR"
+type "Armor"
+data "Level" "1"
+data "Slot" "MusicalInstrument"
+data "ValueLevel" "7"
+data "ValueUUID" "c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa"
+data "ValueScale" "1"
+data "ValueRounding" "1"
+data "Rarity" "VeryRare"
+
+new entry "JWL_DiscordantInstruments_Base_LG"
+type "Armor"
+data "Level" "1"
+data "Slot" "MusicalInstrument"
+data "ValueLevel" "10"
+data "ValueUUID" "f46eb019-edd0-4216-99df-9dae89a83ce7"
+data "ValueScale" "1"
+data "ValueRounding" "1"
+data "Rarity" "Legendary"
+
+new entry "JWL_ARM_Instrument_Test"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "cc8b454f-ad92-44d9-a561-09a681c380e6"
+data "Weight" "1.5"
+data "Boosts" ""
+
+
+// ===============================================================
+// UNCOMMON ITEMS
+// ===============================================================
+
+// Fashionable Backpack
+new entry "JWL_DiscordantInstruments_ComfyBackpack"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "f1a179b8-aa6d-4eaa-b557-75671188428b"
+data "ValueLevel" "1.25"
+data "Weight" "1.00"
+data "PassivesOnEquip" "JWL_Passive_ComfyBackpack;JWL_Passive_ComfyBackpack_Human;JWL_Passive_ComfyBackpack_Giant;JWL_Passive_ComfyBackpack_Combo"
+
+// Annotated Map of the Sword Coast
+new entry "JWL_DiscordantInstruments_FaerunMap"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "f11adb87-bcde-40a1-aeaf-05086890a1cf"
+data "ValueLevel" "1"
+data "Weight" "0.25"
+data "Boosts" "Skill(History, 1);Skill(Nature, 1);Skill(Survival, 1)"
+
+// Eversmoking Bottle
+new entry "JWL_DiscordantInstruments_EversmokingBottle"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "77742d5b-ee0c-45c7-994f-4dbb7df556a8"
+data "Weight" "0.5"
+//data "PassivesOnEquip" "JWL_Passive_EversmokingBottle"
+data "Boosts" "UnlockSpell(JWL_Target_SmokeCloud_Trinket)"
+data "Unique" "1"
+
+// Decanter of Endless Mead
+new entry "JWL_DiscordantInstruments_EndlessMead"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "badd3e46-fc87-4184-ab11-db83b13aa4f9"
+data "ValueLevel" "2.1"
+data "Weight" "2.5"
+//data "StatusOnEquip" "DRUNK"
+data "PassivesOnEquip" "JWL_Passive_EndlessMead;JWL_Passive_EndlessMead_MonkWatcher"
+data "StatusOnEquip" "JWL_Status_EndlessMead_TECHNICAL"
+data "Unique" "1"
+
+// Rope of Mending
+new entry "JWL_DiscordantInstruments_MendingRope"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "e4ffeb02-8097-4455-bb56-95b9118e79ee"
+data "ValueLevel" "1.33"
+data "Weight" "1.00"
+data "Boosts" "UnlockSpell(Target_Mending)"
+data "Unique" "1"
+
+// Balance of Harmony
+new entry "JWL_DiscordantInstruments_BalanceHarmony"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "9080213f-7468-41fa-9682-448f76122708"
+data "ValueLevel" "1.90"
+data "Weight" "1.25"
+data "Boosts" "UnlockSpell(JWL_Target_ProtectionFromEvilAndGood_Trinket)"
+data "Unique" "1"
+
+// Galder's Bubble Pipe
+new entry "JWL_DiscordantInstruments_SmokingPipe"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "3d5b0195-04eb-4c73-97ea-7817ab928c00"
+data "Weight" "0.2"
+data "Boosts" "UnlockSpell(JWL_Target_MistyStep_Trinket)"
+data "Unique" "1"
+
+// Pole of Collapsing
+new entry "JWL_DiscordantInstruments_VaultingPole"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "c8e8f20b-4f1a-4fcd-a823-31c16643396b"
+data "ValueLevel" "2.2"
+data "Weight" "1.50"
+data "PassivesOnEquip" "JWL_Passive_VaultingPole"
+
+
+// ===============================================================
+// RARE ITEMS
+// ===============================================================
+
+// Triage Kit
+new entry "JWL_DiscordantInstruments_TriageKit"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "69106843-75e0-4d7d-889a-aff684bf7313"
+data "ValueLevel" "3.75"
+data "Weight" "1.25"
+data "Boosts" "UnlockSpell(JWL_Target_Triage)"
+
+// Portable Whetstone
+new entry "JWL_DiscordantInstruments_Whetstone"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "fb75d59b-906a-4f61-bb74-119fa47af093"
+data "ValueLevel" "3.90"
+data "Weight" "0.2"
+data "Boosts" "UnlockSpell(JWL_Shout_Whetstone)"
+data "StatusOnEquip" "JWL_Status_Whetstone_TECHNICAL"
+data "UseConditions" "not IsWeaponOfProficiencyGroup('None|Clubs|Flails|Greatclubs|LightHammers|Maces|Mauls|Morningstars|Quarterstaffs|Shields|Warhammers', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand))"
+
+// Candle of Lawful Invocation
+new entry "JWL_DiscordantInstruments_HolyCandle"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "baf8e075-56cf-429a-8a77-65106aac46f1"
+data "ValueLevel" "4.20"
+data "Weight" "0.125"
+data "Boosts" "UnlockSpell(JWL_Target_Light_Trinket)"
+data "Unique" "1"
+
+// Pearl of Power
+new entry "JWL_DiscordantInstruments_PearlPower"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "23a0cbcc-62cc-4721-9283-a846e921774b"
+data "ValueLevel" "3.85"
+data "Weight" "0.01"
+data "Boosts" "UnlockSpell(JWL_Shout_MAG_SpellSlotRestoration_Trinket)"
+data "Unique" "1"
+
+// Wind Fan
+new entry "JWL_DiscordantInstruments_WindFan"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "c3fb41fc-da76-4ce8-8f78-9f004bd7f88d"
+data "Weight" "0.3"
+data "Boosts" "UnlockSpell(Zone_MAG_GustOfWind_Trinket)"
+data "Unique" "1"
+
+// Hourglass of Distorted Perception
+new entry "JWL_DiscordantInstruments_Hourglass"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "83147bb1-aad8-4410-8433-f30956d94f2e"
+data "ValueLevel" "4.75"
+data "Weight" "1.125"
+data "Boosts" "UnlockSpell(JWL_Shout_Haste_Trinket)"
+data "Unique" "1"
+
+// Ruby of the War Mage
+new entry "JWL_DiscordantInstruments_RubyWarmage"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "fada4b90-c873-4628-b30f-695895a0fee0"
+data "ValueLevel" "4.25"
+data "Weight" "0.1"
+data "StatusOnEquip" "JWL_Status_MeleeCaster_TECHNICAL"
+data "Boosts" "UnlockSpell(JWL_Shout_RubyWarmage)"
+data "Unique" "1"
+
+// Lens of Astute Observation
+new entry "JWL_DiscordantInstruments_AstuteLens"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "766b3db3-e7a1-4d73-b3e0-d08402108bc8"
+data "ValueLevel" "3.50"
+data "Weight" "0.15"
+data "Boosts" "Skill(Insight,2);Skill(Investigation,3)"
+data "Unique" "1"
+
+// Shielding Brooch
+new entry "JWL_DiscordantInstruments_ShieldingBrooch"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "e7f3f420-c75b-4047-92c3-d1101a84970f"
+data "ValueLevel" "4.75"
+data "Weight" "0.15"
+data "PassivesOnEquip" "JWL_Passive_ShieldingBrooch"
+data "Unique" "1"
+
+// Docent
+new entry "JWL_DiscordantInstruments_Docent"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "4443b3fd-8235-43d3-98de-0592307de2d7"
+data "ValueLevel" "4.25"
+data "Weight" "1.00"
+data "PassivesOnEquip" "JWL_Passive_WoundClosure"
+data "Unique" "1"
+
+// Professor Orb
+new entry "JWL_DiscordantInstruments_ProfessorOrb"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "c45ea160-68f2-44ad-99e3-00d0294c868a"
+data "Weight" "1.10"
+data "Boosts" "UnlockSpell(JWL_Target_MageHand_Trinket);Skill(Arcana,2);Skill(History,1)"
+data "Unique" "1"
+
+// Soulbound Chain
+new entry "JWL_DiscordantInstruments_WeaponChain"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "1a009701-6188-4ee2-9e3a-92744aa43961"
+data "ValueLevel" "3.50"
+data "Weight" "0.75"
+data "StatusOnEquip" "JWL_Status_WeaponBond_TECHNICAL"
+data "Boosts" "UnlockSpell(Shout_WeaponBond)"
+data "Unique" "1"
+
+
+// ===============================================================
+// VERY RARE ITEMS
+// ===============================================================
+
+// Cowardly Magic Carpet
+new entry "JWL_DiscordantInstruments_FlyingCarpet"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "f6ed4d26-3522-44e2-89a9-4cd1cdec9be8"
+data "ValueLevel" "7.75"
+data "Weight" "4.50"
+data "Boosts" "UnlockSpell(JWL_Projectile_FlyingCarpet)"
+data "Unique" "1"
+
+// Harbin's Lucky Die
+new entry "JWL_DiscordantInstruments_LuckyDice"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "bb9d0ede-6baa-44d3-8963-6ddc6ce2b747"
+data "ValueLevel" "6.25"
+data "Weight" "0.01"
+data "PassivesOnEquip" "JWL_Passive_LuckyDice"
+data "Unique" "1"
+
+// Bowl of Commanding Water
+new entry "JWL_DiscordantInstruments_BowlCommandingWater"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "58ce36e2-9c5c-420a-973e-15dd2096199d"
+data "ValueLevel" "6.75"
+data "Weight" "1.50"
+data "Boosts" "UnlockSpell(JWL_Target_BowlCommandingWater)"
+data "Unique" "1"
+
+// Eyes of Charming
+new entry "JWL_DiscordantInstruments_CharmingEyes"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "c2683b89-a423-454b-86bb-f06599464243"
+data "ValueLevel" "7.15"
+data "Weight" "0.15"
+data "Boosts" "Skill(Persuasion,2);UnlockSpell(JWL_Target_CharmingEyes)"
+data "Unique" "1"
+
+// Handy Haversack
+new entry "JWL_DiscordantInstruments_HandyHaversack"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "8932df29-e031-4486-8736-2e508e506a2a"
+data "ValueLevel" "8"
+data "Weight" "2.00"
+data "PassivesOnEquip" "JWL_Passive_HandyHaversack;JWL_Passive_HandyHaversack_Human;JWL_Passive_HandyHaversack_Giant;JWL_Passive_HandyHaversack_Combo"
+data "Unique" "1"
+
+// Badge of the Watch
+new entry "JWL_DiscordantInstruments_WatchBadge"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "602e53b2-ceb3-4703-9c0d-75421bed58db"
+data "Weight" "0.05"
+data "Boosts" "AC(2);RollBonus(SavingThrow,1)"
+data "Unique" "1"
+
+// Mimir
+new entry "JWL_DiscordantInstruments_Mimir"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "a60af61c-6bca-48f4-8e7d-5f5d996f78b4"
+data "ValueLevel" "6"
+data "Weight" "0.50"
+data "StatusOnEquip" "JWL_Status_Mimir_TECHNICAL"
+//data "Boosts" "UnlockSpell(Shout_AstralKnowledge)"
+data "Boosts" "UnlockSpell(JWL_Shout_WellOfKnowledge)"
+data "UseConditions" "CanUseMimir()"
+data "Unique" "1"
+
+
+// ===============================================================
+// LEGENDARY ITEMS
+// ===============================================================
+
+// Bag of Holding
+new entry "JWL_DiscordantInstruments_BagHolding"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "c706b371-f58a-440b-9eb3-9c643bf83286"
+data "ValueLevel" "12"
+data "Weight" "0.15"
+data "PassivesOnEquip" "JWL_Passive_BagHolding"
+data "Unique" "1"
+
+// Dimensional Shackles
+new entry "JWL_DiscordantInstruments_Shackles"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "c873730b-a2fd-41c5-9120-ff4766497b34"
+data "ValueLevel" "8.75"
+data "Weight" "0.25"
+data "Boosts" "UnlockSpell(JWL_Target_Shackles)"
+data "Unique" "1"
+
+// Empowered Guardian Emblem
+new entry "JWL_DiscordantInstruments_GuardianEmblem"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "68ae2a78-57fc-4a10-9271-afe10dcc50c0"
+data "ValueLevel" "9.50"
+data "Weight" "0.2"
+data "PassivesOnEquip" "JWL_Passive_GuardianEmblem"
+data "Boosts" "CriticalHit(AttackTarget,Success,Never)"
+data "Unique" "1"
+
+// Kyrzin's Ooze
+new entry "JWL_DiscordantInstruments_KerzinsOoze"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "22cb3882-1e5f-4873-8367-7385d248f577"
+data "ValueLevel" "8.50"
+data "Weight" "0.50"
+data "PassivesOnEquip" "JWL_Passive_KerzinsOoze"
+data "Boosts" "Resistance(Acid,Resistant);Resistance(Poison,Resistant);UnlockSpell(Projectile_AcidSplash);UnlockSpell(Projectile_PoisonSpray)"
+data "Unique" "1"
+
+// Black Crystal Tablet
+new entry "JWL_DiscordantInstruments_BlackCrystalTablet"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "6e62d024-7fa5-46a5-ab2f-b31dd39b1bd4"
+data "ValueLevel" "7.75"
+data "Weight" "2.00"
+data "Boosts" "UnlockSpell(JWL_Target_ProfaneKnowledge)"
+data "Unique" "1"
+
+// Orb of Skoraeus
+new entry "JWL_DiscordantInstruments_OrbSkoraeus"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "5944880b-3e3c-442c-9233-e0b60d5cdd1f"
+data "ValueLevel" "6.75"
+data "Weight" "0.80"
+data "Boosts" "RollBonus(SavingThrow, 2, Constitution)"
+data "PassivesOnEquip" "JWL_Passive_GreaterDarkvision;TAD_Freecast"
+data "Unique" "1"
+
+// Compendium of Furtive Techniques
+new entry "JWL_DiscordantInstruments_CompendiumTechniques"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "48927a1a-035b-431e-8a9f-d5894724cf43"
+data "ValueLevel" "7"
+data "Weight" "0.5"
+data "PassivesOnEquip" "JWL_Passive_CompendiumTechniques"
+data "Boosts" "UnlockSpell(Zone_Cleave);UnlockSpell(Target_Slash_New);UnlockSpell(Target_PiercingThrust);UnlockSpell(Rush_SpringAttack);UnlockSpell(Target_HinderingSmash)"
+data "Unique" "1"
+
+// Orb of Imminent Scrying
+new entry "JWL_DiscordantInstruments_OrbScrying"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "46886b26-7cf4-407e-aefc-8668a788f412"
+data "ValueLevel" "10.75"
+data "Weight" "1.25"
+data "PassivesOnEquip" "JWL_Passive_OrbScrying"
+data "Unique" "1"
+
+// Book of Exalted Deeds
+new entry "JWL_DiscordantInstruments_BookExaltedDeeds"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "e27ea56a-a48f-4379-96b8-e2bea0ce8fce"
+data "ValueLevel" "15"
+data "Weight" "1.00"
+data "PassivesOnEquip" "JWL_Passive_BookExaltedDeeds_Regen;JWL_Passive_BookExaltedDeeds_DiseaseImmunity;JWL_Passive_BookExaltedDeeds_LightAura"
+data "StatusOnEquip" "JWL_Status_BookExaltedDeeds_TECHNICAL"
+data "Boosts" "Ability(Wisdom, 2);UnlockSpell(Target_Resistance);UnlockSpell(JWL_Target_GuardianOfFaith_Trinket)"
+data "Unique" "1"
+
+// Book of Vile Darkness
+new entry "JWL_DiscordantInstruments_BookVileDarkness"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "fb89ecd5-e61f-496e-b8fe-68e6af181809"
+data "ValueLevel" "15"
+data "Weight" "1.00"
+data "PassivesOnEquip" "JWL_Passive_BookVileDarkness_FieryGambit;JWL_Passive_BookVileDarkness_FearImmunity;JWL_Passive_BookVileDarkness_Distracted"
+data "StatusOnEquip" "JWL_Status_BookVileDarkness_TECHNICAL"
+data "Boosts" "Ability(Intelligence, 2);Ability(Wisdom, -2);AC(1);ActionResource(Movement,3,0);Resistance(Necrotic,Immune);Resistance(Radiant,Vulnerable);UnlockSpell(JWL_Target_HoldMonster_Trinket)"
+data "Unique" "1"
+
+// Dealbreaker
+new entry "JWL_DiscordantInstruments_GoldenFiddle"
+type "Armor"
+using "ARM_Instrument_Violin"
+data "RootTemplate" "2724b253-7acc-4171-9797-74576330f9cc"
+data "ValueLevel" "9.75"
+data "PassivesOnEquip" "JWL_Passive_GoldenFiddle"
+data "Boosts" "Skill(Performance,3);UnlockSpell(Shout_Bard_Perform_Violin)"
+data "ValueScale" "9"
+data "Rarity" "Legendary"
+data "UseConditions" "CanUseGoldenFiddle()"
+data "Unique" "1"
+
+
+// ===============================================================
+// IOUN STONES
+// ===============================================================
+
+// Stormy Ioun Stone
+new entry "JWL_DiscordantInstruments_IounBlue"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "533cb022-3b0f-433a-b98d-dc7efb2b32f6"
+data "ValueLevel" "3.75"
+data "Weight" "0.001"
+data "PassivesOnEquip" "JWL_Passive_IounStone_Blue"
+data "Boosts" "Ability(Wisdom, 2, 23)"
+data "Unique" "1"
+
+// Verdant Ioun Stone
+new entry "JWL_DiscordantInstruments_IounGreen"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "bcd2b91c-ac07-4b9c-a907-690edf8377ca"
+data "ValueLevel" "3.75"
+data "Weight" "0.001"
+data "PassivesOnEquip" "JWL_Passive_IounStone_Green"
+data "Boosts" "Ability(Dexterity, 2, 23)"
+data "Unique" "1"
+
+// Roseate Ioun Stone
+new entry "JWL_DiscordantInstruments_IounPink"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "f71c1eb4-b73b-45b9-addc-5bb625bd7bb5"
+data "ValueLevel" "3.75"
+data "Weight" "0.001"
+data "PassivesOnEquip" "JWL_Passive_IounStone_Pink"
+data "Boosts" "Ability(Constitution, 2, 23)"
+data "Unique" "1"
+
+// Umbral Ioun Stone
+new entry "JWL_DiscordantInstruments_IounPurple"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "750755d8-02af-4dcd-866d-d2d83fc96e43"
+data "ValueLevel" "3.75"
+data "Weight" "0.001"
+data "PassivesOnEquip" "JWL_Passive_IounStone_Purple"
+data "Boosts" "Ability(Intelligence, 2, 23)"
+data "Unique" "1"
+
+// Scarlet Ioun Stone
+new entry "JWL_DiscordantInstruments_IounRed"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "39238dd1-5b49-4712-a8d9-a53d9c1d1751"
+data "ValueLevel" "3.75"
+data "Weight" "0.001"
+data "PassivesOnEquip" "JWL_Passive_IounStone_Red"
+data "Boosts" "Ability(Strength, 2, 23)"
+data "Unique" "1"
+
+// Radiant Ioun Stone
+new entry "JWL_DiscordantInstruments_IounYellow"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "dca93175-bb3a-4356-82a1-3a1e99d649ab"
+data "ValueLevel" "3.75"
+data "Weight" "0.001"
+data "PassivesOnEquip" "JWL_Passive_IounStone_Yellow"
+//data "StatusOnEquip" "JWL_Status_IounStone_Yellow"
+data "Boosts" "Ability(Charisma, 2, 23)"
+data "Unique" "1"
+
+
+// ===============================================================
+// QUIVERS
+// ===============================================================
+
+// Brambleheart Quiver
+new entry "JWL_DiscordantInstruments_QuiverBrambleheart"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "7281248c-354e-499b-9597-13ceeb5ad769"
+data "ValueLevel" "1.50"
+data "Weight" "1.50"
+data "Boosts" "RollBonus(RangedWeaponAttack, 1)"
+
+// Efficient Quiver
+new entry "JWL_DiscordantInstruments_QuiverEfficient"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "98ae373c-249c-4162-8c1f-fb2b3edc6a24"
+data "ValueLevel" "3.75"
+data "Weight" "2.00"
+data "PassivesOnEquip" "JWL_Passive_QuiverEfficient_Range;JWL_Passive_QuiverEfficient_RollBonus"
+
+// Quiver of Elemental Chaos
+new entry "JWL_DiscordantInstruments_QuiverChaos"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "6142cbd3-931a-4a8a-b81a-617d953a041c"
+data "ValueLevel" "7.50"
+data "Weight" "2.25"
+data "PassivesOnEquip" "JWL_Passive_QuiverEfficient_RollBonus2"
+data "StatusOnEquip" "JWL_Status_ElementalArrow_TECHNICAL"
+data "Boosts" "UnlockSpell(JWL_Shout_ElementalArrows)"
+data "Unique" "1"
+
+// Dimensional Quiver
+new entry "JWL_DiscordantInstruments_QuiverDimensional"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "f5a0b316-712c-4d4c-8cac-6cd13b360f71"
+data "ValueLevel" "9.75"
+data "Weight" "2.00"
+data "PassivesOnEquip" "JWL_Passive_QuiverEfficient_Range2;JWL_Passive_QuiverEfficient_RollBonus3"
+data "Boosts" "UnlockSpell(Target_Volley)"
+data "Unique" "1"
+
+
+// ===============================================================
+// BELTS
+// ===============================================================
+
+// Belt of Primal Recall
+new entry "JWL_DiscordantInstruments_BeltPrimalRecall"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "ae588c38-3e1b-4f38-97b2-635c76164527"
+data "ValueLevel" "2.50"
+data "Weight" "1.50"
+data "PassivesOnEquip" "JWL_Passive_BeltPrimalRecall"
+data "Boosts" "Ability(Strength, 2, 16)"
+
+// Belt of Dwarvenkind
+new entry "JWL_DiscordantInstruments_BeltDwarven"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "31c71ff2-7049-4380-8987-2ea958e92b98"
+data "ValueLevel" "4.50"
+data "Weight" "1.50"
+data "PassivesOnEquip" "JWL_Passive_BeltDwarven"
+//data "Boosts" "Ability(Constitution, 2, 20)"
+data "Boosts" "Ability(Constitution, 2, 20);ScaleMultiplier(0.95)"
+data "Unique" "1"
+
+// Belt of Frost Giant Strength
+new entry "JWL_DiscordantInstruments_BeltFrostGiant"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "b3e45e8a-bc43-48a9-a5be-40be40084ad0"
+data "ValueLevel" "7.50"
+data "Weight" "1.25"
+data "Boosts" "AbilityOverrideMinimum(Strength, 23);ScaleMultiplier(1.05)"
+data "Unique" "1"
+
+// Belt of the Raid Leader
+new entry "JWL_DiscordantInstruments_BeltRaidLeader"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "a2ef9d76-446c-4459-873f-751b52e3af0e"
+data "ValueLevel" "7.25"
+data "Weight" "1.25"
+data "Boosts" "AbilityOverrideMinimum(Dexterity, 21)"
+data "Unique" "1"
+
+// Belt of Forbidden Harmony
+new entry "JWL_DiscordantInstruments_BeltForbiddenHarmony"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "ae778557-df31-4081-b33d-c1549903e5b2"
+data "ValueLevel" "12"
+data "Weight" "1.25"
+data "Boosts" "Ability(Strength, 2, 18);Ability(Dexterity, 2, 18);Ability(Constitution, 2, 18);Ability(Intelligence, 2, 18);Ability(Wisdom, 2, 18);Ability(Charisma, 2, 18)"
+data "Unique" "1"
+
+
+// ===============================================================
+// SPELL TOMES (WIZARD)
+// ===============================================================
+
+// Grimoire of the Green Arts
+new entry "JWL_DiscordantInstruments_BookGreenArts"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "433286e9-1e26-46a7-8316-ca05697dbb55"
+data "ValueLevel" "2.25"
+data "Weight" "0.5"
+data "Boosts" "UnlockSpell(JWL_Target_AnimalFriendship_Trinket);UnlockSpell(JWL_Target_FaerieFire_Trinket);UnlockSpell(JWL_Shout_SpeakWithAnimals_Trinket)"
+data "UseConditions" "CanUseSpellTome()"
+data "Unique" "1"
+
+// Tome of Celestial Healing
+new entry "JWL_DiscordantInstruments_BookCelestialHealing"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "7667fbb6-6a1a-44fa-a35b-288055a10a02"
+data "ValueLevel" "4.75"
+data "Weight" "0.5"
+data "PassivesOnEquip" "JWL_Passive_BookCelestialHealing"
+data "Boosts" "UnlockSpell(JWL_Target_CureWounds_Trinket);UnlockSpell(JWL_Target_HealingWord_Trinket);UnlockSpell(JWL_Target_LesserRestoration_Trinket)"
+data "UseConditions" "CanUseSpellTome()"
+data "Unique" "1"
+
+// Book of Many Spells
+new entry "JWL_DiscordantInstruments_BookManySpells"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "991abd7a-1875-4357-ad6a-ae0f3de6bd50"
+data "ValueLevel" "6.75"
+data "Weight" "0.5"
+data "PassivesOnEquip" "JWL_Passive_BookManySpells"
+data "Boosts" "UnlockSpell(Projectile_EldritchBlast);UnlockSpell(Target_Guidance);UnlockSpell(Target_SacredFlame);UnlockSpell(Shout_Thaumaturgy);UnlockSpell(Target_ThornWhip);UnlockSpell(Target_ViciousMockery)"
+data "UseConditions" "CanUseSpellTome()"
+data "Unique" "1"
+
+// Codex of the Arcanes
+new entry "JWL_DiscordantInstruments_BookArcaneCodex"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "fb7d1253-d6a0-4c08-8800-5ff8306c7b40"
+data "ValueLevel" "9.50"
+data "Weight" "0.5"
+data "PassivesOnEquip" "JWL_Passive_BookArcaneCodex"
+data "Boosts" "UnlockSpell(JWL_Zone_ConeOfCold_Trinket);UnlockSpell(JWL_Target_FlameStrike_Trinket);UnlockSpell(JWL_Wall_BladeBarrier_Trinket)"
+data "UseConditions" "CanUseSpellTome()"
+data "Unique" "1"
+
+
+// ===============================================================
+// INFERNAL TOMES (WARLOCK)
+// ===============================================================
+
+// Infernal Archive
+new entry "JWL_DiscordantInstruments_BookInfernalArchive"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "eae0289f-96db-447f-8fa4-12d3a224657f"
+data "ValueLevel" "1.85"
+data "Weight" "0.5"
+data "PassivesOnEquip" "JWL_Passive_BookInfernalArchive"
+data "UseConditions" "CanUseFiendishTome()"
+data "Unique" "1"
+
+// Tome of Lost Knowledge
+new entry "JWL_DiscordantInstruments_BookLostKnowledge"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "877d4060-efa9-418b-b2c7-2a5584b27b6a"
+data "ValueLevel" "3.85"
+data "Weight" "0.5"
+data "PassivesOnEquip" "JWL_Passive_BookLostKnowledge"
+data "UseConditions" "CanUseFiendishTome()"
+data "Unique" "1"
+
+// Tome of Clear Thought
+new entry "JWL_DiscordantInstruments_BookClearThought"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "a63a9f2f-e70a-41aa-900c-56a035c007a3"
+data "ValueLevel" "6.85"
+data "Weight" "0.5"
+data "PassivesOnEquip" "JWL_Passive_BookClearThought"
+data "Boosts" "UnlockSpell(JWL_Target_HypnoticPattern_Trinket);UnlockSpell(JWL_Target_Slow_Trinket)"
+data "UseConditions" "CanUseFiendishTome()"
+data "Unique" "1"
+
+// Tome of Ethereal Currents
+new entry "JWL_DiscordantInstruments_BookEtherealCurrents"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "7e30bf41-4fa9-45ae-85da-797b00504a1a"
+data "ValueLevel" "8.85"
+data "Weight" "0.5"
+data "PassivesOnEquip" "JWL_Passive_BookEtherealCurrents"
+data "Boosts" "Ability(Charisma, 1, 23);Ability(Dexterity, 1, 23)"
+data "UseConditions" "CanUseFiendishTome()"
+data "Unique" "1"
+
+
+// ===============================================================
+// MEDALS
+// ===============================================================
+
+// Mourningsteel Obol
+new entry "JWL_DiscordantInstruments_MourningsteelCoin"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "912d054a-82cb-4295-9961-609b61b35041"
+data "ValueLevel" "2.85"
+data "Weight" "0.001"
+data "PassivesOnEquip" "JWL_Passive_SoldiersBoon"
+data "Unique" "1"
+
+// Sea Serpent's Pin
+new entry "JWL_DiscordantInstruments_SerpentsPin"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "a9dae592-7f06-4757-b45e-2e4269d2e37a"
+data "ValueLevel" "6.50"
+data "Weight" "0.05"
+data "PassivesOnEquip" "JWL_Passive_SerpentsPin;JWL_Passive_SoldiersBoon2"
+data "Unique" "1"
+
+
+// ===============================================================
+// STRAPS
+// ===============================================================
+
+// Shoulder-Mounted Leather Frog
+new entry "JWL_DiscordantInstruments_WeaponStrap"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "de48261f-913c-4a1e-86ae-0c26ec5beebc"
+data "ValueLevel" "1.85"
+data "Weight" "1.00"
+data "PassivesOnEquip" "JWL_Passive_WeaponStrap;JWL_Passive_WeaponStrap_TECHNICAL"
+
+// Worghide Leather Frog
+new entry "JWL_DiscordantInstruments_WorghideWeaponStrap"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "ca2ab06d-0e1e-4b95-a5e4-47ac91a74af4"
+data "ValueLevel" "5.66"
+data "Weight" "1.25"
+data "PassivesOnEquip" "JWL_Passive_WeaponStrap;JWL_Passive_WeaponStrap_TECHNICAL;JWL_Passive_WorghideWeaponStrap"
+data "Unique" "1"
+
+// Dragonscale Leather Frog
+new entry "JWL_DiscordantInstruments_DragonhideWeaponStrap"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "c40009cf-0dac-4b73-a1c6-1e62b5d088ba"
+data "ValueLevel" "7.75"
+data "Weight" "1.25"
+data "PassivesOnEquip" "JWL_Passive_WeaponStrap;JWL_Passive_WeaponStrap_TECHNICAL;JWL_Passive_DragonhideWeaponStrap"
+data "Unique" "1"
+
+// Steel Crowbar
+new entry "JWL_DiscordantInstruments_Crowbar"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "4acf7acf-0522-4564-a400-190179863774"
+data "ValueLevel" "1"
+data "Weight" "2.50"
+data "PassivesOnEquip" "JWL_Passive_Crowbar"
+
+
+// ===============================================================
+// TOTEMS (BARBARIAN/DRUID)
+// ===============================================================
+
+// Beast Totem
+new entry "JWL_DiscordantInstruments_TotemBeast"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "f4576109-b114-4945-a5aa-071e8efd8204"
+data "ValueLevel" "1.75"
+data "Weight" "0.5"
+data "PassivesOnEquip" "JWL_Passive_TotemBeast"
+data "UseConditions" "CanUseTotem()"
+data "Unique" "1"
+
+// Totem of Dread
+new entry "JWL_DiscordantInstruments_TotemDread"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "201faba1-7cd6-4b0f-ad7f-c9ff9560ef0d"
+data "ValueLevel" "3.25"
+data "Weight" "0.5"
+data "PassivesOnEquip" "JWL_Passive_TotemDread"
+data "StatusOnEquip" "JWL_Status_TotemDread_TECHNICAL"
+data "UseConditions" "CanUseTotem()"
+data "Unique" "1"
+
+// Spirit Totem
+new entry "JWL_DiscordantInstruments_TotemSpirit"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "a305fde1-b7a3-4bc7-a81e-8c958a7da74b"
+data "ValueLevel" "6"
+data "Weight" "0.5"
+data "PassivesOnEquip" "JWL_Passive_TotemSpirit"
+data "UseConditions" "CanUseTotem()"
+data "Unique" "1"
+
+// Ornate Dragon Totem
+new entry "JWL_DiscordantInstruments_TotemDragon"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "d89aab5b-7ada-4663-aa18-62742de7a502"
+data "ValueLevel" "7.25"
+data "Weight" "0.5"
+data "PassivesOnEquip" "JWL_Passive_TotemDragon"
+data "Boosts" "RollBonus(Attack, 2)"
+data "UseConditions" "CanUseTotem()"
+data "Unique" "1"
+
+
+// ===============================================================
+// BLOODWELL VIALS (SORCERER)
+// ===============================================================
+
+// Booyahg Bloodwell Vial
+new entry "JWL_DiscordantInstruments_BloodwellGoblin"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "6bcdc3d7-32af-4317-846e-206db09e0a85"
+data "ValueLevel" "2.15"
+data "Weight" "0.25"
+data "PassivesOnEquip" "JWL_Passive_Bloodwell"
+data "UseConditions" "CanUseBloodwell()"
+data "Unique" "1"
+
+// Corrupted Bloodwell Vial
+new entry "JWL_DiscordantInstruments_BloodwellCorrupted"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "2c5fce17-edd2-421d-b5da-65c8a2cfba8b"
+data "ValueLevel" "3.85"
+data "Weight" "0.25"
+data "PassivesOnEquip" "JWL_Passive_BloodwellCorrupted;JWL_Passive_Bloodwell"
+data "UseConditions" "CanUseBloodwell()"
+data "Unique" "1"
+
+// Blood of Ahmarreld
+new entry "JWL_DiscordantInstruments_BloodwellSorcerous"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "62676ba4-100c-4e29-8f23-c3044a1d910a"
+data "ValueLevel" "6.66"
+data "Weight" "0.25"
+data "PassivesOnEquip" "JWL_Passive_BloodwellSorcerous;JWL_Passive_Bloodwell2"
+data "UseConditions" "CanUseBloodwell()"
+data "Unique" "1"
+
+// Dragon Bloodwell Vial
+new entry "JWL_DiscordantInstruments_BloodwellDragon"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "c4b4ba06-e2ff-48da-ac76-762ee9625520"
+data "ValueLevel" "7.80"
+data "Weight" "0.40"
+data "PassivesOnEquip" "JWL_Passive_BloodwellDragon;JWL_Passive_BloodwellDragon_TECHNICAL;JWL_Passive_Bloodwell3"
+data "StatusOnEquip" "JWL_Status_BloodwellDragon_TECHNICAL"
+data "UseConditions" "CanUseBloodwell()"
+data "Unique" "1"
+
+
+// ===============================================================
+// WHISTLES
+// ===============================================================
+
+// Houndmaster's Whistle
+new entry "JWL_DiscordantInstruments_WhistleBeast"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "a75cda5b-f92f-403b-a550-7e041b87b49c"
+data "ValueLevel" "2.75"
+data "Weight" "0.1"
+data "PassivesOnEquip" "JWL_Passive_WhistleBeast"
+data "StatusOnEquip" "JWL_Status_WhistleBeastAura"
+data "Unique" "1"
+
+// Silver Lycan Chime
+new entry "JWL_DiscordantInstruments_SilverLycanCharm"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "c4d45206-9201-4eca-b835-628ad31a8941"
+data "ValueLevel" "7.45"
+data "Weight" "0.1"
+data "PassivesOnEquip" "JWL_Passive_SilverLycanCharm"
+data "StatusOnEquip" "JWL_Status_SilverLycanCharmAura"
+data "Unique" "1"
+
+// Cerberus Whistle
+new entry "JWL_DiscordantInstruments_WhistleCerberus"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "0f0e391d-01cf-4c05-844d-e03d3a244a77"
+data "ValueLevel" "9.50"
+data "Weight" "0.1"
+data "PassivesOnEquip" "JWL_Passive_WhistleCerberus"
+data "StatusOnEquip" "JWL_Status_WhistleCerberusAura"
+data "Unique" "1"
+
+// Witch's Whistle
+new entry "JWL_DiscordantInstruments_WhistleWitch"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "3a76eeba-ab0e-4b92-9ab7-48df94e6e4c6"
+data "ValueLevel" "3.50"
+data "Weight" "0.1"
+data "PassivesOnEquip" "JWL_Passive_WhistleWitch"
+data "StatusOnEquip" "JWL_Status_WhistleWitchAura"
+data "Unique" "1"
+
+// Thayan Femur
+new entry "JWL_DiscordantInstruments_ThayanFemur"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "15d86bdd-71b7-4481-b175-8d0b43733f51"
+data "ValueLevel" "6"
+data "Weight" "0.1"
+data "PassivesOnEquip" "JWL_Passive_ThayanFemur"
+data "StatusOnEquip" "JWL_Status_ThayanFemurAura"
+data "Unique" "1"
+
+// Gibbering Bell
+new entry "JWL_DiscordantInstruments_GibberingBell"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "ca3dcb1e-0212-4f91-9180-f05ba91353d2"
+data "ValueLevel" "8"
+data "Weight" "0.1"
+data "PassivesOnEquip" "JWL_Passive_GibberingBell"
+data "StatusOnEquip" "JWL_Status_GibberingBellAura"
+data "Unique" "1"
+
+
+// ===============================================================
+// ROGUE TOOLS (ROGUE)
+// ===============================================================
+
+// Curious Copper Coin
+new entry "JWL_DiscordantInstruments_CuriousCoin"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "dcc90432-f6cb-4a22-a002-f480450a4976"
+data "ValueLevel" "1"
+data "Weight" "0.001"
+data "Boosts" "UnlockSpell(JWL_Target_TossCoin)"
+data "UseConditions" "CanUseRogueTool()"
+data "Unique" "1"
+
+// Illusory Coin
+new entry "JWL_DiscordantInstruments_CuriousCoin_Illusion"
+type "Armor"
+using "JWL_DiscordantInstruments_CuriousCoin"
+data "RootTemplate" "71581bb3-62f1-401c-9e51-ed3ac16555f7"
+data "Boosts" ""
+data "ValueOverride" "1"
+
+// Bag of Tricks
+new entry "JWL_DiscordantInstruments_BagTricks"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "4352b7a5-cbbe-48e5-b02e-8def9020661c"
+data "ValueLevel" "1.75"
+data "Weight" "0.75"
+data "Boosts" "UnlockSpell(JWL_Target_FogCloud_Trinket)"
+data "UseConditions" "CanUseRogueTool()"
+data "Unique" "1"
+
+// Stone of Good Luck
+new entry "JWL_DiscordantInstruments_StoneGoodLuck"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "177d437a-3459-4c03-b82f-41837b3fc617"
+data "ValueLevel" "5"
+data "Weight" "0.1"
+data "PassivesOnEquip" "JWL_Passive_Lucky;Lucky;JWL_Passive_Lucky_TECHNICAL"
+data "StatusOnEquip" "JWL_Status_Lucky_TECHNICAL"
+data "Boosts" "RollBonus(SkillCheck,1)"
+data "UseConditions" "CanUseRogueTool()"
+data "Unique" "1"
+
+// Skeleton Key
+new entry "JWL_DiscordantInstruments_SkeletonKey"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "6310deff-a0c1-45c8-a152-15b3713d41dd"
+data "ValueLevel" "12"
+data "Weight" "0.01"
+data "Boosts" "UnlockSpell(JWL_Target_SkeletonKey_Knock);UnlockSpell(JWL_Target_SkeletonKey_Lock);UnlockSpell(JWL_Target_SkeletonKey_Silence)"
+data "UseConditions" "CanUseRogueTool()"
+data "Unique" "1"
+
+
+// ===============================================================
+// WAR BANNERS (FIGHTER/MONK)
+// ===============================================================
+
+// Goblin War Banner
+new entry "JWL_DiscordantInstruments_BannerGoblin"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "c86e638b-93c8-4187-a14f-8e06917c9517"
+data "ValueLevel" "1.50"
+data "Weight" "2.00"
+data "PassivesOnEquip" "JWL_Passive_BannerGoblin"
+data "StatusOnEquip" "JWL_Status_BannerGoblinAura;JWL_Status_BannerGoblinBuff"
+data "UseConditions" "CanUseWarBanner()"
+data "Unique" "1"
+
+// Mourningsteel War Banner
+new entry "JWL_DiscordantInstruments_BannerMourningsteel"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "abd813fb-ca1d-4417-91ed-b3fc22c64248"
+data "ValueLevel" "3.75"
+data "Weight" "2.00"
+data "PassivesOnEquip" "JWL_Passive_BannerMourningsteel"
+data "StatusOnEquip" "JWL_Status_BannerMourningsteelAura;JWL_Status_BannerMourningsteelBuff"
+data "UseConditions" "CanUseWarBanner()"
+data "Unique" "1"
+
+// Consecrated War Banner
+new entry "JWL_DiscordantInstruments_BannerConsecrated"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "b4f30314-8dc3-4814-a1a5-c9840f9ad726"
+data "ValueLevel" "6.75"
+data "Weight" "2.00"
+data "PassivesOnEquip" "JWL_Passive_BannerConsecrated;JWL_Passive_BannerConsecrated_TECHNICAL"
+data "StatusOnEquip" "JWL_Status_BannerConsecratedAura;JWL_Status_BannerConsecratedBuff"
+data "UseConditions" "CanUseWarBanner()"
+data "Unique" "1"
+
+// Battle Standard of Infernal Power
+new entry "JWL_DiscordantInstruments_BannerInfernalPower"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "73b96be4-a2fd-44d1-bbb6-5127bc7200e8"
+data "ValueLevel" "8.80"
+data "Weight" "2.00"
+data "PassivesOnEquip" "JWL_Passive_BannerInfernalPower;JWL_Passive_BannerInfernalPower_TECHNICAL"
+data "StatusOnEquip" "JWL_Status_BannerInfernalPowerAura;JWL_Status_BannerInfernalPowerBuff"
+data "UseConditions" "CanUseWarBanner()"
+data "Unique" "1"
+
+
+// ===============================================================
+// HOLY SYMBOLS (CLERIC/PALADIN → DEITY-LOCKED )
+// ===============================================================
+
+// Holy Symbol of Kelemvor
+new entry "JWL_DiscordantInstruments_SymbolKelemvor"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "fa05689e-5367-4ddd-8dab-0139db3677be"
+data "ValueLevel" "1.75"
+data "Weight" "0.01"
+data "PassivesOnEquip" "JWL_Passive_SymbolKelemvor;JWL_Passive_Follower_SymbolKelemvor"
+data "UseConditions" "CanUseKelemvorSymbol()"
+data "Unique" "1"
+
+// Holy Symbol of Silvanus
+new entry "JWL_DiscordantInstruments_SymbolSylvanus"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_UC"
+data "RootTemplate" "169fbf1e-82a2-4e09-8a1f-8f7fc25b20b7"
+data "ValueLevel" "1.75"
+data "Weight" "0.01"
+data "PassivesOnEquip" "JWL_Passive_SymbolSylvanus"
+data "UseConditions" "CanUseSilvanusSymbol()"
+data "Unique" "1"
+
+// Holy Symbol of Lolth
+new entry "JWL_DiscordantInstruments_SymbolLolth"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "bda4d2e2-288d-45ff-9d67-31cb072ac507"
+data "ValueLevel" "3.75"
+data "Weight" "0.01"
+data "PassivesOnEquip" "JWL_Passive_SymbolLolth;JWL_Passive_Follower_SymbolLolth"
+data "Boosts" "Resistance(Poison,Resistant)"
+data "UseConditions" "CanUseLolthSymbol()"
+data "Unique" "1"
+
+// Holy Symbol of Moradin
+new entry "JWL_DiscordantInstruments_SymbolMoradin"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_RR"
+data "RootTemplate" "43237b7d-9f23-4599-854d-0270be42308f"
+data "ValueLevel" "3.75"
+data "Weight" "0.05"
+data "PassivesOnEquip" "JWL_Passive_SymbolMoradin;JWL_Passive_Follower_SymbolMoradin"
+data "UseConditions" "CanUseMoradinSymbol()"
+data "Unique" "1"
+
+// Holy Symbol of Bahamut
+new entry "JWL_DiscordantInstruments_SymbolBahamut"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "c7989a33-c853-4e3f-8678-fd2e95d528fc"
+data "ValueLevel" "5.75"
+data "Weight" "0.05"
+data "PassivesOnEquip" "JWL_Passive_SymbolBahamut;JWL_Passive_Follower_SymbolBahamut"
+data "UseConditions" "CanUseBahamutSymbol()"
+data "Unique" "1"
+
+// Holy Symbol of Eilistraee
+new entry "JWL_DiscordantInstruments_SymbolEllistrae"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "68b94726-3d18-4fad-a376-ca9ba297f5f9"
+data "ValueLevel" "5.75"
+data "Weight" "0.05"
+data "PassivesOnEquip" "JWL_Passive_SymbolEllistrae;JWL_Passive_SymbolEllistrae_Crit;JWL_Passive_Follower_SymbolEllistrae"
+data "UseConditions" "CanUseEilistraeeSymbol()"
+data "Unique" "1"
+
+// Holy Symbol of Helm
+new entry "JWL_DiscordantInstruments_SymbolHelm"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "81448159-d461-41d1-873a-4cae29f94b85"
+data "ValueLevel" "5.75"
+data "Weight" "0.05"
+data "PassivesOnEquip" "JWL_Passive_SymbolHelm;JWL_Passive_Follower_SymbolHelm"
+data "UseConditions" "CanUseHelmSymbol()"
+data "Unique" "1"
+
+// Holy Symbol of Mielikki
+new entry "JWL_DiscordantInstruments_SymbolMeilikki"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_VR"
+data "RootTemplate" "b2a380cf-1717-40b2-987f-bfe274ec7af8"
+data "ValueLevel" "5.75"
+data "Weight" "0.05"
+data "PassivesOnEquip" "JWL_Passive_SymbolMeilikki;JWL_Passive_Follower_SymbolMeilikki"
+data "UseConditions" "CanUseMielikkiSymbol()"
+data "Unique" "1"
+
+// Holy Symbol of Corellon Larethian
+new entry "JWL_DiscordantInstruments_SymbolCorellon"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "c8ff4f81-a21a-41ff-915b-9301d01b29bf"
+data "ValueLevel" "9.75"
+data "Weight" "0.05"
+data "PassivesOnEquip" "JWL_Passive_SymbolCorellon;JWL_Passive_SymbolCorellon_Cleric;JWL_Passive_SymbolCorellon_Paladin;JWL_Passive_Follower_SymbolCorellon;JWL_Passive_SymbolCorellon_Cleric_TECHNICAL;JWL_Passive_SymbolCorellon_Paladin_TECHNICAL"
+data "StatusOnEquip" "JWL_Status_SymbolCorellon_Cleric_TECHNICAL;JWL_Status_SymbolCorellon_Paladin_TECHNICAL"
+data "UseConditions" "CanUseCorellonSymbol()"
+data "Unique" "1"
+
+// Holy Symbol of Ilmater
+new entry "JWL_DiscordantInstruments_SymbolIlmater"
+type "Armor"
+using "JWL_DiscordantInstruments_Base_LG"
+data "RootTemplate" "e3e557ba-f62b-480e-bf99-6b026a41158e"
+data "ValueLevel" "7.75"
+data "Weight" "0.05"
+data "PassivesOnEquip" "JWL_Passive_SymbolIlmater;JWL_Passive_Follower_SymbolIlmater;JWL_Passive_SymbolIlmater_TECHNICAL"
+data "UseConditions" "CanUseIlmaterSymbol()"
+data "Unique" "1"

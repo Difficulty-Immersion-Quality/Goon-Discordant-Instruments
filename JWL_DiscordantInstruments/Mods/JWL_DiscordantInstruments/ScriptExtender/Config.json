@@ -1,0 +1,7 @@
+{
+    "RequiredVersion": 5,
+    "ModTable": "JWL_DiscordantInstruments_a0fc73a0-26ae-4e73-962c-ab850cb9625e",
+    "FeatureFlags": [
+        "Lua"
+    ]
+}
