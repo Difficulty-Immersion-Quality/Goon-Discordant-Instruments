@@ -2,12 +2,6 @@
 // UNCOMMON ITEMS
 // ===============================================================
 
-new entry "JWL_Passive_MusicalProficiency"
-type "PassiveData"
-data "DisplayName" "haf038fc3gea65g4152g8be9g5187a945b436;1"
-data "Description" "hc4d6ff19g9a80g430cgbaa2g273a20e49f86;1"
-data "Boosts" "Proficiency(MusicalInstrument)"
-
 new entry "JWL_Passive_ComfyBackpack"
 type "PassiveData"
 data "DisplayName" "h0d93bd89g2802g478fgb7dbg1bbe7461e582;1"

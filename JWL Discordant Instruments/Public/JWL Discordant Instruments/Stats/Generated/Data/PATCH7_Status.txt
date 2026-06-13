@@ -1,16 +1,4 @@
 // ===============================================================
-// INSTRUMENTS
-// ===============================================================
-
-new entry "JWL_PERFORM_POSITIVE_BARDIC"
-type "StatusData"
-data "StatusType" "BOOST"
-data "DisplayName" "ha186c9ffgfbedg4c4fg9d06g344347885a7f;1"
-data "Description" "h1c9dbd81g06fdg4b5eg85d2gfb6fa8c04e3f;1"
-data "Icon" "Action_Song_ThePower"
-
-
-// ===============================================================
 // UNCOMMON ITEMS
 // ===============================================================
 
