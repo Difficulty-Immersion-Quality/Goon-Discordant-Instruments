@@ -152,8 +152,10 @@
 						</node>
 					</children>
 				</node>
+			<!-- Eversmoking Bottle -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h129f6f7bg8551g4b05g84f9g9709c075177f" version="1" />
+					<!-- Smoke leaks from the lead-stoppered mouth of this brass bottle. -->
 					<attribute id="Description" type="TranslatedString" handle="h84d817ecgc99bg45e4ga402g6d0da384028f" version="1" />
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="MapKey" type="FixedString" value="77742d5b-ee0c-45c7-994f-4dbb7df556a8" />
@@ -198,8 +200,10 @@
 						</node>
 					</children>
 				</node>
+			<!-- Decanter of Endless Mead -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="he6100dc2g41a1g4712g98d2ga16f229ef429" version="1" />
+					<!-- No matter how much you pour, the jug never seems to get lighter. -->
 					<attribute id="Description" type="TranslatedString" handle="h7fbf749bgc076g4dbbg838bg52a6d4ea9862" version="1" />
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="MapKey" type="FixedString" value="badd3e46-fc87-4184-ab11-db83b13aa4f9" />

@@ -124,7 +124,9 @@ data "SpellProperties" "GROUND:CreateSurface(1.5,2,FogCloud,true)"
 data "TargetRadius" ""
 data "AreaRadius" ""
 data "TargetConditions" "Self()"
+// Instant Smoke
 data "DisplayName" "h3ecef8baf67f4ca8ba3f2787ebab87fa340f;1"
+// Open the bottle to release a small &lt;LSTag Type="Spell" Tooltip="Target_FogCloud"&gt;cloud of smoke&lt;/LSTag&gt; in a [1] radius around the caster. The smoke cloud dissipates after [2] rounds.
 data "Description" "h641496bdg3745g4ae1gbfcagc6f12af63ec3;1"
 data "DescriptionParams" "Distance(1.5);2"
 data "VocalComponentSound" ""
@@ -136,53 +138,43 @@ data "SpellFlags" "IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundR
 data "MemoryCost" ""
 
 // ==================================== Decanter of Endless Mead
+// TODO: Going through the SG_Drunk conditions made me realise multiple things referring to them need to reference the status group instead... classic.
+// TODO: Work getting hungover into this? Goon's Alcohol Abuse Overhaul.
 
 new entry "JWL_DiscordantInstruments_EndlessMead"
 type "Armor"
 using "JWL_DiscordantInstruments_Base_Uncommon"
 data "RootTemplate" "badd3e46-fc87-4184-ab11-db83b13aa4f9"
 data "ValueLevel" "2.1"
-data "Weight" "2.5"
-//data "StatusOnEquip" "DRUNK"
-data "PassivesOnEquip" "JWL_Passive_EndlessMead;JWL_Passive_EndlessMead_MonkWatcher"
-data "StatusOnEquip" "JWL_Status_EndlessMead_TECHNICAL"
+// data "Weight" "1"
+data "Weight" "2"
+data "PassivesOnEquip" "JWL_ContactBuzz"
+data "StatusOnEquip" "JWL_DECANTEROFENDLESSMEAD_TECHNICAL"
 data "Unique" "1"
 
-new entry "JWL_Passive_EndlessMead"
+new entry "JWL_DiscordantInstruments_EndlessMead_NotUnique"
+type "Armor"
+using "JWL_DiscordantInstruments_EndlessMead"
+// data "Unique" "1"
+data "Unique" "0"
+
+new entry "JWL_ContactBuzz"
 type "PassiveData"
+// Contact Buzz
 data "DisplayName" "hc871842agb1a7g4ac2g9f40ge0d8827c4d24;1"
+// Simply holding this decanter is enough to make you feel &lt;LSTag Type="Status" Tooltip="DRUNK"&gt;Drunk&lt;/LSTag&gt;.
 data "Description" "hbf81d249gc12dg4206gafcegc2b54d4be618;1"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnEquip;OnCreate;OnStatusApplied;OnStatusRemoved"
+data "Conditions" "HasAnyStatus({}, {}, { 'SG_Drunk', 'DRUNK_DRUNKEN_MASTER' }, context.Source) or HasAnyStatus({ 'HUNGOVER' }, {}, {}, context.Source)"
+data "StatsFunctors" "IF(not HasPassive('CheekyTipple_Drunk', context.Source)):ApplyStatus(DRUNK, 100, -1);IF(HasPassive('CheekyTipple_Drunk', context.Source)):ApplyStatus(DRUNK_DRUNKEN_MASTER, 100, -1)"
 
-new entry "JWL_Passive_EndlessMead_MonkWatcher"
-type "PassiveData"
-// %%% EMPTY
-data "DisplayName" "hb54aed68ge945g4133g99e7gc9d0adb1157d;1"
-data "Properties" "IsHidden"
-data "StatsFunctorContext" "OnCreate"
-data "Conditions" "not HasStatus('JWL_Status_EndlessMead_Applied',context.Source)"
-data "StatsFunctors" "IF(not HasPassive('CheekyTipple_Drunk',context.Source)):ApplyStatus(DRUNK, 100, -1);IF(HasPassive('CheekyTipple_Drunk',context.Source)):ApplyStatus(DRUNK_DRUNKEN_MASTER, 100, -1);ApplyStatus(JWL_Status_EndlessMead_Applied, 100, -1)"
-
-new entry "JWL_Status_EndlessMead_Applied"
+new entry "JWL_DECANTEROFENDLESSMEAD_TECHNICAL"
 type "StatusData"
 data "StatusType" "BOOST"
-// %%% EMPTY
-data "Description" "hb933af88g1448g476eg95adgc4b3da7ec624;1"
-// %%% EMPTY
-data "Description" "hb933af88g1448g476eg95adgc4b3da7ec624;1"
-data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead"
-
-new entry "JWL_Status_EndlessMead_TECHNICAL"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "JWL_Status_EndlessMead_TECHNICAL"
+data "StackId" "JWL_DECANTEROFENDLESSMEAD_TECHNICAL"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
-data "OnRemoveFunctors" "ApplyStatus(JWL_Status_EndlessMead_CLEANER,100,0)"
-
-new entry "JWL_Status_EndlessMead_CLEANER"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
-data "OnApplyFunctors" "RemoveStatus(DRUNK);RemoveStatus(DRUNK_DRUNKEN_MASTER);RemoveStatus(JWL_Status_EndlessMead_Applied)"
+data "OnRemoveFunctors" "RemoveStatus(DRUNK);RemoveStatus(DRUNK_DRUNKEN_MASTER)"
 
 // ==================================== Rope of Mending
 

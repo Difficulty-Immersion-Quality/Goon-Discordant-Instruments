@@ -32,6 +32,19 @@
 	<content contentuid="h374f226fg7464g4d2fga8b6gb83b0291e2b3" version="1">Annotated Map of the Sword Coast</content>
 	<content contentuid="h5b9eed9egedd6g441bg844cg684b0f645cac" version="1">A map covered in notes marking places of interest. Has an atlas on the back filled with useful facts on the region.</content>
 
+	<!-- "JWL_DiscordantInstruments_EversmokingBottle" - "77742d5b-ee0c-45c7-994f-4dbb7df556a8" -->
+	<content contentuid="h129f6f7bg8551g4b05g84f9g9709c075177f" version="1">Eversmoking Bottle</content>
+	<content contentuid="h84d817ecgc99bg45e4ga402g6d0da384028f" version="1">Smoke leaks from the lead-stoppered mouth of this brass bottle.</content>
+	<!-- JWL_Target_SmokeCloud_Trinket -->
+	<content contentuid="h3ecef8baf67f4ca8ba3f2787ebab87fa340f" version="1">Instant Smoke</content>
+	<content contentuid="h641496bdg3745g4ae1gbfcagc6f12af63ec3" version="1">Open the bottle to release a small &lt;LSTag Type="Spell" Tooltip="Target_FogCloud"&gt;cloud of smoke&lt;/LSTag&gt; in a [1] radius around the caster. The smoke cloud dissipates after [2] rounds.</content>
+	<!-- "JWL_DiscordantInstruments_EndlessMead" - "badd3e46-fc87-4184-ab11-db83b13aa4f9" -->
+	<content contentuid="he6100dc2g41a1g4712g98d2ga16f229ef429" version="1">Decanter of Endless Mead</content>
+	<content contentuid="h7fbf749bgc076g4dbbg838bg52a6d4ea9862" version="1">No matter how much you pour, the jug never seems to get lighter.</content>
+	<!-- "JWL_ContactBuzz" -->
+	<content contentuid="hc871842agb1a7g4ac2g9f40ge0d8827c4d24" version="1">Contact Buzz</content>
+	<content contentuid="hbf81d249gc12dg4206gafcegc2b54d4be618" version="1">Simply holding this decanter is enough to make you feel &lt;LSTag Type="Status" Tooltip="DRUNK"&gt;Drunk&lt;/LSTag&gt;.</content>
+
 	<!--  -->
 
 	<!--  -->
@@ -53,16 +66,10 @@
 	<content contentuid="h179c9e7dgbc6bg40bfga76eg5d3bea28d044" version="1">Securely Fastened</content>
 	<content contentuid="h291fbb29gb863g4516gb16agcff49cc2c615" version="1">While you have a Glaive, Greatclub, Halberd, Maul, Pike, Quarterstaff, Spear, Trident, or Warhammer equipped in your main hand and nothing in your free hand, your primary attacks are &lt;LSTag Type="Spell" Tooltip="Target_UnarmedAttack"&gt;Unarmed Strikes&lt;/LSTag&gt;.</content>
 
-	<content contentuid="h129f6f7bg8551g4b05g84f9g9709c075177f" version="1">Eversmoking Bottle</content>
-	<content contentuid="h84d817ecgc99bg45e4ga402g6d0da384028f" version="1">Smoke leaks from the lead-stoppered mouth of this brass bottle.</content>
-	<content contentuid="h3ecef8baf67f4ca8ba3f2787ebab87fa340f" version="1">Instant Smoke</content>
-	<content contentuid="h641496bdg3745g4ae1gbfcagc6f12af63ec3" version="1">Open the bottle to release a small &lt;LSTag Type="Spell" Tooltip="Target_FogCloud"&gt;cloud of smoke&lt;/LSTag&gt; in a [1] radius around the caster. The smoke cloud dissipates after [2] rounds.</content>
-	<content contentuid="he6100dc2g41a1g4712g98d2ga16f229ef429" version="1">Decanter of Endless Mead</content>
-	<content contentuid="h7fbf749bgc076g4dbbg838bg52a6d4ea9862" version="1">No matter how much you pour, the jug never seems to get lighter.</content>
-	<content contentuid="hc871842agb1a7g4ac2g9f40ge0d8827c4d24" version="1">Contact Buzz</content>
-	<content contentuid="hbf81d249gc12dg4206gafcegc2b54d4be618" version="1">Simply holding this decanter is enough to make you feel &lt;LSTag Type="Status" Tooltip="DRUNK"&gt;Drunk&lt;/LSTag&gt;.</content>
+	<!--  -->
 	<content contentuid="h3a39ac63g9fa9g4a9cg9df3g72c4b58766fa" version="1">Rope of Mending</content>
 	<content contentuid="h388b16f6g2e3bg4c50ga3b1gf32ca3d60285" version="1">Wrapping this around a damaged object or construct will magically repair it.</content>
+	<!--  -->
 	<content contentuid="hb6d68dc6g53a2g4f17g9d37g5f839caa7a81" version="1">Curious Copper Coin</content>
 	<content contentuid="hbdf5413agd697g4619gaba2gd462616d1c14" version="1">This otherwise unassuming coin hums with magical energy.</content>
 	<content contentuid="h6fc056e2g9e47g40a6gbd62g431d58358d2c" version="1">Coin Toss</content>
