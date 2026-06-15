@@ -8,8 +8,9 @@ object category "I_JWL_CONT_TrinketCrate",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_CONT_InstrumentCrate",1,0,0,0,0,0,0,0
 
-// TODO: Split class locked trinkets into different container
+// TODO: Split class locked trinkets into different container?
 new treasuretable "JWL_TreasureTable_TrinketCrate"
+// ==================================== UNCOMMON ITEMS
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_ComfyBackpack",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -23,11 +24,10 @@ object category "I_JWL_DiscordantInstruments_MendingRope_NotUnique",1,0,0,0,0,0,
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_BalanceHarmony_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_CuriousCoin",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_SmokingPipe_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SmokingPipe",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_VaultingPole",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_VaultingPole_NotUnique",1,0,0,0,0,0,0,0
+//
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_QuiverBrambleheart",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -42,8 +42,6 @@ new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_TotemBeast",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_BloodwellGoblin",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BannerGoblin",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_SymbolKelemvor",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -90,10 +88,25 @@ new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_WhistleBeast",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_WhistleWitch",1,0,0,0,0,0,0,0
+// ==================================== ROGUE TOOLS (ROGUE)
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_CuriousCoin",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_BagTricks",1,0,0,0,0,0,0,0
 new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_StoneGoodLuck",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SkeletonKey",1,0,0,0,0,0,0,0
+// ==================================== WAR BANNERS (FIGHTER/MONK)
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BannerGoblin",1,0,0,0,0,0,0,0
+new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_BannerMourningsteel",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BannerConsecrated",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BannerInfernalPower",1,0,0,0,0,0,0,0
+//
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_SymbolLolth",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -147,10 +160,6 @@ object category "I_JWL_DiscordantInstruments_SilverLycanCharm",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_ThayanFemur",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_StoneGoodLuck",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BannerConsecrated",1,0,0,0,0,0,0,0
-new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_SymbolBahamut",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_SymbolEllistrae",1,0,0,0,0,0,0,0
@@ -160,8 +169,6 @@ new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_SymbolMeilikki",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_BagHolding",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SkeletonKey",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_Shackles",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -196,8 +203,6 @@ new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_GibberingBell",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_GoldenFiddle",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BannerInfernalPower",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_SymbolIlmater",1,0,0,0,0,0,0,0
 new subtable "1,1"

@@ -416,10 +416,10 @@
 						</node>
 					</children>
 				</node>
-			<!--  -->
+			<!-- Galder's Bubble Pipe -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h9945da84gae43g4c1egb237g1159de62f125" version="1" />
-					<!--  -->
+					<!-- A pipe once belonging to the legendary wizard Galder Fendt the Immortal. -->
 					<attribute id="Description" type="TranslatedString" handle="hb38b12ffg47dbg424bg90afg0959bdafe7d2" version="1" />
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="MapKey" type="FixedString" value="3d5b0195-04eb-4c73-97ea-7817ab928c00" />
@@ -464,10 +464,10 @@
 						</node>
 					</children>
 				</node>
-			<!--  -->
+			<!-- Pole of Collapsing -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="hc34502b5gdf82g49bfg8afcgb1b03931bda8" version="1" />
-					<!--  -->
+					<!-- An enchanted wooden rod that can extend or collapse. -->
 					<attribute id="Description" type="TranslatedString" handle="h086ed752gd84cg4d77g8425gd90ce6fc5823" version="1" />
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="MapKey" type="FixedString" value="c8e8f20b-4f1a-4fcd-a823-31c16643396b" />

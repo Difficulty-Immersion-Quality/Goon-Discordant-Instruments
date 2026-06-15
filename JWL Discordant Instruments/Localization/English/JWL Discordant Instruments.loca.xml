@@ -57,6 +57,17 @@
 	<content contentuid="heaf74714g4980g4ad3g84efg5aab7f51fe85" version="1">Balance of Harmony</content>
 	<content contentuid="h1e3eafe9ga606g449cgaf2fg0349992e8027" version="1">This scale bears celestial symbols on one pan and fiendish symbols on the other.</content>
 
+	<!-- "JWL_DiscordantInstruments_SmokingPipe" - "3d5b0195-04eb-4c73-97ea-7817ab928c00" -->
+	<content contentuid="h9945da84gae43g4c1egb237g1159de62f125" version="1">Galder's Bubble Pipe</content>
+	<content contentuid="hb38b12ffg47dbg424bg90afg0959bdafe7d2" version="1">A pipe once belonging to the legendary wizard Galder Fendt the Immortal.</content>
+
+	<!-- "JWL_DiscordantInstruments_VaultingPole" - "c8e8f20b-4f1a-4fcd-a823-31c16643396b" -->
+	<content contentuid="hc34502b5gdf82g49bfg8afcgb1b03931bda8" version="1">Pole of Collapsing</content>
+	<content contentuid="h086ed752gd84cg4d77g8425gd90ce6fc5823" version="1">An enchanted wooden rod that can extend or collapse.</content>
+	<!-- "JWL_Passive_VaultingPole" -->
+	<content contentuid="hd3914dfcg3a26g4ff3g9682ga9dd70f4b89b" version="1">Pole Vaulting</content>
+	<content contentuid="h5b84c8edg3ba5g4233g9418g7eb1d06d36e1" version="1">Your &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; distance is increased by [1].</content>
+
 	<!-- "" - "" -->
 	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
 	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
@@ -83,8 +94,7 @@
 	<content contentuid="h9d81d02aga9feg4478g9ea9gbabcb7a0ece6" version="1">Toss the coin at an unoccupied space on the ground, creating the illusion of several coins tumbling down and compelling nearby creatures to investigate. The coin then immediately returns to its owner, leaving behind an illusory duplicate in its place.</content>
 	<content contentuid="h4e3db738ga8aeg49c0gade1g186a92439978" version="1">Illusory Coin</content>
 
-	<content contentuid="h9945da84gae43g4c1egb237g1159de62f125" version="1">Galder's Bubble Pipe</content>
-	<content contentuid="hb38b12ffg47dbg424bg90afg0959bdafe7d2" version="1">A pipe once belonging to the legendary wizard Galder Fendt the Immortal.</content>
+
 	<!-- "" - "" -->
 	<content contentuid="h6f2f299dgce78g4e46gbe1dg18a3e1921f77" version="1">Triage Kit</content>
 	<content contentuid="ha7930679g7090g4390g9136gdbf730456f69" version="1">A collection of tools used for treating wounds in the field.</content>
@@ -92,11 +102,7 @@
 	<content contentuid="h4addf87dg5166g40cfg9467gd2110e037825" version="1">Tend to a creature's wounds, healing them. The target must wait before they can be tended to again.</content>
 	<content contentuid="h92d55a11g15efg413dgb442g169c11e4ef68" version="1">Tender Loving Care</content>
 	<content contentuid="h6d894e2cgd309g4fceg8d28ge1d055a6b53e" version="1">You've recently been medically tended to.</content>
-	<!-- "" - "" -->
-	<content contentuid="hc34502b5gdf82g49bfg8afcgb1b03931bda8" version="1">Pole of Collapsing</content>
-	<content contentuid="h086ed752gd84cg4d77g8425gd90ce6fc5823" version="1">An enchanted wooden rod that can extend or collapse.</content>
-	<content contentuid="hd3914dfcg3a26g4ff3g9682ga9dd70f4b89b" version="1">Pole Vaulting</content>
-	<content contentuid="h5b84c8edg3ba5g4233g9418g7eb1d06d36e1" version="1">Your &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; distance is increased by [1].</content>
+
 	<!-- "" - "" -->
 	<content contentuid="h1e15e6ebg8ae1g40cfg9677g25dd23123a2e" version="1">Portable Whetstone</content>
 	<content contentuid="h19b3ae37g5128g4905gab1fg7361a8482cf0" version="1">A sharpening stone used for keeping slashing and piercing weapons ready for battle.</content>
@@ -141,6 +147,7 @@
 	<content contentuid="h8a88701cg10f5g42ddg94eagcd734b23794e" version="1">Attach the ruby to your main hand melee weapon, adding your &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability Modifier&lt;/LSTag&gt; to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; instead of your Strength or Dexterity.</content>
 	<content contentuid="h0f4e566fg3f6bg4ce4g89adg55aee118e396" version="1">Lens of Astute Observation</content>
 	<content contentuid="hd9f196c4gf184g4f3cga691g0a491bd6554c" version="1">Holding the lens to your eye fills you with magical energy.</content>
+	<!-- "" - "" -->
 	<content contentuid="h97e52670g70f7g4e8cg8433g757385833675" version="1">Shielding Brooch</content>
 	<content contentuid="hb17cc4aeg7fefg44efg8ebfg2c0f0b6fad11" version="1">A turtle-shaped brooch that protects whoever holds it.</content>
 	<content contentuid="hc0a37439gd64eg4443g9860g76bfff9bd648" version="1">Forceful Deflection</content>
@@ -149,8 +156,10 @@
 	<content contentuid="h524983dcgbdb3g42c1gbed3g62b6f9a35849" version="1">A small construct made of metal and studded with dragonshards. It comes to your aid when you need it most, as if it had a mind of its own.</content>
 	<content contentuid="hcc5200fbgf65dg412fgb75cg277bc53f1a03" version="1">Professor Orb</content>
 	<content contentuid="hd5c059d6g4ee6g4402g9179gb342e8f4e5ad" version="1">A sentient sphere with the personality of a scholar.</content>
+	<!-- "" - "" -->
 	<content contentuid="h773d7a38gecf5g4d07gae34g1655aa8b2cd2" version="1">Soulbound Chain</content>
 	<content contentuid="h8e87a508gea2ag4013g9b2cg7be758f99b03" version="1">Whatever attaches to the end of this chain is magically bound until the next dawn.</content>
+	<!-- "" - "" -->
 	<content contentuid="h7ef8bae8g17ceg44aagbe3eg6f5b09c81592" version="1">Cowardly Magic Carpet</content>
 	<content contentuid="h256135d6gf4c0g4505g91afg63221b04baea" version="1">Don't expect it to stick around when threatened.</content>
 	<content contentuid="h3f0a8d55gfa44g43d7gba9cg567d798ba886" version="1">Ride the Carpet</content>
@@ -166,9 +175,11 @@
 	<content contentuid="hb81d7a9dg110bg4e68ga681gceb2ae36ed06" version="1">Two magical lenses with accompanying frame.</content>
 	<content contentuid="h7d9fa01ag199cg4788g9027g5a8a1232bf6b" version="1">Charming Stare</content>
 	<content contentuid="h58b16969gd457g4443g8260g9255a37e1364" version="1">Place the lenses to your face to attempt to &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charm&lt;/LSTag&gt; up to 6 humanoids, preventing them from attacking you. You gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Charisma &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt; in dialogue.</content>
+	<!-- "" - "" -->
 	<content contentuid="hc5345370g60acg4d8dg96bagf664734ec704" version="1">Handy Haversack</content>
 	<content contentuid="hcb0e4c84g67c9g4ae4g8118g58ada6c9c075" version="1">A backpack made up of several small extradimensional pockets.</content>
 	<content contentuid="h4cef8db3g5f4bg40bcg9483g1e91c369e74c" version="1">Your &lt;LSTag Tooltip="CarryWeight"&gt;carrying capacity&lt;/LSTag&gt; is increased to 250% of its base value.</content>
+	<!-- "" - "" -->
 	<content contentuid="hb94697b8g8b9eg47eag8a61g924107401772" version="1">Badge of the Watch</content>
 	<content contentuid="h7eadc0fbg23d8g4040g8b82g274f3f4649f3" version="1">A badge worn by high ranking guardsmen in Waterdeep. It's a long way from home.</content>
 	<content contentuid="h869dada8g2013g4dd5gbe58gc174d0758e3a" version="1">Mimir</content>
@@ -182,6 +193,7 @@
 	<content contentuid="h947b0b3bg157dg4b10g8ac9g016602b32dfc" version="1">Bag of Holding</content>
 	<content contentuid="hea2bcac8g4555g4f07g9fd1g8ee85ddca9ea" version="1">A magical satchel connected to a large extradimensional space.</content>
 	<content contentuid="h39329b8ag5d8cg4ae3gbde9g9083488807e0" version="1">Your &lt;LSTag Tooltip="CarryWeight"&gt;carrying capacity&lt;/LSTag&gt; is increased to 1000% of its base value.</content>
+	<!-- "" - "" -->
 	<content contentuid="hd707b9d0g1aa7g4fd1g8089ga8eeadc9ef16" version="1">Skeleton Key</content>
 	<content contentuid="h70a5e031g4caag435eg89d7g7df5f456c4d5" version="1">Capable of changing its shape to fit any lock.</content>
 	<content contentuid="ha89debd2g4961g46ebga995ga75f4ad8e34c" version="1">Dimensional Shackles</content>
@@ -192,20 +204,24 @@
 	<content contentuid="hda0c0377g4b97g4f3ag8e3ag06f190e37c2d" version="1">An ornate gem-encrusted pin infused with divine magic.</content>
 	<content contentuid="hcd98610dgc9edg4a0bgb2d6g8d3816c92273" version="1">Kyrzin's Ooze</content>
 	<content contentuid="h3fc85089gc5c9g4753g901fg16825d42681b" version="1">The disgusting goo sealed within slowly shifts and moves, as if endlessly exploring the jar's interior.</content>
+	<!-- "" - "" -->
 	<content contentuid="hfc824c30g3d98g4ecag8027g6e894f74457d" version="1">Black Crystal Tablet</content>
 	<content contentuid="ha7d2a101gd98cg4decga069g2aade13352ea" version="1">This tablet reveals many secrets, most of which should stay that way.</content>
 	<content contentuid="h1f9a579eg61b7g4b51g9ed9g19b4bdffc355" version="1">Profane Knowledge</content>
 	<content contentuid="h07bcf7e2gdd87g42c8gbf40g259d014e5143" version="1">Read from the tablet, striking &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Fear&lt;/LSTag&gt; deep into a creature's heart.</content>
 	<content contentuid="hac30fb99g0e58g4bf7g9a8ag36a7b1330bbf" version="1">Entity must make a Wisdom &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; (&lt;LSTag Tooltip="DifficultyClass"&gt;DC&lt;/LSTag&gt;15) or go &lt;LSTag Type="Status" Tooltip="MADNESS"&gt;Mad&lt;/LSTag&gt;.</content>
+	<!-- "" - "" -->
 	<content contentuid="h264eedcag37c9g489bg83abg14b78fc8a778" version="1">Orb of Skoraeus</content>
 	<content contentuid="hdf985259gef61g46c0g818dg170fce5c921c" version="1">Said to be infused with the wisdom and power of the god Skoraeus, this polished stone orb is veined with iridescent crystal that seems to glow from within.</content>
 	<content contentuid="h87214168gfe8dg4283g98afgfa4210d71e66" version="1">Exceptional Dark Vision</content>
 	<content contentuid="h586ac412g1c99g4732ga346g821cdb828006" version="1">Compendium of Furtive Techniques</content>
 	<content contentuid="he45f73a0g8eaag4674g833fg4a57fd639d20" version="1">This book outlines several lesser known martial techniques.</content>
+	<!-- "" - "" -->
 	<content contentuid="h5937a1adg46d2g457agbfefg86975e6f88d1" version="1">Orb of Imminent Scrying</content>
 	<content contentuid="h83181f16g92d0g4e8dgbe7ag9484f53f9a3d" version="1">Staring into this crystal ball reveals your immediate future.</content>
 	<content contentuid="h21059f48g08bfg42c2ga601gde03a1017252" version="1">Clairvoyance</content>
 	<content contentuid="hcf4f7239g386ag4598g8e6ag5e34b35ed445" version="1">Gain an additional &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;reaction&lt;/LSTag&gt;.</content>
+	<!-- "" - "" -->
 	<content contentuid="h929b1d91g3949g4652g8873gc1178e91e947" version="1">Book of Exalted Deeds</content>
 	<content contentuid="ha7f69d87ge013g44ecg9368g4f238fa6b8eb" version="1">The supreme written authority of goodness in all the multiverse.</content>
 	<content contentuid="h541a79497fb64d5bbf0d115ae87b21c9996b" version="1">Luminance</content>
@@ -224,14 +240,22 @@
 	<content contentuid="hf0996e7egcb70g451dgbf82gd55ce037f617" version="1">Suffering a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; has left the Ioun stone temporarily inert.</content>
 	<content contentuid="h3bbe848eg726cg4b04g9456g76680212f5da" version="1">A small stone about the size of a fingernail dedicated to the god Ioun. It contains formidable power but is vulnerable to damage.</content>
 	<content contentuid="h5a8212f7gf198g45d7g8f72g19fcfd89b502" version="1">Suffering a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; will temporarily render the Ioun stone inert.</content>
+	<!-- "" - "" -->
 	<content contentuid="he9335543gba9bg47a7g8641g44a240c88fae" version="1">Stormy Ioun Stone</content>
+	<!-- "" - "" -->
 	<content contentuid="hfe6b54c6gae88g492ag823bg092368d7fbc6" version="1">Verdant Ioun Stone</content>
+	<!-- "" - "" -->
 	<content contentuid="hd23734c9gc708g4aadgb45eg8c607c5cc949" version="1">Roseate Ioun Stone</content>
+	<!-- "" - "" -->
 	<content contentuid="h00ba6dd3g73e6g4cc4g92f5ga98c344f12d2" version="1">Umbral Ioun Stone</content>
+	<!-- "" - "" -->
 	<content contentuid="h3eea610ag6630g4192gb1f7ge83d39da85f4" version="1">Scarlet Ioun Stone</content>
+	<!-- "" - "" -->
 	<content contentuid="h73f4ad78g5067g44f6g8d66g34a2db440220" version="1">Radiant Ioun Stone</content>
+	<!-- "" - "" -->
 	<content contentuid="h359dbd0eg977bg434agbaaag77dc264ccd1b" version="1">Brambleheart Quiver</content>
 	<content contentuid="h347abdedg9762g4976ga6f4gea0174b771d4" version="1">A basic quiver made of wood. Favoured among the druids of the Grove.</content>
+	<!-- "" - "" -->
 	<content contentuid="h3d683cb5g8155g4977g806ag548adc75a4a4" version="1">Quiver of Elemental Chaos</content>
 	<content contentuid="h51b61a94ga154g42a7gb78ag9e1d8fdc8377" version="1">Each slot in this quiver is connected to a different elemental plane.</content>
 	<content contentuid="hf5062f31g73a6g4ccbg9b8aga9264f2c0c3b" version="1">Select Element</content>
@@ -259,10 +283,13 @@
 	<content contentuid="h394f316cg79acg41ffgb6ecgeb6fb249ef59" version="1">Studied Strikes</content>
 	<content contentuid="h63b2bc2ag0c9ag46e4gaecfg7c4eeaad31a4" version="1">Receive a +[1] bonus to &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;melee weapon&lt;/LSTag&gt; &lt;LSTag Tooltip="AttackRoll"&gt;Attack&lt;/LSTag&gt; and Damage Rolls.&lt;br&gt;&lt;br&gt;If the wielder has at least [2] levels in the &lt;i&gt;Fighter&lt;/i&gt; class, the bonus increases to +[3].</content>
 
+	<!-- "" - "" -->
 	<content contentuid="h17aa76abg3229g4964gad26g22c99ff639f2" version="1">Dimensional Quiver</content>
 	<content contentuid="h128c5420g5daeg417bg9d44g981071cd7673" version="1">Every time an arrow is pulled from this quiver, another immediately appears in its place.</content>
+	<!-- "" - "" -->
 	<content contentuid="h8877f418g67feg41c0gb9a5g55f2bfd95d77" version="1">Grimoire of the Green Arts</content>
 	<content contentuid="h6c4e810ag96a2g42c0ga2aegdf97ac298a27" version="1">A collection of druidic spells are detailed in this tome.</content>
+	<!-- "" - "" -->
 	<content contentuid="h22d7f9d0g5e74g45a9g8d5fg6defec5c57ee" version="1">Tome of Celestial Healing</content>
 	<content contentuid="h1250ef38ga988g495bgbedcg12f3988a1186" version="1">This tome outlines various healing magics.</content>
 	<content contentuid="hda0fdc6egca3bg4884gb8dcg38b905d029d0" version="1">Serotonin Release</content>
