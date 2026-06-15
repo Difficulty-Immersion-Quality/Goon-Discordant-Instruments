@@ -53,17 +53,21 @@
 	<!-- "JWL_Target_Mending" -->
 	<content contentuid="h25cc425fg2f46g4646g8056g029ec8f832f3" version="1">Heal an inorganic construct.</content>
 
-	<!--  -->
+	<!-- "JWL_DiscordantInstruments_BalanceHarmony" - "9080213f-7468-41fa-9682-448f76122708" -->
+	<content contentuid="heaf74714g4980g4ad3g84efg5aab7f51fe85" version="1">Balance of Harmony</content>
+	<content contentuid="h1e3eafe9ga606g449cgaf2fg0349992e8027" version="1">This scale bears celestial symbols on one pan and fiendish symbols on the other.</content>
+
+	<!-- "" - "" -->
 	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
 	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
-	<!--  -->
+	<!-- "" - "" -->
 	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
 	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
-	<!--  -->
+	<!-- "" - "" -->
 	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
 	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
 
-	<!--  -->
+	<!-- "" - "" -->
 	<content contentuid="hd71087fege40dg4875gb80eg4aea2cb98460" version="1">Psionic Alarm</content>
 	<content contentuid="h7e2a0d8fg1379g48e7ga23agf773f98e4baa" version="1">You cannot be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;.</content>
 	<content contentuid="h7ef7c832g6883g46f9ga63egfe6ac408b669" version="1">Shoulder-Mounted Leather Frog</content>
@@ -78,20 +82,22 @@
 	<content contentuid="h6fc056e2g9e47g40a6gbd62g431d58358d2c" version="1">Coin Toss</content>
 	<content contentuid="h9d81d02aga9feg4478g9ea9gbabcb7a0ece6" version="1">Toss the coin at an unoccupied space on the ground, creating the illusion of several coins tumbling down and compelling nearby creatures to investigate. The coin then immediately returns to its owner, leaving behind an illusory duplicate in its place.</content>
 	<content contentuid="h4e3db738ga8aeg49c0gade1g186a92439978" version="1">Illusory Coin</content>
-	<content contentuid="heaf74714g4980g4ad3g84efg5aab7f51fe85" version="1">Balance of Harmony</content>
-	<content contentuid="h1e3eafe9ga606g449cgaf2fg0349992e8027" version="1">This scale bears celestial symbols on one pan and fiendish symbols on the other.</content>
+
 	<content contentuid="h9945da84gae43g4c1egb237g1159de62f125" version="1">Galder's Bubble Pipe</content>
 	<content contentuid="hb38b12ffg47dbg424bg90afg0959bdafe7d2" version="1">A pipe once belonging to the legendary wizard Galder Fendt the Immortal.</content>
+	<!-- "" - "" -->
 	<content contentuid="h6f2f299dgce78g4e46gbe1dg18a3e1921f77" version="1">Triage Kit</content>
 	<content contentuid="ha7930679g7090g4390g9136gdbf730456f69" version="1">A collection of tools used for treating wounds in the field.</content>
 	<content contentuid="h9feab2e7g52b5g4455ga485g021f03b0811d" version="1">Tend Injuries</content>
 	<content contentuid="h4addf87dg5166g40cfg9467gd2110e037825" version="1">Tend to a creature's wounds, healing them. The target must wait before they can be tended to again.</content>
 	<content contentuid="h92d55a11g15efg413dgb442g169c11e4ef68" version="1">Tender Loving Care</content>
 	<content contentuid="h6d894e2cgd309g4fceg8d28ge1d055a6b53e" version="1">You've recently been medically tended to.</content>
+	<!-- "" - "" -->
 	<content contentuid="hc34502b5gdf82g49bfg8afcgb1b03931bda8" version="1">Pole of Collapsing</content>
 	<content contentuid="h086ed752gd84cg4d77g8425gd90ce6fc5823" version="1">An enchanted wooden rod that can extend or collapse.</content>
 	<content contentuid="hd3914dfcg3a26g4ff3g9682ga9dd70f4b89b" version="1">Pole Vaulting</content>
 	<content contentuid="h5b84c8edg3ba5g4233g9418g7eb1d06d36e1" version="1">Your &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; distance is increased by [1].</content>
+	<!-- "" - "" -->
 	<content contentuid="h1e15e6ebg8ae1g40cfg9677g25dd23123a2e" version="1">Portable Whetstone</content>
 	<content contentuid="h19b3ae37g5128g4905gab1fg7361a8482cf0" version="1">A sharpening stone used for keeping slashing and piercing weapons ready for battle.</content>
 	<content contentuid="h4c56c12bg12abg44aega499g784a977841aa" version="1">Apply Whetstone</content>
@@ -99,15 +105,18 @@
 	<content contentuid="h10c2d9f0g11ecg428dgb8a8g696c1aa1ba38" version="1">Sharpened</content>
 	<content contentuid="h819ba449g2892g4b83gb4f4g9cc47eb2e1d0" version="1">+[1] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and Damage Rolls.</content>
 	<content contentuid="h14890274gb7d3g44fagbef3g2bbd9735e854" version="1">The trinket that grants this spell must stay on the spellcaster's person.</content>
+	<!-- "" - "" -->
 	<content contentuid="ha84e637cg248fg426cg86a4g3b9d811d5052" version="1">Belt of Dwarvenkind</content>
 	<content contentuid="hf015fb2fg57d8g4698ga997g35f2e8f1ec43" version="1">A well-made, thick leather belt with a square runic carving on the front.</content>
 	<content contentuid="h8fd61985g33c0g4e87g9502gc424d4cbf8c1" version="1">Dwarven Excellence</content>
 	<content contentuid="h659e139dg985ag49degb9feg909c48372856" version="1">A dwarf wearing this belt has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="Intimidation"&gt;Intimidation&lt;/LSTag&gt; and &lt;LSTag Tooltip="Persuasion"&gt;Persuasion&lt;/LSTag&gt; checks.</content>
+	<!-- "" - "" -->
 	<content contentuid="hda711983gaa8dg4857g8009g6e7fad1586f9" version="1">Candle of Lawful Invocation</content>
 	<content contentuid="h39c74846g1ebag40aagb85dg948bcd217aa3" version="1">A slender taper dedicated to various lawful deities.</content>
 	<content contentuid="h6464bc22gfd08g4349gad10g8d70ed230120" version="1">Holy Warmth</content>
 	<content contentuid="h737ae331g5f76g4ffag8528gd91bdf1e21dd" version="1">Infuse your weapon with light.</content>
 	<content contentuid="h93101549gc2acg425ag92f7gf0b846a2f2ae" version="1">Additionally, a druid or cleric gains an additional 1st level &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<!-- "" - "" -->
 	<content contentuid="h623f78f1gb4cbg477aga12cg22b6926a343a" version="1">Efficient Quiver</content>
 	<content contentuid="hadade399g5e64g4096ga708g87fbc6bf17b8" version="1">Contains a small extradimensional space capable of holding more than the average quiver.</content>
 	<content contentuid="h46b292c7g8d64g4d24g90c1g9ca1974a655d" version="1">Greatarrows</content>
@@ -115,14 +124,18 @@
 	<content contentuid="h5b8a7ee7g6f68g4337gacb6g4630d3cd0ef2" version="1">Arrow Printer</content>
 	<content contentuid="h19dc5fb0ga3e1g4bd9gb0ceg9784b119bf35" version="1">&lt;LSTag Type="Spell" Tooltip="Projectile_MainHandAttack"&gt;Ranged Attack&lt;/LSTag&gt; can fire an additional projectile.</content>
 	<content contentuid="hf3c62884g46c4g46d6g8c6fg697f192c1e67" version="1">Replenish an expended &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; up to 3rd level. </content>
+	<!-- "" - "" -->
 	<content contentuid="h67779633g3038g4c0egb964g0a03d5a4ab50" version="1">Pearl of Power</content>
 	<content contentuid="h8da5be35gee44g449fg89d8gd54ae1946393" version="1">This seemingly normal pearl of average size and luster is a potent aid to all spellcasters.</content>
+	<!-- "" - "" -->
 	<content contentuid="hbc003cabg3c5fg4bd6gb907g9e17af69aa0a" version="1">Wind Fan</content>
 	<content contentuid="h1cee36f1g0e89g4811gb715g5de886def36e" version="1">An enchanted fan capable of creating a powerful burst of air.</content>
+	<!-- "" - "" -->
 	<content contentuid="h374a53a6g16b2g4066gae63gcd527f730e01" version="1">Hourglass of Distorted Perception</content>
 	<content contentuid="hc98011b4gfe13g4457gafb0gb75206ced927" version="1">The sands of time lie within.</content>
 	<content contentuid="he227c5c6g528ag4f35g9398gc49ae35d72e6" version="1">Turn The Hourglass</content>
 	<content contentuid="hf1b27892g4c28g4676g8c73gf5ad04cbdcb8" version="1">Become &lt;LSTag Type="Status" Tooltip="HASTE"&gt;Hastened&lt;/LSTag&gt;: gain an action, become faster and gain +2 to &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
+	<!-- "" - "" -->
 	<content contentuid="h5297aa60g4494g406fga6efg73a32e332fb3" version="1">Ruby of the War Mage</content>
 	<content contentuid="hf2317ec1gad89g4a62g9ac5g52212d83fd4a" version="1">A powerful gem favoured by wizards who prefer settling their arguments up close.</content>
 	<content contentuid="h8a88701cg10f5g42ddg94eagcd734b23794e" version="1">Attach the ruby to your main hand melee weapon, adding your &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability Modifier&lt;/LSTag&gt; to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; instead of your Strength or Dexterity.</content>
@@ -481,7 +494,14 @@
 	<content contentuid="h3564219846e64025978be22a44ead981e6fg" version="1">Only a follower of Mielikki can use this.</content>
 	<content contentuid="ha966b7799ef54ee48076f0540e7e0280cd1g" version="1">Only a follower of Corellon Larethian can use this.</content>
 	<content contentuid="h3a3e19f168dc40c59e670614f355fd046710" version="1">Only a follower of Ilmater can use this.</content>
-	<!-- JWL_CONT_TrinketCrate - b91412ad-d9fc-47e0-b89b-51dbd39db2f9 -->
+
+<!-- ==================================== Containers ==================================== -->
+
+	<!-- "JWL_CONT_TrinketCrate" - "b91412ad-d9fc-47e0-b89b-51dbd39db2f9" -->
 	<content contentuid="hd0146582g2796g4c82g9253ge653e4273a5c" version="1">Trinket Crate</content>
 	<content contentuid="hbd185ddcgab06g4f22g8d91g6ce6b413d25c" version="1">A crate full of trinkets.</content>
+
+	<!-- "JWL_CONT_InstrumentCrate" - "c16d93fc-ca4e-4a80-bbad-da363115db6c" -->
+	<content contentuid="h7a682ccag0f82g45bdga948g1f33bc9cb786" version="1">Instrument Crate</content>
+	<content contentuid="h835722a2g4b1ag4868gb9b4ga6423e926b80" version="1">A crate full of instruments.</content>
 </contentList>

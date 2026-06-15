@@ -7,8 +7,8 @@
 		<!-- Containers -->
 			<!-- Trinket Crate -->
 				<node id="GameObjects">
-					<!-- A crate full of trinkets. -->
 					<attribute id="DisplayName" type="TranslatedString" handle="hd0146582g2796g4c82g9253ge653e4273a5c" version="1" />
+					<!-- A crate full of trinkets. -->
 					<attribute id="Description" type="TranslatedString" handle="hbd185ddcgab06g4f22g8d91g6ce6b413d25c" version="1" />
 					<attribute id="MapKey" type="FixedString" value="b91412ad-d9fc-47e0-b89b-51dbd39db2f9" />
 					<attribute id="Name" type="LSString" value="JWL_CONT_TrinketCrate" />
@@ -19,7 +19,7 @@
 					<attribute id="VisualTemplate" type="FixedString" value="4364f9b4-b8fd-9484-6bd5-3688c3dead69" />
 					<attribute id="PhysicsTemplate" type="FixedString" value="dcadc52c-8ab5-94da-26cb-0aae2901e889" />
 					<attribute id="Icon" type="FixedString" value="Item_CONT_GEN_Chest_Rich_B" />
-					<attribute id="Tooltip" type="uint8" value="0" />
+					<attribute id="Tooltip" type="uint8" value="2" />
 					<attribute id="InventoryType" type="uint8" value="51" />
 					<children>
 						<node id="Bounds">
@@ -86,6 +86,27 @@
 							<children>
 								<node id="InventoryItem">
 									<attribute id="Object" type="FixedString" value="JWL_TreasureTable_TrinketCrate" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Instrument Crate -->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h7a682ccag0f82g45bdga948g1f33bc9cb786" version="1" />
+					<!-- A crate full of instruments. -->
+					<attribute id="Description" type="TranslatedString" handle="h835722a2g4b1ag4868gb9b4ga6423e926b80" version="1" />
+					<attribute id="MapKey" type="FixedString" value="c16d93fc-ca4e-4a80-bbad-da363115db6c" />
+					<attribute id="Name" type="LSString" value="JWL_CONT_InstrumentCrate" />
+					<attribute id="Stats" type="FixedString" value="JWL_CONT_InstrumentCrate" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="b91412ad-d9fc-47e0-b89b-51dbd39db2f9" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="JWL_TreasureTable_InstrumentCrate" />
 								</node>
 							</children>
 						</node>

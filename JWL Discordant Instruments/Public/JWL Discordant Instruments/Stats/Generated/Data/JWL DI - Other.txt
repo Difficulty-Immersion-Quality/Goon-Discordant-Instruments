@@ -8,6 +8,14 @@ data "Weight" "1"
 data "ValueOverride" "1"
 data "Rarity" "VeryRare"
 
+new entry "JWL_CONT_TrinketCrate"
+type "Object"
+using "_Container"
+data "RootTemplate" "c16d93fc-ca4e-4a80-bbad-da363115db6c"
+data "Weight" "1"
+data "ValueOverride" "1"
+data "Rarity" "VeryRare"
+
 // ==================================== Unarmed Strike ==================================== 
 
 new entry "Target_UnarmedAttack"

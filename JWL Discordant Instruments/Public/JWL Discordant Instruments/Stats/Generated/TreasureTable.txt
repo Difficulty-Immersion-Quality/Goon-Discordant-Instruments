@@ -1,15 +1,17 @@
+// ==================================== Tutorial chest tables ====================================
+
+// TODO: One main container, rest sub-contained
 new treasuretable "TUT_Chest_Potions"
 CanMerge 1
 new subtable "1,1"
 object category "I_JWL_CONT_TrinketCrate",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_CONT_InstrumentCrate",1,0,0,0,0,0,0,0
 
+// TODO: Split class locked trinkets into different container
 new treasuretable "JWL_TreasureTable_TrinketCrate"
 new subtable "1,1"
-object category "I_ARM_Instrument_Violin",1,0,0,0,0,0,0,0
-new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_ComfyBackpack",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_WeaponStrap",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_FaerunMap",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -18,6 +20,8 @@ new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_EndlessMead_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_MendingRope_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BalanceHarmony_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_CuriousCoin",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -44,18 +48,6 @@ new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_SymbolKelemvor",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_SymbolSylvanus",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BalanceHarmony",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_BookLostKnowledge",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -214,6 +206,65 @@ new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_BookExaltedDeeds",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_BookVileDarkness",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WeaponStrap",1,0,0,0,0,0,0,0
+
+new treasuretable "JWL_TreasureTable_InstrumentCrate"
+new subtable "1,1"
+object category "I_ARM_Instrument_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ARM_Instrument_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ARM_Instrument_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ARM_Instrument_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ARM_Instrument_Violin",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ARM_Instrument_Uncommon_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ARM_Instrument_Uncommon_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ARM_Instrument_Uncommon_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ARM_Instrument_Uncommon_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ARM_Instrument_Uncommon_Violin",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
+
+// ==================================== World tables ====================================
+
+new treasuretable "ST_JWL_Trade_CommonTrinkets"
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_ComfyBackpack",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_FaerunMap",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_Crowbar",1,0,0,0,0,0,0,0
+
+// TODO: I don't really need Alfira selling these, just feels, eh. Uncommon at best, and probably just lutes too.
+new treasuretable "JWL_AlfiraTrade"
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
+
+// ==================================== Vendors and vanilla tables ====================================
 
 new treasuretable "LOW_MusicTrader"
 CanMerge 1
@@ -227,26 +278,6 @@ new subtable "1,1"
 object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
-
-new treasuretable "JWL_AlfiraTrade"
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
-
-new treasuretable "ST_JWL_Trade_CommonTrinkets"
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_ComfyBackpack",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_FaerunMap",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_Crowbar",1,0,0,0,0,0,0,0
 
 new treasuretable "DEN_Volo_Trade"
 CanMerge 1
