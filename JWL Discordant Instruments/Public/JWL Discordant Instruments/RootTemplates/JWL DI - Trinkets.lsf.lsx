@@ -248,8 +248,10 @@
 						</node>
 					</children>
 				</node>
+			<!-- Rope of Mending -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h3a39ac63g9fa9g4a9cg9df3g72c4b58766fa" version="1" />
+					<!-- Wrapping this around a damaged construct will magically repair it. -->
 					<attribute id="Description" type="TranslatedString" handle="h388b16f6g2e3bg4c50ga3b1gf32ca3d60285" version="1" />
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="MapKey" type="FixedString" value="e4ffeb02-8097-4455-bb56-95b9118e79ee" />
@@ -263,6 +265,7 @@
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209022" />
 					<attribute id="maxStackAmount" type="int32" value="1" />
 				</node>
+			<!--  -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="hb6d68dc6g53a2g4f17g9d37g5f839caa7a81" version="1" />
 					<attribute id="Description" type="TranslatedString" handle="hbdf5413agd697g4619gaba2gd462616d1c14" version="1" />
@@ -312,6 +315,7 @@
 						</node>
 					</children>
 				</node>
+			<!--  -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h4e3db738ga8aeg49c0gade1g186a92439978" version="1" />
 					<attribute id="Description" type="TranslatedString" handle="hbdf5413agd697g4619gaba2gd462616d1c14" version="1" />
@@ -362,6 +366,7 @@
 						</node>
 					</children>
 				</node>
+			<!--  -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="heaf74714g4980g4ad3g84efg5aab7f51fe85" version="1" />
 					<attribute id="Description" type="TranslatedString" handle="h1e3eafe9ga606g449cgaf2fg0349992e8027" version="1" />
@@ -408,6 +413,7 @@
 						</node>
 					</children>
 				</node>
+			<!--  -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h9945da84gae43g4c1egb237g1159de62f125" version="1" />
 					<attribute id="Description" type="TranslatedString" handle="hb38b12ffg47dbg424bg90afg0959bdafe7d2" version="1" />
@@ -454,6 +460,7 @@
 						</node>
 					</children>
 				</node>
+			<!--  -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="hc34502b5gdf82g49bfg8afcgb1b03931bda8" version="1" />
 					<attribute id="Description" type="TranslatedString" handle="h086ed752gd84cg4d77g8425gd90ce6fc5823" version="1" />
@@ -501,6 +508,7 @@
 						</node>
 					</children>
 				</node>
+			<!--  -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h6f2f299dgce78g4e46gbe1dg18a3e1921f77" version="1" />
 					<attribute id="Description" type="TranslatedString" handle="ha7930679g7090g4390g9136gdbf730456f69" version="1" />
@@ -547,6 +555,7 @@
 						</node>
 					</children>
 				</node>
+			<!--  -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h1e15e6ebg8ae1g40cfg9677g25dd23123a2e" version="1" />
 					<attribute id="Description" type="TranslatedString" handle="h19b3ae37g5128g4905gab1fg7361a8482cf0" version="1" />
@@ -578,6 +587,7 @@
 						</node>
 					</children>
 				</node>
+			<!--  -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="ha84e637cg248fg426cg86a4g3b9d811d5052" version="1" />
 					<attribute id="Description" type="TranslatedString" handle="hf015fb2fg57d8g4698ga997g35f2e8f1ec43" version="1" />
@@ -624,6 +634,7 @@
 						</node>
 					</children>
 				</node>
+			<!--  -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="hda711983gaa8dg4857g8009g6e7fad1586f9" version="1" />
 					<attribute id="Description" type="TranslatedString" handle="h39c74846g1ebag40aagb85dg948bcd217aa3" version="1" />
@@ -673,6 +684,7 @@
 						</node>
 					</children>
 				</node>
+			<!--  -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h623f78f1gb4cbg477aga12cg22b6926a343a" version="1" />
 					<attribute id="Description" type="TranslatedString" handle="hadade399g5e64g4096ga708g87fbc6bf17b8" version="1" />
@@ -719,6 +731,7 @@
 						</node>
 					</children>
 				</node>
+			<!--  -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h67779633g3038g4c0egb964g0a03d5a4ab50" version="1" />
 					<attribute id="Description" type="TranslatedString" handle="h8da5be35gee44g449fg89d8gd54ae1946393" version="1" />
@@ -765,6 +778,7 @@
 						</node>
 					</children>
 				</node>
+			<!--  -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="hbc003cabg3c5fg4bd6gb907g9e17af69aa0a" version="1" />
 					<attribute id="Description" type="TranslatedString" handle="h1cee36f1g0e89g4811gb715g5de886def36e" version="1" />
@@ -811,6 +825,7 @@
 						</node>
 					</children>
 				</node>
+			<!--  -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h374a53a6g16b2g4066gae63gcd527f730e01" version="1" />
 					<attribute id="Description" type="TranslatedString" handle="hc98011b4gfe13g4457gafb0gb75206ced927" version="1" />
