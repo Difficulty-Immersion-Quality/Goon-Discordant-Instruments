@@ -8,7 +8,7 @@ data "Weight" "1"
 data "ValueOverride" "1"
 data "Rarity" "VeryRare"
 
-new entry "JWL_CONT_TrinketCrate"
+new entry "JWL_CONT_InstrumentCrate"
 type "Object"
 using "_Container"
 data "RootTemplate" "c16d93fc-ca4e-4a80-bbad-da363115db6c"
@@ -52,60 +52,49 @@ data "TargetSound" "Spell_Impact_Monk_UnarmedStrike_L1to3"
 // data "Sheathing" "Melee"
 data "Sheathing" "Sheathed"
 
-// ==================================== Bardic Inspiration ==================================== 
-// TODO: Why the fuck does this inherit from Blade Ward?!
-// TODO: Why are we overwriting and changing this?!
-
-new entry "Shout_MAG_Restore_BardicInspiration"
-type "SpellData"
-data "SpellType" "Shout"
-// using "Shout_BladeWard"
-using "Shout_MAG_Restore_BardicInspiration"
-// data "Level" ""
-// data "SpellSchool" ""
-// data "ContainerSpells" ""
-// data "Cooldown" "OncePerRestPerItem"
-// data "AIFlags" ""
-// data "SpellProperties" "RestoreResource(BardicInspiration,1,0)"
-data "SpellProperties" "RestoreResource(BardicInspiration,2,0)"
-// data "TargetConditions" "Self()"
-// data "Icon" "Action_Bard_RestoreBardicInspiration"
-// // Restore Bardic Inspiration
-// data "DisplayName" "h8d40ac67gfaf9g4a5cgae70ga8ee4bf86e38;1"
-// // Play your instrument to restore one of your Bardic Inspiration slots.
-// data "Description" "h2772442bgd7c2g4318g9055g48906fc219d9;1"
-// // Play your instrument to restore two of your Bardic Inspiration slots.
-data "Description" "heea41e66g06d4g4feega335g882f905d40bb;1"
-// data "TooltipStatusApply" ""
-// data "InstrumentComponentPrepareSound" "Instrument_Bard_BardicInspiration_Prepare"
-// data "InstrumentComponentLoopingSound" "Instrument_Bard_BardicInspiration_Loop"
-// data "InstrumentComponentCastSound" "Instrument_Bard_BardicInspiration_Cast"
-// data "InstrumentComponentImpactSound" "Instrument_Bard_BardicInspiration_Impact"
-// data "UseCosts" "ActionPoint:1"
-// data "SpellFlags" "HasSomaticComponent;HasVerbalComponent"
-// data "Requirements" ""
-
-// ==================================== Unused ==================================== 
-
-// ==================================== Passives
+// ==================================== Cut Content ==================================== 
 
 new entry "JWL_Passive_GithRadar"
 type "PassiveData"
+// Psionic Alarm
 data "DisplayName" "hd71087fege40dg4875gb80eg4aea2cb98460;1"
+// You cannot be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;.
 data "Description" "h7e2a0d8fg1379g48e7ga23agf773f98e4baa;1"
 data "Boosts" "StatusImmunity(SURPRISED)"
-
-new entry "JWL_Passive_HolyCandle"
-type "PassiveData"
-data "DisplayName" "h6464bc22gfd08g4349gad10g8d70ed230120;1"
-data "Description" "h93101549gc2acg425ag92f7gf0b846a2f2ae;1"
-data "Boosts" "IF(Tagged('DRUID', context.Source)):ActionResource(SpellSlot,1,1);IF(Tagged('CLERIC', context.Source)):ActionResource(SpellSlot,1,1)"
-
-// ==================================== Spells
 
 new entry "JWL_Target_Smite_Thunderous_Trinket"
 type "SpellData"
 data "SpellType" "Target"
+// using "Target_MainHandAttack"
 using "Target_Smite_Thunderous"
+// data "Level" "1"
+// data "SpellSchool" "Evocation"
 data "Cooldown" "OncePerCombat"
+// data "SpellProperties" "GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);GROUND:DealDamage(2d6, Thunder)"
+// data "SpellRoll" "Attack(AttackType.MeleeWeaponAttack)"
+// data "SpellSuccess" "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand); DealDamage(2d6, Thunder,Magical);ApplyStatus(PRONE_THUNDEROUS_SMITE, 100, 1, , , ,not SavingThrow(Ability.Strength, SourceSpellDC()))"
+// data "Icon" "Spell_Evocation_ThunderousSmite"
+// // Thunderous Smite
+// data "DisplayName" "hc501c354g0acfg4cf2ga8a8g68a571de054a;1"
+// // Pushes your target [1] away and possibly knocks it &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.
+// data "Description" "hb828b89bg758eg4ed1gac15g20c3efb94d9b;2"
+// data "DescriptionParams" "Distance(3)"
+// data "TooltipDamageList" "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d6,Thunder)"
+// data "TooltipAttackSave" "MeleeWeaponAttack;Strength"
+// data "TooltipStatusApply" "ApplyStatus(PRONE,100,1)"
+// data "TooltipUpcastDescription" "6ff1780a-855a-414c-a8bf-811251537206"
+// data "CastSound" "Spell_Cast_Damage_Thunder_ThunderousSmite_L1to3"
+// data "TargetSound" "Spell_Impact_Damage_Thunder_ThunderousSmite_L1to3"
+// data "DualWieldingUseCosts" ""
+// data "HitCosts" "BonusActionPoint:1;SpellSlotsGroup:1:1:1"
 data "HitCosts" "BonusActionPoint:1"
+// data "SpellAnimation" "71369b20-18f1-4d33-89ad-a99b10f0444c,,;48beee2b-7124-4fa1-b820-dab4d89198d4,,;bcecc5ce-e7c9-4391-b4b6-5f93872ba2e6,,;9add032c-e500-4e88-a2ea-ef6c905bd656,,;3b9da8d4-3eff-43bd-9eaa-1c13fba0045e,,;d9feef5a-3726-4e23-95e5-6ec295efdc96,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,,"
+// data "DualWieldingSpellAnimation" "71369b20-18f1-4d33-89ad-a99b10f0444c,,;48beee2b-7124-4fa1-b820-dab4d89198d4,,;bcecc5ce-e7c9-4391-b4b6-5f93872ba2e6,,;9add032c-e500-4e88-a2ea-ef6c905bd656,,;3b9da8d4-3eff-43bd-9eaa-1c13fba0045e,,;d9feef5a-3726-4e23-95e5-6ec295efdc96,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,,"
+// data "VerbalIntent" "Damage"
+// data "SpellFlags" "IsSpell;IsMelee;HasVerbalComponent;IsHarmful;AddFallDamageOnLand"
+// data "HitAnimationType" "MagicalDamage_Electric"
+// data "MemoryCost" "1"
+// data "PrepareEffect" "3dd8cb62-d04e-449c-bd94-ed59f472ec5a"
+// data "CastEffect" "da03ffe6-2e75-4070-be9d-a637666f2e9e"
+// data "TargetEffect" "288e0f80-7d7c-4f36-b748-17182318180e"
+// data "DamageType" "Thunder"

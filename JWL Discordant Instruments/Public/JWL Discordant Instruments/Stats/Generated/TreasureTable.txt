@@ -226,15 +226,15 @@ object category "I_ARM_Instrument_Lyre",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_ARM_Instrument_Violin",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_ARM_Instrument_Uncommon_Drum",1,0,0,0,0,0,0,0
+object category "I_JWL_Instrument_Uncommon_Drum",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_ARM_Instrument_Uncommon_Flute",1,0,0,0,0,0,0,0
+object category "I_JWL_Instrument_Uncommon_Flute",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_ARM_Instrument_Uncommon_Lute",1,0,0,0,0,0,0,0
+object category "I_JWL_Instrument_Uncommon_Lute",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_ARM_Instrument_Uncommon_Lyre",1,0,0,0,0,0,0,0
+object category "I_JWL_Instrument_Uncommon_Lyre",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_ARM_Instrument_Uncommon_Violin",1,0,0,0,0,0,0,0
+object category "I_JWL_Instrument_Uncommon_Violin",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -245,6 +245,16 @@ new subtable "1,1"
 object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_UNI_LOW_KiamGodasKilatDrum_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_UNI_LOW_DostrealtsPiccolo_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_UNI_LOW_StolyarofsTableLute_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_UNI_LOW_FalataericCliLyre_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_UNI_LOW_GlimmergadSelgauntFiddle_NotUnique",1,0,0,0,0,0,0,0
 
 // ==================================== World tables ====================================
 
@@ -256,37 +266,40 @@ object category "I_JWL_DiscordantInstruments_FaerunMap",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_Crowbar",1,0,0,0,0,0,0,0
 
-// TODO: I don't really need Alfira selling these, just feels, eh. Uncommon at best, and probably just lutes too.
-new treasuretable "JWL_AlfiraTrade"
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
-
 // ==================================== Vendors and vanilla tables ====================================
 
-new treasuretable "LOW_MusicTrader"
-CanMerge 1
+// ==================================== Instruments
+
+new treasuretable "JWL_AlfiraTrade"
 new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
+object category "I_JWL_Instrument_Uncommon_Lute",1,0,0,0,0,0,0,0
 
 new treasuretable "DEN_Volo_Trade"
 CanMerge 1
 new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Violin",1,0,0,0,0,0,0,0
+
+new treasuretable "LOW_MusicTrader"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Violin",1,0,0,0,0,0,0,0
+new subtable "1,1"
 object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
@@ -296,6 +309,8 @@ new subtable "1,1"
 object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
+
+// ==================================== Trinkets
 
 new treasuretable "DEN_Entrance_Trade"
 CanMerge 1

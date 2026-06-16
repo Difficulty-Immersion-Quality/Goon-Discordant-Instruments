@@ -2,19 +2,35 @@
 <contentList>
 <!-- ==================================== Instruments ==================================== -->
 
+	<!-- "JWL_Instrument_Uncommon_Drum" - "50901bb1-1fc7-44ce-bb08-8e7ad5d52cb2" -->
+	<content contentuid="h3bf7a87ag14aeg4554gb10agb0540f798292" version="1">Hand Drum +1</content>
+	<!-- "JWL_Instrument_Rare_Drum" - "8c66df6f-3a59-4d48-8b4a-9191d9a13817" -->
+	<content contentuid="h2915aa2ag3a2fg4677g9a44ge12c2435c59a" version="1">Hand Drum +2</content>
+	<!-- "JWL_Instrument_Uncommon_Flute" - "b74c06e1-e7bc-4a53-9587-4b8a630b53cd" -->
+	<content contentuid="hd03d8147g34d6g4809gb34fga4da3cd4af5d" version="1">Flute +1</content>
+	<!-- "JWL_Instrument_Rare_Flute" - "3bc7c948-e2c3-4895-b0ce-49e4cabdccc1" -->
+	<content contentuid="hea285eb6g9de4g402cg84e8g32d7bac94871" version="1">Flute +2</content>
+	<!-- "JWL_Instrument_Uncommon_Lute" - "cf2f1313-3ff2-4b6e-af3d-eed069c32db9" -->
+	<content contentuid="h24d16cb6ga4dag4564gbd66g126b3654fb2d" version="1">Lute +1</content>
+	<!-- "JWL_Instrument_Rare_Lute" - "64f36ccd-4cd3-4c20-ba31-9fdffa42849d" -->
+	<content contentuid="h3d49c631gd5d1g4d00g8858ga9eb42f2bd9c" version="1">Lute +2</content>
+	<!-- "JWL_Instrument_Uncommon_Lyre" - "298a6eed-c8ed-435f-bb79-bf6d4096359b" -->
+	<content contentuid="h3cca5e79g4a00g499egbf6fg70c03257ef6d" version="1">Lyre +1</content>
+	<!-- "JWL_Instrument_Rare_Lyre" - "ae0afdb6-022c-479f-9db2-1d28fcbb91e4" -->
+	<content contentuid="h80d1e209ga861g421fgb8aag3f1e76db520a" version="1">Lyre +2</content>
+	<!-- "JWL_Instrument_Uncommon_Violin" - "b072428f-4a63-4976-a528-a791472d66a3" -->
+	<content contentuid="h3e2d482dg774fg4a7cgb457g0e7c42dd78ad" version="1">Violin +1</content>
+	<!-- "JWL_Instrument_Rare_Violin" - "2a4d6328-8ce9-4fa4-bca9-c0e449777783" -->
+	<content contentuid="h0b87007eg7582g473cg9a46g2bc4f739435e" version="1">Violin +2</content>
+
 	<!-- "JWL_Passive_MusicalProficiency" -->
 	<content contentuid="haf038fc3gea65g4152g8be9g5187a945b436" version="1">Sentient Song</content>
 	<content contentuid="hc4d6ff19g9a80g430cgbaa2g273a20e49f86" version="1">A magical enchantment allows anyone to play this instrument with &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt;.</content>
-	<!-- "JWL_PERFORM_POSITIVE_BARDIC" -->
-	<content contentuid="ha186c9ffgfbedg4c4fg9d06g344347885a7f" version="1">Catchy Tune</content>
-	<content contentuid="h1c9dbd81g06fdg4b5eg85d2gfb6fa8c04e3f" version="1">Your previously played song is still stuck in your head.</content>
 
-	<!-- "Shout_Bard_Perform_Whistle" -->
-	<content contentuid="hb940fd04g538dg4b61g81b3g709de6372382" version="1">A bard playing a song restores one charge of Bardic Inspiration, but must wait before they can restore another.</content>
-	<!-- "Shout_Bard_Perform_ThePower_Whistle", "Shout_Bard_Perform_Stargazing_Whistle", "Shout_Bard_Perform_BardDance_Whistle", "Shout_Bard_Perform_DOS2_1_Whistle", "Shout_Bard_Perform_DOS2_2_Whistle", "Shout_Bard_Perform_DOS2_3_Whistle",  -->
-	<content contentuid="hd9c18a19gb30cg46abg8748ge720e57dc85d" version="1">A bard playing this song restores one charge of Bardic Inspiration, but must wait before they can restore another.</content>
-	<!-- "Shout_MAG_Restore_BardicInspiration" -->
-	<content contentuid="heea41e66g06d4g4feega335g882f905d40bb" version="1">Play your instrument to restore two of your Bardic Inspiration slots.</content>
+	<!-- "JWL_Passive_CatchyTune" -->
+	<content contentuid="ha186c9ffgfbedg4c4fg9d06g344347885a7f" version="1">Catchy Tune</content>
+	<!-- "JWL_Passive_CatchyTune" -->
+	<content contentuid="hc33f0c31gedaag4770ga35ag57dd018cfda7" version="1">Successfully &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performing&lt;/LSTag&gt; with this instrument leaves the music stuck in your head, restoring one &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; charge.</content>
 
 <!-- ==================================== Trinkets - Uncommon ==================================== -->
 
@@ -78,9 +94,6 @@
 	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
 	<content contentuid="XXXXXXXXXXXXXXXXXXX" version="1">XXXXXXXXXXXXXXXXX</content>
 
-	<!-- "" - "" -->
-	<content contentuid="hd71087fege40dg4875gb80eg4aea2cb98460" version="1">Psionic Alarm</content>
-	<content contentuid="h7e2a0d8fg1379g48e7ga23agf773f98e4baa" version="1">You cannot be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;.</content>
 	<content contentuid="h7ef7c832g6883g46f9ga63egfe6ac408b669" version="1">Shoulder-Mounted Leather Frog</content>
 	<content contentuid="h864d0c9eg29d0g4d1cgbb92g3e0ee0e09b2c" version="1">A solid leather base with sturdy straps used to comfortably and securely attach a weapon to your back.</content>
 	<!-- "JWL_Passive_WeaponStrap" -->
@@ -119,6 +132,7 @@
 	<!-- "" - "" -->
 	<content contentuid="hda711983gaa8dg4857g8009g6e7fad1586f9" version="1">Candle of Lawful Invocation</content>
 	<content contentuid="h39c74846g1ebag40aagb85dg948bcd217aa3" version="1">A slender taper dedicated to various lawful deities.</content>
+	<!-- "JWL_Target_Light_Trinket" -->
 	<content contentuid="h6464bc22gfd08g4349gad10g8d70ed230120" version="1">Holy Warmth</content>
 	<content contentuid="h737ae331g5f76g4ffag8528gd91bdf1e21dd" version="1">Infuse your weapon with light.</content>
 	<content contentuid="h93101549gc2acg425ag92f7gf0b846a2f2ae" version="1">Additionally, a druid or cleric gains an additional 1st level &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
@@ -531,4 +545,10 @@
 	<!-- "JWL_CONT_InstrumentCrate" - "c16d93fc-ca4e-4a80-bbad-da363115db6c" -->
 	<content contentuid="h7a682ccag0f82g45bdga948g1f33bc9cb786" version="1">Instrument Crate</content>
 	<content contentuid="h835722a2g4b1ag4868gb9b4ga6423e926b80" version="1">A crate full of instruments.</content>
+
+<!-- ==================================== Cut Content ==================================== -->
+
+	<!-- "JWL_Passive_GithRadar" -->
+	<content contentuid="hd71087fege40dg4875gb80eg4aea2cb98460" version="1">Psionic Alarm</content>
+	<content contentuid="h7e2a0d8fg1379g48e7ga23agf773f98e4baa" version="1">You cannot be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;.</content>
 </contentList>
