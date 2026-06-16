@@ -25,11 +25,10 @@
 
 	<!-- "JWL_Passive_MusicalProficiency" -->
 	<content contentuid="haf038fc3gea65g4152g8be9g5187a945b436" version="1">Sentient Song</content>
-	<content contentuid="hc4d6ff19g9a80g430cgbaa2g273a20e49f86" version="1">A magical enchantment allows anyone to play this instrument with &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt;.</content>
+	<content contentuid="hc4d6ff19g9a80g430cgbaa2g273a20e49f86" version="1">A magical enchantment grants &lt;LSTag Tooltip="MusicalInstrumentProficiency"&gt;Musical Instrument Proficiency&lt;/LSTag&gt;.</content>
 
 	<!-- "JWL_Passive_CatchyTune" -->
 	<content contentuid="ha186c9ffgfbedg4c4fg9d06g344347885a7f" version="1">Catchy Tune</content>
-	<!-- "JWL_Passive_CatchyTune" -->
 	<content contentuid="hc33f0c31gedaag4770ga35ag57dd018cfda7" version="1">Successfully &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performing&lt;/LSTag&gt; with this instrument leaves the music stuck in your head, restoring one &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; charge.</content>
 
 <!-- ==================================== Trinkets - Uncommon ==================================== -->

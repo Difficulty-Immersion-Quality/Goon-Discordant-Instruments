@@ -230,7 +230,7 @@ new entry "JWL_Passive_MusicalProficiency"
 type "PassiveData"
 // Sentient Song
 data "DisplayName" "haf038fc3gea65g4152g8be9g5187a945b436;1"
-// A magical enchantment allows anyone to play this instrument with &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt;.
+// A magical enchantment grants &lt;LSTag Tooltip="MusicalInstrumentProficiency"&gt;Musical Instrument Proficiency&lt;/LSTag&gt;.
 data "Description" "hc4d6ff19g9a80g430cgbaa2g273a20e49f86;1"
 data "Properties" "Highlighted"
 data "Boosts" "Proficiency(MusicalInstrument)"
@@ -244,7 +244,13 @@ data "Description" "hc33f0c31gedaag4770ga35ag57dd018cfda7;1"
 data "Properties" "Highlighted;OncePerLongRest"
 data "StatsFunctorContext" "OnStatusApplied"
 data "Conditions" "StatusId('PERFORM_POSITIVE')"
-data "StatsFunctors" "RestoreResource(BardicInspiration,1,0)"
+data "StatsFunctors" "IF(not HasStatus('JWL_CATCHYTUNE_TECHNICAL',context.Source))RestoreResource(BardicInspiration,1,0);ApplyStatus(JWL_CATCHYTUNE_TECHNICAL,100,-1)"
+
+new entry "JWL_CATCHYTUNE_TECHNICAL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead"
+data "StatusGroups" "SG_RemoveOnRespec"
 
 // ==================================== Kiam Goda's Kilat Drum
 // A Lulutiun hand drum covered in sealskin, like those played at koatulit peace festivals. Kiam Goda was famous for his finger-thumb taradiddles.

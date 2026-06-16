@@ -269,6 +269,7 @@ object category "I_JWL_DiscordantInstruments_Crowbar",1,0,0,0,0,0,0,0
 // ==================================== Vendors and vanilla tables ====================================
 
 // ==================================== Instruments
+// TODO: Spread some rares around in Act 1b/Act 2.
 
 new treasuretable "JWL_AlfiraTrade"
 new subtable "1,1"
