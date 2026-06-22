@@ -69,7 +69,7 @@ object category "I_JWL_DiscordantInstruments_RubyWarmage",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_AstuteLens",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_ShieldingBrooch",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_ShieldingBrooch_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_Docent",1,0,0,0,0,0,0,0
 new subtable "1,1"

@@ -980,10 +980,10 @@
 						</node>
 					</children>
 				</node>
-			<!--  -->
+			<!-- Shielding Brooch -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h97e52670g70f7g4e8cg8433g757385833675" version="1" />
-					<!--  -->
+					<!-- A turtle-shaped brooch that protects whoever holds it. -->
 					<attribute id="Description" type="TranslatedString" handle="hb17cc4aeg7fefg44efg8ebfg2c0f0b6fad11" version="1" />
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="MapKey" type="FixedString" value="e7f3f420-c75b-4047-92c3-d1101a84970f" />

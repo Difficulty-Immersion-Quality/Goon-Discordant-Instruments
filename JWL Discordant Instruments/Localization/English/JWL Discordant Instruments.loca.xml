@@ -142,10 +142,13 @@
 	<content contentuid="h616f433dg87d5g4972g8692g432763c60834" version="1">When you deal damage with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;ranged weapon attack&lt;/LSTag&gt;, you have a chance to apply &lt;LSTag Type="Status" Tooltip="BLEEDING"&gt;Bleeding&lt;/LSTag&gt; for [1] turns.</content>
 	<content contentuid="h5b8a7ee7g6f68g4337gacb6g4630d3cd0ef2" version="1">Arrow Printer</content>
 	<content contentuid="h19dc5fb0ga3e1g4bd9gb0ceg9784b119bf35" version="1">&lt;LSTag Type="Spell" Tooltip="Projectile_MainHandAttack"&gt;Ranged Attack&lt;/LSTag&gt; can fire an additional projectile.</content>
-	<content contentuid="hf3c62884g46c4g46d6g8c6fg697f192c1e67" version="1">Replenish an expended &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; up to 3rd level. </content>
+
 	<!-- "" - "" -->
 	<content contentuid="h67779633g3038g4c0egb964g0a03d5a4ab50" version="1">Pearl of Power</content>
 	<content contentuid="h8da5be35gee44g449fg89d8gd54ae1946393" version="1">This seemingly normal pearl of average size and luster is a potent aid to all spellcasters.</content>
+	<!-- "JWL_Shout_MAG_SpellSlotRestoration_Trinket" -->
+	<content contentuid="hf3c62884g46c4g46d6g8c6fg697f192c1e67" version="1">Replenish an expended &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt; of up to 3rd level.</content>
+
 	<!-- "" - "" -->
 	<content contentuid="hbc003cabg3c5fg4bd6gb907g9e17af69aa0a" version="1">Wind Fan</content>
 	<content contentuid="h1cee36f1g0e89g4811gb715g5de886def36e" version="1">An enchanted fan capable of creating a powerful burst of air.</content>
@@ -160,11 +163,14 @@
 	<content contentuid="h8a88701cg10f5g42ddg94eagcd734b23794e" version="1">Attach the ruby to your main hand melee weapon, adding your &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability Modifier&lt;/LSTag&gt; to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; instead of your Strength or Dexterity.</content>
 	<content contentuid="h0f4e566fg3f6bg4ce4g89adg55aee118e396" version="1">Lens of Astute Observation</content>
 	<content contentuid="hd9f196c4gf184g4f3cga691g0a491bd6554c" version="1">Holding the lens to your eye fills you with magical energy.</content>
-	<!-- "" - "" -->
+	
+	<!-- "JWL_DiscordantInstruments_ShieldingBrooch" - "e7f3f420-c75b-4047-92c3-d1101a84970f" -->
 	<content contentuid="h97e52670g70f7g4e8cg8433g757385833675" version="1">Shielding Brooch</content>
 	<content contentuid="hb17cc4aeg7fefg44efg8ebfg2c0f0b6fad11" version="1">A turtle-shaped brooch that protects whoever holds it.</content>
+	<!-- "JWL_Passive_ShieldingBrooch" -->
 	<content contentuid="hc0a37439gd64eg4443g9860g76bfff9bd648" version="1">Forceful Deflection</content>
-	<content contentuid="hbf15a81dg68fag4239g839fg90fcd4fac3e6" version="1">Grants &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Force damage. Immune to Magic Missile.</content>
+	<content contentuid="hbf15a81dg68fag4239g839fg90fcd4fac3e6" version="1">The wearer gains &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to[1] and &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to &lt;LSTag Type="Spell" Tooltip="Projectile_MagicMissile"&gt;Magic Missile&lt;/LSTag&gt;.</content>
+
 	<content contentuid="hd7eb3531g379bg4fa0g8876gd518bbb80b33" version="1">Docent</content>
 	<content contentuid="h524983dcgbdb3g42c1gbed3g62b6f9a35849" version="1">A small construct made of metal and studded with dragonshards. It comes to your aid when you need it most, as if it had a mind of its own.</content>
 	<content contentuid="hcc5200fbgf65dg412fgb75cg277bc53f1a03" version="1">Professor Orb</content>
