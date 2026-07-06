@@ -1,12 +1,13 @@
 // ==================================== Tutorial chest tables ====================================
 
 // TODO: One main container, rest sub-contained
-new treasuretable "TUT_Chest_Potions"
-CanMerge 1
-new subtable "1,1"
-object category "I_JWL_CONT_TrinketCrate",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_CONT_InstrumentCrate",1,0,0,0,0,0,0,0
+// TODO: Only make it accessible once they're all non-unique.
+// new treasuretable "TUT_Chest_Potions"
+// CanMerge 1
+// new subtable "1,1"
+// object category "I_JWL_CONT_TrinketCrate",1,0,0,0,0,0,0,0
+// new subtable "1,1"
+// object category "I_JWL_CONT_InstrumentCrate",1,0,0,0,0,0,0,0
 
 // TODO: Split class locked trinkets into different container?
 new treasuretable "JWL_TreasureTable_TrinketCrate"
