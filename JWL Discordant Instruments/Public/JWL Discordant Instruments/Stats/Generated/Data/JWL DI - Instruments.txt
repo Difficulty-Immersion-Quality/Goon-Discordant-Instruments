@@ -376,3 +376,36 @@ type "Armor"
 using "UNI_LOW_GlimmergadSelgauntFiddle"
 // data "Unique" "1"
 data "Unique" "0"
+
+// ==================================== Dealbreaker
+
+new entry "JWL_DiscordantInstruments_GoldenFiddle"
+type "Armor"
+using "ARM_Instrument_Violin"
+data "RootTemplate" "2724b253-7acc-4171-9797-74576330f9cc"
+data "ValueLevel" "9"
+data "ValueScale" "9"
+data "PassivesOnEquip" "JWL_Passive_MusicalProficiency;JWL_Passive_CatchyTune;JWL_Passive_GoldenFiddle"
+data "Boosts" "UnlockSpell(Shout_Bard_Perform_Violin);Skill(Performance,3)"
+data "Rarity" "Legendary"
+data "UseConditions" "CanUseGoldenFiddle()"
+data "Unique" "1"
+
+new entry "JWL_DiscordantInstruments_GoldenFiddle_NotUnique"
+type "Armor"
+using "JWL_DiscordantInstruments_GoldenFiddle"
+// data "Unique" "1"
+data "Unique" "0"
+
+// ==================
+
+new entry "JWL_Passive_GoldenFiddle"
+type "PassiveData"
+// // Devilish Charms
+data "DisplayName" "h72ce85ebg558bg448ag9a32g6ad78de3d9d0;1"
+// // Once per turn, when a melee attack hits you, the attacker is &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; for 1 round.
+data "Description" "h297f440bgf832g4be1gbd65g8c330664a8ef;1"
+data "Properties" "Highlighted;OncePerTurn"
+data "StatsFunctorContext" "OnDamaged"
+data "Conditions" "IsMeleeAttack() and Character()"
+data "StatsFunctors" "ApplyStatus(SWAP,CHARMED, 100, 1)"

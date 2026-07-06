@@ -23,6 +23,13 @@
 	<!-- "JWL_Instrument_Rare_Violin" - "2a4d6328-8ce9-4fa4-bca9-c0e449777783" -->
 	<content contentuid="h0b87007eg7582g473cg9a46g2bc4f739435e" version="1">Violin +2</content>
 
+	<!-- "JWL_DiscordantInstruments_GoldenFiddle" - "2724b253-7acc-4171-9797-74576330f9cc" -->
+	<content contentuid="h4a5326aaga75ag4348ga87fg51c83fe194ec" version="1">Dealbreaker</content>
+	<content contentuid="h043aaeb2g0379g462eg86c8g0abf03bbe1ae" version="1">Raphael's golden fiddle. It radiates with incredible power.</content>
+	<!-- "JWL_Passive_GoldenFiddle" -->
+	<content contentuid="h72ce85ebg558bg448ag9a32g6ad78de3d9d0" version="1">Devilish Charms</content>
+	<content contentuid="h297f440bgf832g4be1gbd65g8c330664a8ef" version="1">Once per turn, when a melee attack hits you, the attacker is &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; for 1 round.</content>
+
 	<!-- "JWL_Passive_MusicalProficiency" -->
 	<content contentuid="haf038fc3gea65g4152g8be9g5187a945b436" version="1">Sentient Song</content>
 	<content contentuid="hc4d6ff19g9a80g430cgbaa2g273a20e49f86" version="1">A magical enchantment grants &lt;LSTag Tooltip="MusicalInstrumentProficiency"&gt;Musical Instrument Proficiency&lt;/LSTag&gt;.</content>
@@ -107,11 +114,13 @@
 	<content contentuid="h4e3db738ga8aeg49c0gade1g186a92439978" version="1">Illusory Coin</content>
 
 
-	<!-- "" - "" -->
+	<!-- "JWL_DiscordantInstruments_TriageKit" - "69106843-75e0-4d7d-889a-aff684bf7313" -->
 	<content contentuid="h6f2f299dgce78g4e46gbe1dg18a3e1921f77" version="1">Triage Kit</content>
 	<content contentuid="ha7930679g7090g4390g9136gdbf730456f69" version="1">A collection of tools used for treating wounds in the field.</content>
+	<!-- "JWL_Target_Triage" -->
 	<content contentuid="h9feab2e7g52b5g4455ga485g021f03b0811d" version="1">Tend Injuries</content>
 	<content contentuid="h4addf87dg5166g40cfg9467gd2110e037825" version="1">Tend to a creature's wounds, healing them. The target must wait before they can be tended to again.</content>
+	<!-- JWL_TRIAGEKIT_TECHNICAL -->
 	<content contentuid="h92d55a11g15efg413dgb442g169c11e4ef68" version="1">Tender Loving Care</content>
 	<content contentuid="h6d894e2cgd309g4fceg8d28ge1d055a6b53e" version="1">You've recently been medically tended to.</content>
 
@@ -152,11 +161,14 @@
 	<!-- "" - "" -->
 	<content contentuid="hbc003cabg3c5fg4bd6gb907g9e17af69aa0a" version="1">Wind Fan</content>
 	<content contentuid="h1cee36f1g0e89g4811gb715g5de886def36e" version="1">An enchanted fan capable of creating a powerful burst of air.</content>
-	<!-- "" - "" -->
+
+	<!-- "JWL_DiscordantInstruments_Hourglass" - "83147bb1-aad8-4410-8433-f30956d94f2e" -->
 	<content contentuid="h374a53a6g16b2g4066gae63gcd527f730e01" version="1">Hourglass of Distorted Perception</content>
 	<content contentuid="hc98011b4gfe13g4457gafb0gb75206ced927" version="1">The sands of time lie within.</content>
+	<!-- "JWL_Shout_Haste_Trinket" -->
 	<content contentuid="he227c5c6g528ag4f35g9398gc49ae35d72e6" version="1">Turn The Hourglass</content>
-	<content contentuid="hf1b27892g4c28g4676g8c73gf5ad04cbdcb8" version="1">Become &lt;LSTag Type="Status" Tooltip="HASTE"&gt;Hastened&lt;/LSTag&gt;: gain an action, become faster and gain +2 to &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
+	<content contentuid="hf1b27892g4c28g4676g8c73gf5ad04cbdcb8" version="1">Gain &lt;LSTag Type="Status" Tooltip="HASTE"&gt;Hastened&lt;/LSTag&gt;.</content>
+
 	<!-- "" - "" -->
 	<content contentuid="h5297aa60g4494g406fga6efg73a32e332fb3" version="1">Ruby of the War Mage</content>
 	<content contentuid="hf2317ec1gad89g4a62g9ac5g52212d83fd4a" version="1">A powerful gem favoured by wizards who prefer settling their arguments up close.</content>
@@ -435,10 +447,7 @@
 	<content contentuid="hba613187gef97g41ecga20cgc383e27dbcf0" version="1">The wielder's summoned Undead creatures within [1] use your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; and have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against any target that doesn't have all of its hit points, provided it's not a construct, an ooze, a plant, or an elemental.</content>
 
 	<content contentuid="h9bfaa917ge884g4a27ga08fg2cd825b99915" version="1">Affected entity uses the summoner's &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; and has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on attacks against any target that doesn't have all of its hit points, provided it's not a construct, an ooze, a plant, or an elemental.</content>
-	<content contentuid="h4a5326aaga75ag4348ga87fg51c83fe194ec" version="1">Dealbreaker</content>
-	<content contentuid="h043aaeb2g0379g462eg86c8g0abf03bbe1ae" version="1">Raphael's golden fiddle. It radiates with incredible power.</content>
-	<content contentuid="h72ce85ebg558bg448ag9a32g6ad78de3d9d0" version="1">Devilish Charms</content>
-	<content contentuid="h297f440bgf832g4be1gbd65g8c330664a8ef" version="1">When a melee attack hits you, the attacker is &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; for 1 turn. This effect can only occur once per turn.</content>
+
 	<content contentuid="he5b984a1g4c73g4c0dgb275g2a48f01475fe" version="1">Bag of Tricks</content>
 	<content contentuid="h00cfd621ga3abg460bgae62gfeb99d95d55b" version="1">A bag filled with small round balls. There is seemingly no bottom.</content>
 	<content contentuid="h42e8410dg0582g49e7g9789g9de950350e0f" version="1">Throw a ball from the bag, creating a [1]-wide smoke cloud that &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blinds&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="SNEAKING_HEAVILY_OBSCURED"&gt;Heavily Obscures&lt;/LSTag&gt; creatures within it.</content>

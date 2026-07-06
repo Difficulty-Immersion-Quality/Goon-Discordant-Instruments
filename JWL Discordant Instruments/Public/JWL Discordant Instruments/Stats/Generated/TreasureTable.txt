@@ -1,19 +1,20 @@
-// ==================================== Tutorial chest tables ====================================
+// ==================================== Tutorial Chest etc. ====================================
 
 // TODO: One main container, rest sub-contained
-// TODO: Only make it accessible once they're all non-unique.
-// new treasuretable "TUT_Chest_Potions"
-// CanMerge 1
-// new subtable "1,1"
-// object category "I_JWL_CONT_TrinketCrate",1,0,0,0,0,0,0,0
-// new subtable "1,1"
-// object category "I_JWL_CONT_InstrumentCrate",1,0,0,0,0,0,0,0
+new treasuretable "TUT_Chest_Potions"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_CONT_TrinketCrate",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_CONT_InstrumentCrate",1,0,0,0,0,0,0,0
 
-// TODO: Split class locked trinkets into different container?
+// ==================================== TRINKETS
 new treasuretable "JWL_TreasureTable_TrinketCrate"
-// ==================================== UNCOMMON ITEMS
+// ==================================== UNCOMMON TRINKETS
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_ComfyBackpack",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_Crowbar",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_FaerunMap",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -28,194 +29,204 @@ new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_SmokingPipe_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_VaultingPole_NotUnique",1,0,0,0,0,0,0,0
-//
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_QuiverBrambleheart",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BookGreenArts",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BookInfernalArchive",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_Crowbar",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BeltPrimalRecall",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_TotemBeast",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BloodwellGoblin",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SymbolKelemvor",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SymbolSylvanus",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BookLostKnowledge",1,0,0,0,0,0,0,0
+// ==================================== RARE TRINKETS
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_TriageKit",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_Whetstone",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_Whetstone_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BeltDwarven",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_HolyCandle_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_HolyCandle",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_PearlPower_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_QuiverEfficient",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_WindFan_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_PearlPower",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_Hourglass_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_WindFan",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_RubyWarmage_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_Hourglass",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_RubyWarmage",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_AstuteLens",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_AstuteLens_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_ShieldingBrooch_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_Docent",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_Docent_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_ProfessorOrb",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_ProfessorOrb_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_WeaponChain",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_WeaponChain_NotUnique",1,0,0,0,0,0,0,0
+// ==================================== VERY RARE TRINKETS
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BookCelestialHealing",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_FlyingCarpet_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_MourningsteelCoin",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_LuckyDice_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_TotemDread",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BowlCommandingWater_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BloodwellCorrupted",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_CharmingEyes_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_WhistleBeast",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_HandyHaversack_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_WhistleWitch",1,0,0,0,0,0,0,0
-// ==================================== ROGUE TOOLS (ROGUE)
+object category "I_JWL_DiscordantInstruments_WatchBadge_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_CuriousCoin",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_Mimir_NotUnique",1,0,0,0,0,0,0,0
+// ==================================== LEGENDARY TRINKETS
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BagTricks",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BagHolding_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_StoneGoodLuck",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_Shackles_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SkeletonKey",1,0,0,0,0,0,0,0
-// ==================================== WAR BANNERS (FIGHTER/MONK)
+object category "I_JWL_DiscordantInstruments_GuardianEmblem_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BannerGoblin",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_KerzinsOoze_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BannerMourningsteel",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BlackCrystalTablet_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BannerConsecrated",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_OrbSkoraeus_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BannerInfernalPower",1,0,0,0,0,0,0,0
-//
+object category "I_JWL_DiscordantInstruments_CompendiumTechniques_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SymbolLolth",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_OrbScrying_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SymbolMoradin",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BookExaltedDeeds_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_FlyingCarpet",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BookVileDarkness_NotUnique",1,0,0,0,0,0,0,0
+// ==================================== IOUN STONES
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_LuckyDice",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_IounBlue_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BeltFrostGiant",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_IounGreen_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BowlCommandingWater",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_IounPink_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_HandyHaversack",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_IounPurple_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_CharmingEyes",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_IounRed_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_WatchBadge",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_IounYellow_NotUnique",1,0,0,0,0,0,0,0
+// ==================================== QUIVERS
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_Mimir",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_QuiverBrambleheart",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_IounBlue",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_QuiverEfficient",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_IounGreen",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_QuiverChaos_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_IounPink",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_QuiverDimensional_NotUnique",1,0,0,0,0,0,0,0
+// ==================================== BELTS
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_IounPurple",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BeltPrimalRecall",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_IounRed",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BeltDwarven_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_IounYellow",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BeltFrostGiant_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_QuiverChaos",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BeltRaidLeader_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BookManySpells",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BeltForbiddenHarmony_NotUnique",1,0,0,0,0,0,0,0
+// ==================================== SPELL TOMES (WIZARD)
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BookClearThought",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BookGreenArts_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SerpentsPin",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BookCelestialHealing_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_WorghideWeaponStrap",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BookManySpells_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BeltRaidLeader",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BookArcaneCodex_NotUnique",1,0,0,0,0,0,0,0
+// ==================================== INFERNAL TOMES (WARLOCK)
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_TotemSpirit",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BookInfernalArchive_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BloodwellSorcerous",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BookLostKnowledge_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SilverLycanCharm",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BookClearThought_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_ThayanFemur",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BookEtherealCurrents_NotUnique",1,0,0,0,0,0,0,0
+// ==================================== MEDALS (FIGHTER)
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SymbolBahamut",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_MourningsteelCoin_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SymbolEllistrae",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SymbolHelm",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SymbolMeilikki",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BagHolding",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_Shackles",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_GuardianEmblem",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_KerzinsOoze",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BlackCrystalTablet",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_OrbSkoraeus",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_CompendiumTechniques",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_OrbScrying",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_QuiverDimensional",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BookArcaneCodex",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BookEtherealCurrents",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_DragonhideWeaponStrap",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BeltForbiddenHarmony",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_TotemDragon",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BloodwellDragon",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_WhistleCerberus",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_GibberingBell",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_GoldenFiddle",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SymbolIlmater",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SymbolCorellon",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BookExaltedDeeds",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BookVileDarkness",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_SerpentsPin_NotUnique",1,0,0,0,0,0,0,0
+// ==================================== STRAPS (MONK)
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_WeaponStrap",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WorghideWeaponStrap_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_DragonhideWeaponStrap_NotUnique",1,0,0,0,0,0,0,0
+// ==================================== TOTEMS (BARBARIAN/DRUID)
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_TotemBeast_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_TotemDread_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_TotemSpirit_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_TotemDragon_NotUnique",1,0,0,0,0,0,0,0
+// ==================================== BLOODWELL VIALS (SORCERER)
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BloodwellGoblin_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BloodwellCorrupted_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BloodwellSorcerous_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BloodwellDragon_NotUnique",1,0,0,0,0,0,0,0
+// ==================================== WHISTLES
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WhistleBeast_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SilverLycanCharm_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WhistleCerberus_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WhistleWitch_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_ThayanFemur_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_GibberingBell_NotUnique",1,0,0,0,0,0,0,0
+// ==================================== ROGUE TOOLS (ROGUE)
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_CuriousCoin_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BagTricks_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_StoneGoodLuck_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SkeletonKey_NotUnique",1,0,0,0,0,0,0,0
+// ==================================== WAR BANNERS (FIGHTER/MONK)
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BannerGoblin_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BannerMourningsteel_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BannerConsecrated_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BannerInfernalPower_NotUnique",1,0,0,0,0,0,0,0
+// ==================================== HOLY SYMBOLS (CLERIC/PALADIN → DEITY-LOCKED)
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolKelemvor_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolSylvanus_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolLolth_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolMoradin_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolBahamut_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolEllistrae_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolHelm_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolMeilikki_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolCorellon_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolIlmater_NotUnique",1,0,0,0,0,0,0,0
 
+// ==================================== INSTRUMENTS
 new treasuretable "JWL_TreasureTable_InstrumentCrate"
+// ==================================== BASE INSTRUMENTS
 new subtable "1,1"
 object category "I_ARM_Instrument_Drum",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -226,6 +237,7 @@ new subtable "1,1"
 object category "I_ARM_Instrument_Lyre",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_ARM_Instrument_Violin",1,0,0,0,0,0,0,0
+// ==================================== UNCOMMON INSTRUMENTS
 new subtable "1,1"
 object category "I_JWL_Instrument_Uncommon_Drum",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -236,6 +248,7 @@ new subtable "1,1"
 object category "I_JWL_Instrument_Uncommon_Lyre",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_Instrument_Uncommon_Violin",1,0,0,0,0,0,0,0
+// ==================================== RARE INSTRUMENTS
 new subtable "1,1"
 object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -246,6 +259,7 @@ new subtable "1,1"
 object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
+// ==================================== UNIQUE INSTRUMENTS
 new subtable "1,1"
 object category "I_JWL_UNI_LOW_KiamGodasKilatDrum_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -256,8 +270,12 @@ new subtable "1,1"
 object category "I_JWL_UNI_LOW_FalataericCliLyre_NotUnique",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_UNI_LOW_GlimmergadSelgauntFiddle_NotUnique",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_GoldenFiddle_NotUnique",1,0,0,0,0,0,0,0
 
 // ==================================== World tables ====================================
+
+// ==================================== Trinkets
 
 new treasuretable "ST_JWL_Trade_CommonTrinkets"
 new subtable "1,1"
@@ -266,53 +284,6 @@ new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_FaerunMap",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_Crowbar",1,0,0,0,0,0,0,0
-
-// ==================================== Vendors and vanilla tables ====================================
-
-// ==================================== Instruments
-// TODO: Spread some rares around in Act 1b/Act 2.
-
-new treasuretable "JWL_AlfiraTrade"
-new subtable "1,1"
-object category "I_JWL_Instrument_Uncommon_Lute",1,0,0,0,0,0,0,0
-
-new treasuretable "DEN_Volo_Trade"
-CanMerge 1
-new subtable "1,1"
-object category "I_JWL_Instrument_Uncommon_Drum",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Uncommon_Flute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Uncommon_Lute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Uncommon_Lyre",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Uncommon_Violin",1,0,0,0,0,0,0,0
-
-new treasuretable "LOW_MusicTrader"
-CanMerge 1
-new subtable "1,1"
-object category "I_JWL_Instrument_Uncommon_Drum",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Uncommon_Flute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Uncommon_Lute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Uncommon_Lyre",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Uncommon_Violin",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
-
-// ==================================== Trinkets
 
 new treasuretable "DEN_Entrance_Trade"
 CanMerge 1
@@ -428,3 +399,46 @@ new treasuretable "LOW_StormshoreTabernacle_Guardian"
 CanMerge 1
 new subtable "-1"
 object category "I_JWL_DiscordantInstruments_BannerConsecrated",1,0,0,0,0,0,0,0
+
+// ==================================== Instruments
+// TODO: Spread some rares around in Act 1b/Act 2.
+
+new treasuretable "JWL_AlfiraTrade"
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Lute",1,0,0,0,0,0,0,0
+
+new treasuretable "DEN_Volo_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Violin",1,0,0,0,0,0,0,0
+
+new treasuretable "LOW_MusicTrader"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Uncommon_Violin",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
