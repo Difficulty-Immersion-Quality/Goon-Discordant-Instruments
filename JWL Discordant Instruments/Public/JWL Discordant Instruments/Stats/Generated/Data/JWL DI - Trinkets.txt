@@ -61,8 +61,7 @@ data "Rarity" "Legendary"
 // ==================================== UNCOMMON TRINKETS ==================================== 
 
 // ==================================== Fashionable Backpack
-// TODO: Expand upon this concept with custom sources of "CarryCapacityMultiplier" in Goon's Library.
-// TODO: Confirm if this BoostContext sees "Giants_CarryCapacity" after respec, while it's equipped.
+// TODO: That carry capacity overhaul gonna be lit fr, but this aight for now.
 
 new entry "JWL_DiscordantInstruments_ComfyBackpack"
 type "Armor"
@@ -82,8 +81,7 @@ type "PassiveData"
 data "DisplayName" "h0d93bd89g2802g478fgb7dbg1bbe7461e582;1"
 // // Your &lt;LSTag Tooltip="CarryWeight"&gt;carrying capacity&lt;/LSTag&gt; is increased to 120% of its base value.
 data "Description" "heda4c85age794g4cf8g9b01ge92df2f3d786;1"
-data "BoostContext" "OnEquip;OnCreate"
-data "Boosts" "IF(not HasPassive('HumanVersatility',context.Source) and HasPassive('Giants_CarryCapacity',context.Source)):CarryCapacityMultiplier(1.2);IF((HasPassive('HumanVersatility',context.Source) and not HasPassive('Giants_CarryCapacity',context.Source)) or (HasPassive('Giants_CarryCapacity',context.Source) and not HasPassive('HumanVersatility',context.Source))):CarryCapacityMultiplier(1.45);IF(HasPassive('HumanVersatility',context.Source) and HasPassive('Giants_CarryCapacity',context.Source)):CarryCapacityMultiplier(1.7)"
+data "Boosts" "IF(not HasPassive('HumanVersatility') and not HasPassive('Giants_CarryCapacity')):CarryCapacityMultiplier(1.2);IF((HasPassive('HumanVersatility') and not HasPassive('Giants_CarryCapacity')) or (HasPassive('Giants_CarryCapacity') and not HasPassive('HumanVersatility'))):CarryCapacityMultiplier(1.45);IF(HasPassive('HumanVersatility') and HasPassive('Giants_CarryCapacity')):CarryCapacityMultiplier(1.7)"
 
 // ==================================== Steel Crowbar
 
@@ -1162,7 +1160,7 @@ using "JWL_DiscordantInstruments_Base_VeryRare"
 data "RootTemplate" "8932df29-e031-4486-8736-2e508e506a2a"
 data "ValueLevel" "8"
 data "Weight" "2.00"
-data "PassivesOnEquip" "JWL_Passive_HandyHaversack;JWL_Passive_HandyHaversack_Human;JWL_Passive_HandyHaversack_Giant;JWL_Passive_HandyHaversack_Combo"
+data "PassivesOnEquip" "JWL_Passive_HandyHaversack"
 data "Unique" "1"
 
 new entry "JWL_DiscordantInstruments_HandyHaversack_NotUnique"
@@ -1178,28 +1176,7 @@ type "PassiveData"
 data "DisplayName" "hc5345370g60acg4d8dg96bagf664734ec704;1"
 data "Description" "h4cef8db3g5f4bg40bcg9483g1e91c369e74c;1"
 data "BoostContext" "OnEquip"
-data "Boosts" "CarryCapacityMultiplier(2.5)"
-
-new entry "JWL_Passive_HandyHaversack_Human"
-type "PassiveData"
-using "JWL_Passive_HandyHaversack"
-data "Properties" "IsHidden"
-data "BoostConditions" "HasPassive('HumanVersatility',context.Source)"
-data "Boosts" "CarryCapacityMultiplier(2.75)"
-
-new entry "JWL_Passive_HandyHaversack_Giant"
-type "PassiveData"
-using "JWL_Passive_HandyHaversack"
-data "Properties" "IsHidden"
-data "BoostConditions" "HasPassive('Giants_CarryCapacity',context.Source)"
-data "Boosts" "CarryCapacityMultiplier(2.75)"
-
-new entry "JWL_Passive_HandyHaversack_Combo"
-type "PassiveData"
-using "JWL_Passive_HandyHaversack"
-data "Properties" "IsHidden"
-data "BoostConditions" "HasPassive('HumanVersatility',context.Source) and HasPassive('Giants_CarryCapacity',context.Source)"
-data "Boosts" "CarryCapacityMultiplier(3.0)"
+data "Boosts" "IF(not HasPassive('HumanVersatility') and not HasPassive('Giants_CarryCapacity')):CarryCapacityMultiplier(2.5);IF((HasPassive('HumanVersatility') and not HasPassive('Giants_CarryCapacity')) or (HasPassive('Giants_CarryCapacity') and not HasPassive('HumanVersatility'))):CarryCapacityMultiplier(2.75);IF(HasPassive('HumanVersatility') and HasPassive('Giants_CarryCapacity')):CarryCapacityMultiplier(3)"
 
 // ==================================== Badge of the Watch
 
@@ -1376,7 +1353,7 @@ new entry "JWL_Passive_BagHolding"
 type "PassiveData"
 data "DisplayName" "h947b0b3bg157dg4b10g8ac9g016602b32dfc;1"
 data "Description" "h39329b8ag5d8cg4ae3gbde9g9083488807e0;1"
-data "Boosts" "CarryCapacityMultiplier(10.0)"
+data "Boosts" "IF(not HasPassive('HumanVersatility') and not HasPassive('Giants_CarryCapacity')):CarryCapacityMultiplier(10);IF((HasPassive('HumanVersatility') and not HasPassive('Giants_CarryCapacity')) or (HasPassive('Giants_CarryCapacity') and not HasPassive('HumanVersatility'))):CarryCapacityMultiplier(10.25);IF(HasPassive('HumanVersatility') and HasPassive('Giants_CarryCapacity')):CarryCapacityMultiplier(10.5)"
 
 // ==================================== Dimensional Shackles
 
